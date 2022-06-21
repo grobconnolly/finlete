@@ -1,12 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+	<title>Finlete - Coming soon</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="Rob" content="Finlete-theme">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/jpg" href="./images/flavicon.jpg" />
+	<!--=================== custom style css ================================== -->
+
+
+	
+
 </head>
-<body>
-    <H1> Future Home of Finlete by Meetlete</H1>
+
+<body class="">
+	<style type="text/css" media="screen">
+		body {
+		  background: #E2F6F1;
+		}
+		.wrapper {
+		  position: absolute;
+		  left: 50%;
+		  top: 40%;
+		  transform: translate(-50%, -50%);
+		  -webkit-transform: translate(-50%, -50%);
+		  animation: fadeIn 1000ms ease;
+		  -webkit-animation: fadeIn 1000ms ease;
+		  text-align: center;
+		  width: 70%;
+		  
+		}
+		.wrapper h1 {
+		  font-weight: 700;
+		  font-size: 70px;
+		  line-height: 130%;
+		  color: #404040;
+		  letter-spacing: 2px;
+		}
+		.wrapper p {
+		  font-weight: 400;
+		  font-size: 44px;
+		  line-height: 130%;
+		  color: #404040;
+		  letter-spacing: 2px;
+		}
+		.btn.finbtn,input.login,.logout{
+		    font-weight: 500;
+		    font-size: 18px;
+		    line-height: 140%;
+		    color: #FFFFFF;
+		    padding: 12px 20px;
+		    background: #059C69;
+		    border-radius:7px;
+		    border-color: #059C69;
+	  		width: 200px;
+	  		margin: 20px 10px 0;
+	  		text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		.btn.finbtn.white{
+			background: #ffff;
+			color: #059C69;
+		}
+		input.form-control {
+		  padding: 12px 16px 12px 30px;
+		  max-width: 284px;
+		  height: 53px;
+		  background-color: #FFF;
+		  border: 1px solid #9A9A9A;
+		  border-radius: 12px;
+		  width: 100%;
+		  margin:15px;
+		  display: inline-block;
+		}
+		@media screen and (max-width: 767px) {
+			.wrapper h1{
+				font-size:48px;
+			}
+			.wrapper p{
+				font-size: 24px;
+			}
+		}
+	</style>
+	<div class="wrapper">
+
+	  <div class="textcoming">
+	  <h1>Finlete</h1>
+	  <p>Athlete Investing Platform</p>
+	  <a type="button" class="btn finbtn">Join Waitlist</a>
+	  <a type="button" id="Signin" class="btn finbtn white">Sign In</a>
+	  </div>
+
+	  	<div class="formwrap" style="display: none;">
+	  		
+		 	<div id="first">
+		 		<p>Enter username and password</p>
+		        <form action="" method="post">
+		            <input type="text" name="" class="form-control" id="loginusername" placeholder="Username" />
+		            <input type="password" name="" class="form-control" id="loginpassword" placeholder="Password" />
+		            <input type="button" class="login" value="Sign In" />
+		        </form>
+		        <div class="alert alert-danger" role="alert" style="display:none;margin-top: 20px">username or password is wrong</div>
+	    	</div>
+
+	        <div id="second">
+
+	        </div>
+
+        </div>
+
+
+	 </div>
+	
+
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+
+		<script type="text/javascript">
+			$('#Signin').click(function(event) {
+				$('.textcoming').css('display', 'none');
+				$('.formwrap').css('display', 'block');
+			});
+
+		 	$(document).ready(function(){
+		                 // on click Sign In Button checks that username =='admin' and password == 'password'
+		                 $(".login").click(function(){
+		                 if( $("#loginusername").val()=='admin' && $("#loginpassword").val()=='fin@@@') {
+		                        $("#first").hide();
+		                        //$("#second").show();
+		                        //$("#second").append("<p>Hello, admin</p> <br/><input type='button' class='logout' value='Log Out' />");
+		                        //$URL = ""
+		                        var token = "encquery%3DcFFMdo0m21rWc7MpLjDQYSnanAIL5LxIBKf6mBusRsig6ARZ5uS%2BU1MQFq1Q3OYrbAHTdCP2%2BI80RqYEa8h2PgD9zB5k28Hl3EnWrTvQrFO90ugFa9wWoT%2F3WQ7c%2BAFNYu9iSgnjZUM7kSX2mbnSrgy%2BEwlyXNK3ZidmfQJuFpPe0viUyu8zlSBCs%2Bz71WYzJPzb1kY5OYtcNfEKXsMPET7HQ5xavXkNrQxkQfXwtPfzD2%2Bj7WTKsaDYRDmbhr%2BOni7OCsLK61dU5HuS%2Fhi%2BctDloEjgiwhpKSfA60Rnz0JRyDFebtAUnQb6X%2FqOUlkt%20agentid%3Dobdxohs%20ver%3D1%20crmethod%3D2&ECID-Context=1.005sShduHDP8xkG6yzQ_MG000Mfn00H3U3%3BkXjE";
+		                        window.location.replace("dashboard.html?"+token);
+		                     }
+		                 else {
+		                     $('.alert-danger').css('display', 'block');
+		                 }
+		 
+		                 $(".logout").click(function() {
+		                 $("form")[0].reset();
+		                 $("#second").children('p, input').remove();
+		                 $("#first").show();
+		                 $("#second").hide();
+		             });
+		         });
+		 
+		     });
+		 
+		</script>
 </body>
+
 </html>
