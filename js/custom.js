@@ -73,15 +73,6 @@ jQuery(document).ready(function($) {
 });
 // resdyend
 
-//jQuery to collapse the navbar on scroll
-// $(window).scroll(function() {
-//     if ($(".top-bar").offset().top > 150) {
-//         $('.top-bar').addClass("top-nav-fixed");
-//     } else {
-//         $('.top-bar').removeClass("top-nav-fixed");
-//     }
-// });
-
 // swiper for profile section
  
 var swiper = new Swiper(".swiper", {
