@@ -28,10 +28,10 @@ jQuery(document).ready(function($) {
             var TokenCoin = (Investment / 50);
             var TokenCoin2 = $('#TokenCoin2').text(TokenCoin+" Coins");
           
-            var PercentageofEarnings = (resultratio*TokenCoin).toFixed(6);
+            var PercentageofEarnings = (resultratio*TokenCoin).toFixed(5);
             var PercentageofEarnings2 = $('#PercentageofEarnings2').text(PercentageofEarnings+"%");
           
-            var Payout = (PercentageofEarnings*Earnings).toFixed(3);
+            var Payout = (PercentageofEarnings*Earnings).toFixed(2);
             var Payout2 = $('#Payout').text("$"+Payout);
 
           //alert(PercentageofEarnings+"%");
