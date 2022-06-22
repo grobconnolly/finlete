@@ -33,6 +33,9 @@ img{
     color: #059C69;
     background: #fff;
 }
+.btn.finbtn:focus{
+  outline: none;
+}
 .for-mb{
     display: none !important;
 }
@@ -556,6 +559,15 @@ text-overflow: ellipsis;
 .calculateit input:focus{
   border-color: #059C69;
   outline: none;
+}
+.calculateit input.error{
+  border-color: #d06868;
+}
+.errorp{
+  display: none;
+}
+.calculateit input.error+p{
+  display: block;
 }
 .calcbtn {
   padding-top: 40px;

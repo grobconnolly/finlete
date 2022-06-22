@@ -275,14 +275,17 @@
 						<div class="row">
 							<div class="col-xs-6">
 								<label>Investment</label>
-								<input type="text" name="" value="" placeholder="5,000">
+								<input type="text" id="Investment" class="number_only" value="" placeholder="5,000">
+								<p class="errorp" style="color: #e34e4e;font-size: 14px;">Enter Investment amount</p>
 							</div>
 							<div class="col-xs-6">
 								<label>Potential Career Earnings</label>
-								<input type="text" name="" value="" placeholder="140,000,000">
+								<input type="text" id="Earnings" class="number_only" value="" placeholder="140,000,000">
+								<p class="errorp" style="color: #e34e4e;font-size: 14px;">Enter Career Earnings</p>
 							</div>
+							
 							<div class="col-xs-12 calcbtn">
-							<button type="button" class="btn finbtn btn-block">Calculate <img src="images/arrow-whiteR.svg" alt=""></button>
+							<button type="button"  id="Calculate" class="btn finbtn btn-block">Calculate <img src="images/arrow-whiteR.svg" alt=""></button>
 							</div>
 						</div>
 						
@@ -293,16 +296,16 @@
 						<h3>Results</h3>
 						<div class="invest result-col">
 							<ul>
-								<li><span>Investment</span><p>$5,000</p></li>
+								<li><span>Investment</span><p id="Investment2" class="comma">$5,000</p></li>
 								<li><span>Share Price</span><p>$50.00</p></li>
-								<li><span>Token/Coin</span><p>100 Coins</p></li>
+								<li><span>Token/Coin</span><p id="TokenCoin2">100 Coins</p></li>
 							</ul>
 						</div>
 						<div class="Earnings result-col">
 							<ul>
-								<li><span>Potential Career Earnings</span><p>$140,000,000</p></li>
-								<li><span>% of Earnings</span><p>0.001%</p></li>
-								<li><span>Payout</span><p>$140,000</p></li>
+								<li><span>Potential Career Earnings</span><p id="Earnings2" class="comma">$140,000,000</p></li>
+								<li><span>% of Earnings</span><p id="PercentageofEarnings2">0.001%</p></li>
+								<li><span>Payout</span><p id="Payout" class="comma">$140,000</p></li>
 							</ul>
 						</div>
 					</div>
