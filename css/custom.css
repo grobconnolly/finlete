@@ -567,6 +567,7 @@ text-overflow: ellipsis;
   display: none;
   color: #e34e4e;
   font-size: 14px;
+  font-style: normal;
 }
 .section.Calculator .calculateit input.error+p{
   display: block;
