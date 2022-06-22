@@ -563,10 +563,12 @@ text-overflow: ellipsis;
 .calculateit input.error{
   border-color: #d06868;
 }
-.errorp{
+.section.Calculator p.errorp{
   display: none;
+  color: #e34e4e;
+  font-size: 14px;
 }
-.calculateit input.error+p{
+.section.Calculator .calculateit input.error+p{
   display: block;
 }
 .calcbtn {
@@ -720,6 +722,8 @@ nav.mynav ul.navbar-nav {
   padding: 0;
   margin: 0;
 }
-
+.section.Calculator p.errorp{
+  font-size: 12px;
+}
 
 }
