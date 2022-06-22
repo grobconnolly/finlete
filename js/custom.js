@@ -1,6 +1,11 @@
 // calculator fn
 jQuery(document).ready(function($) {
 
+        var SharePrice = "50";
+        var ratio = "0.1";
+        var ratiobased = "10000";
+        var SharePrice2 = $('#SharePrice').text("$"+SharePrice+".00");
+
         $("#Calculate").click(function(){
 
           var Investment =$('#Investment').val().replace(/,/g, "");
@@ -18,14 +23,11 @@ jQuery(document).ready(function($) {
             $('#Investment').removeClass("error");
             $('#Earnings').removeClass("error");
             
-            var ratio = "0.1";
-            var ratiobased = "10000";
             var resultratio = (ratio/ratiobased);
-
             var Investment2 = $('#Investment2').text("$"+Investment);
             var Earnings2 = $('#Earnings2').text("$"+Earnings);
           
-            var TokenCoin = (Investment / 50);
+            var TokenCoin = (Investment / SharePrice).toFixed(2);
             var TokenCoin2 = $('#TokenCoin2').text(TokenCoin+" Coins");
           
             var PercentageofEarnings = (resultratio*TokenCoin).toFixed(5);
