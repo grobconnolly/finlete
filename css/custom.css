@@ -36,9 +36,7 @@ img{
 .btn.finbtn:focus{
   outline: none;
 }
-.for-mb{
-    display: none !important;
-}
+
 section.meetleteGen {
     padding: 100px 0;
 }
@@ -115,7 +113,7 @@ nav.mynav ul.navbar-nav li{
 }
 nav.mynav  ul.navbar-nav{
     width: 100%;
-    padding:8px 0 0 0; 
+    padding:16px 0 0 0; 
 }
 
 nav.mynav ul.navbar-nav li a i {
@@ -184,6 +182,11 @@ nav.mynav ul.navbar-nav li:hover ul.childmenu{
 .top-bar .btn.finbtn{
     min-width: 139px;
     float: right;
+}
+.btn.finbtn.signin {
+    background: #fff;
+    border-color: #fff;
+    color: #404040;
 }
 .search {
   padding: 0 0 0 30px;
@@ -635,6 +638,14 @@ section.footerNew ul li a{
 }
 
 /*============== Media queries ==================*/
+
+@media screen and (min-width: 768px) {
+
+.for-mb{
+    display: none !important;
+}
+
+}
 
 @media screen and (max-width: 767px) {
   body .swiper{
