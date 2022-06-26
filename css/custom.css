@@ -21,7 +21,7 @@ img{
     color: #FFFFFF;
     padding: 12px 20px;
     background: #059C69;
-    border-radius: 16px;
+    border-radius: 12px;
     border-color: #059C69;
     -webkit-transition: all .25s ease-in-out;
        -moz-transition: all .25s ease-in-out;
@@ -29,14 +29,16 @@ img{
          -o-transition: all .25s ease-in-out;
             transition: all .25s ease-in-out;
 }
-.btn.finbtn:hover{
+.btn.finbtn:hover,.btn.finbtn.active{
     color: #059C69;
     background: #fff;
 }
 .btn.finbtn:focus{
   outline: none;
 }
-
+.btn.finbtn+.btn{
+  margin-left: 10px;
+}
 section.meetleteGen {
     padding: 100px 0;
 }
@@ -61,7 +63,8 @@ h3.titlesection{
   margin-bottom: 20px;
 }
 .section{
-    padding: 90px 0;
+  padding: 90px 0;
+  clear: both;
 }
 /*===========nav style=====================*/
 .top-bar {
@@ -593,6 +596,26 @@ text-overflow: ellipsis;
 .disclaimer{
   padding-top: 64px;
 }
+/*=========== home  =========== */
+.EarlyAccess {
+    background: #F5FBF9;
+}
+.EarlyAccess h1 {
+    font-weight: 900;
+    font-size: 69px;
+    line-height: 120%;
+    text-align: center;
+    color: #404040;
+    margin-bottom: 40px;
+}
+.EarlyAccess  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: #4F4F4F;
+    margin-bottom: 40px;
+}
 /*=========== footer v1 =========== */
 section.footerNew {
     padding: 64px 0;
@@ -737,6 +760,9 @@ nav.mynav ul.navbar-nav {
 }
 .section.Calculator p.errorp{
   font-size: 12px;
+}
+.btn.finbtn+.btn{
+  margin-left: 0px;
 }
 
 }
