@@ -734,7 +734,7 @@ text-overflow: ellipsis;
 .Joinwaitlist{
   text-align: center;
 }
-#_form_5_ ._form_element input[type="text"], #_form_5_ ._form_element input[type="date"], #_form_5_ ._form_element select, #_form_5_ ._form_element textarea:not(.g-recaptcha-response) {
+.Joinwaitlist #_form_5_ ._form_element input[type="text"] {
     display: block;
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -747,8 +747,9 @@ text-overflow: ellipsis;
     border: 1px solid #9A9A9A;
     border-radius: 12px;
     font-family: inherit;
+    width: 260px;
 }
-#_form_5_ ._submit {
+.Joinwaitlist #_form_5_ ._submit {
     -webkit-appearance: none;
     cursor: pointer;
     font-size: 24px;
