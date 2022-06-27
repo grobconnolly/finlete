@@ -672,6 +672,34 @@ text-overflow: ellipsis;
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     padding: 20px;
 }
+.TableAccess .nav-tabs > li > a {
+    margin-right: 2px;
+    border: 1px solid #787878;
+    border-radius: 4px 4px 0 0;
+    display: block;
+    padding: 12px 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #787878;
+    border-radius: 12px;
+    margin-right: 16px;
+}
+.TableAccess  .nav-tabs > li.active > a,
+.TableAccess  .nav-tabs > li.active > a:hover, 
+.TableAccess  .nav-tabs > li.active > a:focus {
+    border: 1px solid #404040;
+    background: #404040;
+    color: #fff;
+}
+.TableAccess ul.nav.nav-tabs {
+    border: 1px solid #D9D9D9;
+    width: 100%;
+    padding: 16px;
+    margin: 0;
+    border-bottom: 0;
+}
 /*Invest in the world*/
 .theworld{
   padding:50px 0 40px 0;
@@ -693,6 +721,7 @@ text-overflow: ellipsis;
     text-align: center;
     color: #5A5A5A;
 }
+
 /*world 2*/
 .theworld2 {
   background-repeat: no-repeat;
