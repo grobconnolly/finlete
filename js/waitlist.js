@@ -314,4 +314,3 @@ window._load_script = function(url, callback) {
   };
   addEvent(form_to_submit, 'submit', form_submit);
 })();
-
