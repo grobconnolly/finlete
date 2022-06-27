@@ -731,6 +731,33 @@ text-overflow: ellipsis;
   margin-bottom: 120px;
   padding-top: 60px;
 }
+.theworld2 .panel-default > .panel-heading {
+    color: #404040;
+    background-color: #fff;
+    border-color: #D9D9D9;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.theworld2 .panel-title > a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    color: #404040;
+    display: block;
+    text-decoration: none;
+}
+.panel-body, .panel-body p,.panel-body a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #5A5A5A;
+}
+.panel-body a{
+  color: #059C69;
+}
+/* Join waitlist */
 .Joinwaitlist{
   text-align: center;
 }
