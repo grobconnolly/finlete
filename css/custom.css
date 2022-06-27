@@ -616,6 +616,153 @@ text-overflow: ellipsis;
     color: #4F4F4F;
     margin-bottom: 40px;
 }
+/*table user*/
+.table.table-home {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #D9D9D9;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+.table.table-home .user{
+  width: 56px;
+  height: 56px;
+  filter: blur(12px);
+  border-radius: 100px
+}
+.table.table-home .btn.finbtn,
+.table.table-home .btn.finbtn.active {
+    font-size: 16px;
+}
+.table.table-home td,
+.table.table-home td p,
+.table.table-home th{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #404040;
+  vertical-align: middle;
+}
+.table.table-home td.percent {
+    color: #059C69;
+}
+.table.table-home th{
+  color: #9A9A9A;
+}
+.table.table-home td p span{
+  color: #9A9A9A;
+  font-size: 14px;
+  font-weight: 400;
+}
+.table.table-home td p span,
+.table.table-home td p {
+    filter: blur(6px);
+}
+.data{
+  position:relative;
+  padding-left: 70px;
+}
+.data img {
+    position: absolute;
+    left: 0;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 20px;
+}
+/*Invest in the world*/
+.theworld{
+  padding:50px 0 40px 0;
+}
+.theworld h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    text-align: center;
+    color: #404040;
+    margin-bottom:16px;
+}
+.theworld p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 140%;
+    text-align: center;
+    color: #5A5A5A;
+}
+/*world 2*/
+.theworld2 {
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left top;
+  min-height: 650px;
+  margin-bottom: 120px;
+  padding-top: 60px;
+}
+.Joinwaitlist{
+  text-align: center;
+}
+#_form_5_ ._form_element input[type="text"], #_form_5_ ._form_element input[type="date"], #_form_5_ ._form_element select, #_form_5_ ._form_element textarea:not(.g-recaptcha-response) {
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: inherit;
+    padding: 12px 16px;
+    height: 58px;
+    background: #FFFFFF;
+    border: 1px solid #9A9A9A;
+    border-radius: 12px;
+    font-family: inherit;
+}
+#_form_5_ ._submit {
+    -webkit-appearance: none;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    background: #059c69 !important;
+    border: 0 !important;
+    -moz-border-radius: 4px !important;
+    color: #fff !important;
+    padding: 15px;
+    border-radius: 12px;
+    line-height: normal;
+    width: 100%;
+    font-weight: 500;
+   margin: 0 0 0 20px;
+}
+.Joinwaitlist .form-inline {
+  display: inline-block;
+  vertical-align: top;
+}
+.Joinwaitlist h3{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  text-align: center;
+  color: #404040;
+  margin-bottom: 16px;
+}
+.Joinwaitlist p{
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 140%;
+  text-align: center;
+  color: #5A5A5A;
+}
+.Joinwaitlist form ._form-content {
+  display: inline-block;
+  padding-top: 40px;
+}
+.Joinwaitlist form ._error-inner {
+  color: #e34e4e;
+  text-align: left;
+}
 /*=========== footer v1 =========== */
 section.footerNew {
     padding: 64px 0;
@@ -674,6 +821,13 @@ section.footerNew ul li a{
   body .swiper{
     overflow: visible;
   }
+  .EarlyAccess h1{
+    font-size: 36px;
+  }
+  .Joinwaitlist #_form_5_ ._submit {
+      margin: 10px 0;
+      font-size: 18px;
+  }
   .userp{
     padding-top: 40px;
   }
@@ -685,11 +839,11 @@ section.footerNew ul li a{
     width: 16%;
     text-align: center;
   }
-  .name h1 {
+  .name h1,.theworld h3,.Joinwaitlist h3 {
     font-size: 28px;
   }
   .name span,.invest-share h3 span,.more-about p,
-  .section.Calculator p{
+  .section.Calculator p, .EarlyAccess p,.theworld p,.Joinwaitlist p{
     font-size: 14px;
   }
   .invest-share h3,.more-about h4{
@@ -763,6 +917,7 @@ nav.mynav ul.navbar-nav {
 }
 .btn.finbtn+.btn{
   margin-left: 0px;
+  margin-top: 10px;
 }
 
 }
