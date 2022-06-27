@@ -66,6 +66,12 @@ p {
     top: 0;
     display: none;
 }
+.thanks {
+    padding-top: 100px;
+}
+.thanksbg{
+     background-image: url(../images/thanksbg.png);
+}
 .text {
     padding: 0 30px;
     position: absolute;
