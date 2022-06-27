@@ -747,6 +747,9 @@ text-overflow: ellipsis;
     display: block;
     text-decoration: none;
 }
+.theworld2 .panel-title > a.collapsed{
+  color: #9A9A9A; 
+}
 .panel-body, .panel-body p,.panel-body a {
     font-style: normal;
     font-weight: 400;
