@@ -737,6 +737,10 @@ text-overflow: ellipsis;
     border-color: #D9D9D9;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    padding: 0;
+}
+.theworld2 .panel-title {
+  padding: 0;
 }
 .theworld2 .panel-title > a {
     font-style: normal;
@@ -745,12 +749,74 @@ text-overflow: ellipsis;
     line-height: 140%;
     color: #404040;
     display: block;
+    padding: 24px 24px 24px 50px;
+    position: relative;
     text-decoration: none;
+   
 }
+.theworld2 .panel-title > a::before,
+.theworld2 .panel-title > a::after {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  content: '';
+  left: 15px;
+  top: 28px;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: 28px;
+  background-color:transparent;
+}
+.theworld2 .panel-title > a::before {
+    background-image: url(../images/Vector3.png);
+}
+.theworld2 .panel-title > a::after {
+    background-image: url(../images/Vector3.png);
+}
+.theworld2 .panel-title > a.prospect::before {
+  background-image: url(../images/Vector1.png);
+}
+.theworld2 .panel-title > a.prospect::after {
+  background-image: url(../images/Vector1.png);
+}
+.theworld2 .panel-title > a.purchase::before {
+  background-image: url(../images/Vector2.png);
+}
+.theworld2 .panel-title > a.purchase::after {
+  background-image: url(../images/Vector2-active.png);
+}
+.theworld2 .panel-title > a.perks::before {
+  background-image: url(../images/Vector3.png);
+}
+.theworld2 .panel-title > a.perks::after {
+  background-image: url(../images/Vector3-active.png);
+}
+.theworld2 .panel-title > a.paid::before {
+  background-image: url(../images/Vector4.png);
+}
+.theworld2 .panel-title > a.paid::after {
+  background-image: url(../images/Vector4-active.png);
+}
+
+.theworld2 .panel-title > a.collapsed::before{
+    visibility: visible;
+}
+.theworld2 .panel-title > a.collapsed::after{
+    visibility: hidden;
+}
+
 .theworld2 .panel-title > a.collapsed{
   color: #9A9A9A; 
 }
-.panel-body, .panel-body p,.panel-body a {
+.theworld2 .panel-body {
+  padding: 24px 24px 24px 50px;
+}
+.theworld2  .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: transparent;
+}
+.theworld2 .panel-body, 
+.theworld2 .panel-body p,
+.theworld2 .panel-body a {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
