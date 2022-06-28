@@ -500,6 +500,12 @@ text-overflow: ellipsis;
   line-height: 160%;
   color: #5A5A5A;
 }
+.section.Calculator p.spotresult {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #059C69;
+}
 .section.Calculator h3.titlesection{
     padding: 0;
 }
@@ -831,6 +837,12 @@ text-overflow: ellipsis;
 .panel-body a{
   color: #059C69;
 }
+.theworld2 .panel-group .panel {
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border-color: #D9D9D9;
+    overflow: hidden;
+}
 /* Join waitlist */
 .Joinwaitlist{
   text-align: center;
@@ -1057,16 +1069,16 @@ nav.mynav ul.navbar-nav {
     width: 883px;
 }
 .TableAccess ul.nav.nav-tabs li {
-    display: inline-block;
-    float: none;
-    margin: 5px;
+  display: inline-block;
+  float: none;
+  margin: 5px;
 }
 .partnerlogo {
-    float: left;
-    border-left: none;
-    padding-left: 0;
-    text-align: center;
-    width: 100%;
+  float: left;
+  border-left: none;
+  padding-left: 0;
+  text-align: center;
+  width: 100%;
 }
 
 }

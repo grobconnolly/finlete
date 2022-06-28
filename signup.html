@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finlete - Sign Up</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="Rob" content="Finlete-theme">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="./images/flavicon.png" />
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/waitlist.css" rel="stylesheet">
+	
+</head>
+
+<body>
+<div class="container-fluid ">
+		<header id="headersignup" class="for-signup">
+			<div class="logo">
+				<a href="javascript:void(0)" title="Finlete"><img src="images/LogoNew.svg" alt="Finlete"></a>
+			</div>
+			<a type="button" href="index.html" class="btn finbtn signin">Sign In</a>
+		</header><!-- /header -->
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 waitlistform signup">
+
+				<h1>Create Account</h1>
+					<form role="form" class="signupform">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6">
+								<div class="form-group">
+									<label>First name*</label>
+			                        <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="John" tabindex="1" required>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6">
+								<div class="form-group">
+									<label>Last name*</label>
+									<input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Doe" tabindex="2" required>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label>Email*</label>
+							<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Enter your email" tabindex="4" required>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label>Create Password</label>
+									<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5" required>
+									<span class="visibility_off pass"></span>
+								</div>
+							</div>
+							
+						</div>
+						<div class="row">
+							
+							<div class="col-xs-12">
+								<label><input type="checkbox" name="t_and_c" id="t_and_c" class="" value="1"> By clicking <strong class="label label-default">Sign Up</strong>, you agree to the <a href="#">Terms and Conditions</a> set out by this site, including our Cookie Use.</label>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-xs-12">
+								<input type="submit" value="Sign up" class="btn submitbtn" tabindex="7">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 text-center">
+								<label>Alraedy have an Account? <a href="index.html">Sign in</a></label>
+							</div>
+						</div>
+					</form>
+
+			</div> 		
+		</div>
+
+		<div class="baseball signupbg">
+			<div class="text">
+				<h3>
+					Invest in the world's most promising athletes
+				</h3>
+			</div>
+		</div>	
+
+</div>
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+  $('.form-group').on('click', 'span.visibility_off.pass', function() { 
+		$(this).addClass('in');
+		$(this).removeClass('pass');
+		$('#password').attr('type', 'text');
+	});
+	
+	$('.form-group').on('click', 'span.visibility_off.in', function() { 
+
+		$(this).removeClass('in');
+		$(this).addClass('pass');
+		$('#password').attr('type', 'password');
+	});
+});
+
+
+
+</script>
+</body>
+</html>
