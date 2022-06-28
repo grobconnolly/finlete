@@ -433,6 +433,8 @@ form#_form_5_ {
     border: 1px solid #9A9A9A;
     width: 100%;
     border-radius: 12px;
+    font-size: 18px;
+    color: #404040;
 }
 .signup .form-group {
     margin-bottom: 24px;
