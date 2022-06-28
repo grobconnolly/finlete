@@ -223,6 +223,11 @@ position: absolute;
 left: 12px;
 top: 12px;
 }
+.partnerlogo {
+    float: left;
+    border-left: 1px solid #D9D9D9;
+    padding-left: 24px;
+}
 
 /*===================== invest profile =====================*/
 .slidin {
@@ -972,8 +977,11 @@ section.footerNew ul li a{
   .section.Calculator p, .EarlyAccess p,.theworld p,.Joinwaitlist p{
     font-size: 14px;
   }
-  .invest-share h3,.more-about h4{
+  .invest-share h3,.more-about h4,.theworld2 .panel-title > a{
     font-size: 18px;
+  }
+  .theworld2 .panel-title > a::before, .theworld2 .panel-title > a::after{
+    top: 20px;
   }
   .share .btn{
     margin: 0 5px 0 0;
@@ -1044,6 +1052,21 @@ nav.mynav ul.navbar-nav {
 .btn.finbtn+.btn{
   margin-left: 0px;
   margin-top: 10px;
+}
+.TableAccess ul.nav.nav-tabs {
+    width: 883px;
+}
+.TableAccess ul.nav.nav-tabs li {
+    display: inline-block;
+    float: none;
+    margin: 5px;
+}
+.partnerlogo {
+    float: left;
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
 }
 
 }
