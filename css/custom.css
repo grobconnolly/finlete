@@ -962,6 +962,24 @@ section.footerNew ul li a{
     padding: 0 0 0 10px;
 }
 
+/*==================== 404 page   =====================*/
+.page-404 h1{
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  text-align: center;
+  color: #404040;
+}
+.page-404 p{
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 140%;
+  text-align: center;
+  color: #5A5A5A;
+  margin-bottom: 40px;
+}
+
+
 /*============== Media queries ==================*/
 
 @media screen and (min-width: 768px) {
