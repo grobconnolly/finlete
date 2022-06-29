@@ -1054,6 +1054,7 @@ section.footerNew ul li a{
 }
 .result-col{
   min-width: auto;
+  max-width: 190px;
 }
 .socialBot {
   text-align: left;
