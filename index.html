@@ -1,169 +1,621 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-	<title>Finlete - Coming soon</title>
+	
+
+	<title>Finlete - Home</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="Rob" content="Finlete-theme">
+	<!-- <meta http-equiv="refresh" content="3; URL=index.html" /> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-	<link href="css/bootstrap.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="./images/flavicon.png" />
+	<link href="css/bootstrap.css" rel="stylesheet">
 	<!--=================== custom style css ================================== -->
-
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css?ver=1.0">
 
 	
-
 </head>
 
+
+
 <body class="">
-	<style type="text/css" media="screen">
-		body {
-		  background: #E2F6F1;
-		  font-family: 'Inter', sans-serif;
-		}
-		.wrapper {
-		  position: absolute;
-		  left: 50%;
-		  top: 40%;
-		  transform: translate(-50%, -50%);
-		  -webkit-transform: translate(-50%, -50%);
-		  animation: fadeIn 1000ms ease;
-		  -webkit-animation: fadeIn 1000ms ease;
-		  text-align: center;
-		  width: 70%;
-		  
-		}
-		.wrapper h1 {
-		  font-weight: 700;
-		  font-size: 70px;
-		  line-height: 130%;
-		  color: #404040;
-		  letter-spacing: 2px;
-		}
-		.wrapper p {
-		  font-weight: 400;
-		  font-size: 44px;
-		  line-height: 130%;
-		  color: #404040;
-		  letter-spacing: 2px;
-		}
-		.btn.finbtn,input.login,.logout{
-		    font-weight: 500;
-		    font-size: 18px;
-		    line-height: 140%;
-		    color: #FFFFFF;
-		    padding: 12px 20px;
-		    background: #059C69;
-		    border-radius:7px;
-		    border-color: #059C69;
-	  		width: 200px;
-	  		margin: 20px 10px 0;
-	  		text-transform: uppercase;
-			letter-spacing: 2px;
-		}
-		.btn.finbtn.white{
-			background: #ffff;
-			color: #059C69;
-		}
-		input.form-control {
-		  padding: 12px 16px 12px 30px;
-		  max-width: 284px;
-		  height: 53px;
-		  background-color: #FFF;
-		  border: 1px solid #9A9A9A;
-		  border-radius: 12px;
-		  width: 100%;
-		  margin:15px;
-		  display: inline-block;
-		}
-		#goback{
-		    font-weight: 400;
-		    font-size: 28px;
-		    line-height: 140%;
-		    color: #059C69;
-		    margin-top: 26px;
-		    display: block;
-		}
-		@media screen and (max-width: 767px) {
-			.wrapper h1{
-				font-size:48px;
-			}
-			.wrapper p{
-				font-size: 24px;
-			}
-		}
-	</style>
-	<div class="wrapper">
 
-	  <div class="textcoming">
-	  <h1>Finlete</h1>
-	  <p>Athlete Investing Platform</p>
-	  <a type="button" href="waitlist.html" class="btn finbtn">Join Waitlist</a>
-	  <a type="button" id="Signin" class="btn finbtn white">Sign In</a>
-	  </div>
+	<!--=================== top nav ================================== -->
+	<header>
+		
+		
 
-	  	<div class="formwrap" style="display: none;">
-	  		
-		 	<div id="first">
-		 		<p>Enter username and password</p>
-		        <form action="" method="post">
-		            <input type="text" name="" class="form-control" id="loginusername" placeholder="Username" />
-		            <input type="password" name="" class="form-control" id="loginpassword" placeholder="Password" />
-		            <input type="button" class="login" value="Sign In" />
-		        </form>
-		        <div class="alert alert-danger" role="alert" style="display:none;margin-top: 20px">username or password is wrong</div>
-		        <p><a href="index.html" title="" id="goback">Go back!</a></p>
-	    	</div>
 
-	        <div id="second">
+		<section class="top-bar" id="">
+			
+			<div class="container-fluid">
+				<div class="logo">
+					<a href="javascript:void(0)" title="Finlete"><img src="images/LogoPrimary.svg" alt="Finlete"></a>
+				</div>
+				<div class="partnerlogo">
+					<img src="images/ComcastNBCU_SportsTech_Logo_3_Stacked_Black_HiRe.svg" alt="Comcast NBCU SportsTech">
+				</div>
+				<a type="button" href="#" class="btn finbtn">Get started</a>
+				<div class="topnavbar">
 
-	        </div>
+					<nav class="navbar navbar-default mynav">
 
-        </div>
+						 <div class="navbar-header">
+				            <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				              <span class="sr-only">Toggle navigation</span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+				            </button>
+				        </div>
+				        
+				        <div id="navbar" class="navbar-collapse collapse ">
+				            <ul class="nav navbar-nav">
+				            	<li><a href="#">Players</a></li>
+				              	<li><a href="#">About</a></li>
+				              	<li><a href="#">Contact</a></li>
+			              	  	<!-- <li><a href="#" class="for-mb">Sign In</a></li> -->
+			              	  	<li><a href="#" class="for-mb">Get started</a></li>
+				            </ul>
+				                                             
+				        </div>
+				        <!--/.nav-collapse -->
 
-         
+			      	</nav>
 
-	 </div>
+			    </div>
+			   	
+			    
+			    <!-- <a type="button" href="index.html" class="btn finbtn signin">Sign In</a> -->
+			  
+			</div>  <!-- container end -->
+
+	</section><!-- tob section end -->
+
 	
 
+
+	</header>
+
+	
+	<!-- Request Early Access -->
+	<section class="section EarlyAccess">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 ">
+					<h1>Fans investing in the world's most promising athletes</h1>
+					<p>Fan-funded future earning contracts (FECs). Enabling fans to financially support prospects and reap the rewards when they go pro, something currently limited to large corporations.</p>
+					
+				</div>
+				<div class="col-xs-12 text-center">
+					<a type="button" class="btn finbtn" href="#RequestEarly">Request Early Access</a>
+					<a type="button" class="btn finbtn active"><img src="images/play_circle.svg" alt=""> Learn more</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Table Access -->
+	<section class="section TableAccess">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 table-responsive">
+
+				<ul class="nav nav-tabs">
+				    <li class="active"><a data-toggle="tab" href="#home">Baseball</a></li>
+				    <li><a data-toggle="tab" href="#menu1">Basketball</a></li>
+				    <li><a data-toggle="tab" href="#menu2">Football</a></li>
+				    <li><a data-toggle="tab" href="#menu3">Hockey</a></li>
+				     <li><a data-toggle="tab" href="#menu4">Motorsports</a></li>
+				</ul>	
+		  		<div class="tab-content">
+				    <div id="home" class="tab-pane fade in active">
+					    <table class="table table-home">
+						      <thead>
+						        <tr>
+						          <th>#</th>
+						          <th>Name</th>
+						          <th>SHARE PRICE</th>
+						          <th>CHANGE</th>
+						          <th>CONTRACT</th>
+						          <th>EARNINGS</th>
+						          <th>TRADE</th>
+						        </tr>
+						      </thead>
+						      <tbody >
+						        <tr>
+						        	<th scope="row">1</th>
+							       	<td>
+							       		<div class="data">
+							       			<img src="images/user.png" alt="User" class="user">
+							       			<p>Miguel Mercedes</p>
+							       			<p><span>3B . Peroia Chiefs . MLB</span> </p>
+							       		</div>
+							        </td>
+							        <td>$145.00</td>
+							        <td class="percent">+8.09%</td>
+							        <td>$97.2M</td>
+							        <td>10%</td>
+							        <td><a type="button" class="btn finbtn active">Invest</a></td>
+						        </tr>
+						        <tr>
+						        	<th scope="row">2</th>
+							       	<td>
+							       		<div class="data">
+							       			<img src="images/u2.png" alt="User" class="user">
+							       			<p>Mike Blanco</p>
+							       			<p><span>B . Buffalo Bison . A</span> </p>
+							       		</div>
+							        </td>
+							        <td>$15.00</td>
+							        <td class="percent">+2.08%</td>
+							        <td>Minors</td>
+							        <td>10%</td>
+							        <td><a type="button" class="btn finbtn active">Invest</a></td>
+						        </tr>
+						        <tr>
+						        	<th scope="row">3</th>
+							       	<td>
+							       		<div class="data">
+							       			<img src="images/u3.png" alt="User" class="user">
+							       			<p>Johnathan Montes</p>
+							       			<p><span>LHP . Rome Braves . AA</span> </p>
+							       		</div>
+							        </td>
+							        <td>$30.00</td>
+							        <td class="percent">+2.05%</td>
+							        <td>Minors</td>
+							        <td>10%</td>
+							        <td><a type="button" class="btn finbtn active">Invest</a></td>
+						        </tr>
+						        <tr>
+						        	<th scope="row">4</th>
+							       	<td>
+							       		<div class="data">
+							       			<img src="images/u4.png" alt="User" class="user">
+							       			<p>Ferili Colas</p>
+							       			<p><span>SS . San Jose Giants . MLB</span> </p>
+							       		</div>
+							        </td>
+							        <td>$79.00</td>
+							        <td class="percent">+17.02%</td>
+							        <td>$42.4M</td>
+							        <td>10%</td>
+							        <td><a type="button" class="btn finbtn active">Invest</a></td>
+						        </tr>
+						        <tr>
+						        	<th scope="row">5</th>
+							       	<td>
+							       		<div class="data">
+							       			<img src="images/u5.png" alt="User" class="user">
+							       			<p>Oscar Cabera</p>
+							       			<p><span>OF . Hillsboro Hops . R</span> </p>
+							       		</div>
+							        </td>
+							        <td>$42.00</td>
+							        <td class="percent">+4.05%</td>
+							        <td>Minors</td>
+							        <td>10%</td>
+							        <td><a type="button" class="btn finbtn active">Invest</a></td>
+						        </tr>
+						      </tbody>
+						</table>
+				    </div>
+				    <div id="menu1" class="tab-pane fade">
+					    <table class="table table-home">
+								<thead>
+								<tr>
+								  <th>#</th>
+								  <th>Name</th>
+								  <th>SHARE PRICE</th>
+								  <th>CHANGE</th>
+								  <th>CONTRACT</th>
+								  <th>EARNINGS</th>
+								  <th>TRADE</th>
+								</tr>
+								</thead>
+								<tbody >
+
+								<tr>
+									<th scope="row">4</th>
+								   	<td>
+								   		<div class="data">
+								   			<img src="images/u4.png" alt="User" class="user">
+								   			<p>Ferili Colas</p>
+								   			<p><span>SS . San Jose Giants . MLB</span> </p>
+								   		</div>
+								    </td>
+								    <td>$79.00</td>
+								    <td class="percent">+17.02%</td>
+								    <td>$42.4M</td>
+								    <td>10%</td>
+								    <td><a type="button" class="btn finbtn active">Invest</a></td>
+								</tr>
+								<tr>
+									<th scope="row">5</th>
+								   	<td>
+								   		<div class="data">
+								   			<img src="images/u5.png" alt="User" class="user">
+								   			<p>Oscar Cabera</p>
+								   			<p><span>OF . Hillsboro Hops . R</span> </p>
+								   		</div>
+								    </td>
+								    <td>$42.00</td>
+								    <td class="percent">+4.05%</td>
+								    <td>Minors</td>
+								    <td>10%</td>
+								    <td><a type="button" class="btn finbtn active">Invest</a></td>
+								</tr>
+								</tbody>
+						</table>
+				    </div>
+				    <div id="menu2" class="tab-pane fade">
+					    <table class="table table-home">
+								<thead>
+								<tr>
+								  <th>#</th>
+								  <th>Name</th>
+								  <th>SHARE PRICE</th>
+								  <th>CHANGE</th>
+								  <th>CONTRACT</th>
+								  <th>EARNINGS</th>
+								  <th>TRADE</th>
+								</tr>
+								</thead>
+								<tbody >
+
+								<tr>
+									<th scope="row">5</th>
+								   	<td>
+								   		<div class="data">
+								   			<img src="images/u5.png" alt="User" class="user">
+								   			<p>Oscar Cabera</p>
+								   			<p><span>OF . Hillsboro Hops . R</span> </p>
+								   		</div>
+								    </td>
+								    <td>$42.00</td>
+								    <td class="percent">+4.05%</td>
+								    <td>Minors</td>
+								    <td>10%</td>
+								    <td><a type="button" class="btn finbtn active">Invest</a></td>
+								</tr>
+								</tbody>
+						</table>
+				    </div>
+				    <div id="menu3" class="tab-pane fade">
+					    <table class="table table-home">
+									<thead>
+									<tr>
+									  <th>#</th>
+									  <th>Name</th>
+									  <th>SHARE PRICE</th>
+									  <th>CHANGE</th>
+									  <th>CONTRACT</th>
+									  <th>EARNINGS</th>
+									  <th>TRADE</th>
+									</tr>
+									</thead>
+									<tbody >
+
+									<tr>
+										<th scope="row">4</th>
+									   	<td>
+									   		<div class="data">
+									   			<img src="images/u4.png" alt="User" class="user">
+									   			<p>Ferili Colas</p>
+									   			<p><span>SS . San Jose Giants . MLB</span> </p>
+									   		</div>
+									    </td>
+									    <td>$79.00</td>
+									    <td class="percent">+17.02%</td>
+									    <td>$42.4M</td>
+									    <td>10%</td>
+									    <td><a type="button" class="btn finbtn active">Invest</a></td>
+									</tr>
+									<tr>
+										<th scope="row">5</th>
+									   	<td>
+									   		<div class="data">
+									   			<img src="images/u5.png" alt="User" class="user">
+									   			<p>Oscar Cabera</p>
+									   			<p><span>OF . Hillsboro Hops . R</span> </p>
+									   		</div>
+									    </td>
+									    <td>$42.00</td>
+									    <td class="percent">+4.05%</td>
+									    <td>Minors</td>
+									    <td>10%</td>
+									    <td><a type="button" class="btn finbtn active">Invest</a></td>
+									</tr>
+									</tbody>
+						</table>
+				    </div>
+				    <div id="menu4" class="tab-pane fade">
+					    <table class="table table-home">
+									<thead>
+									<tr>
+									  <th>#</th>
+									  <th>Name</th>
+									  <th>SHARE PRICE</th>
+									  <th>CHANGE</th>
+									  <th>CONTRACT</th>
+									  <th>EARNINGS</th>
+									  <th>TRADE</th>
+									</tr>
+									</thead>
+									<tbody >
+
+									<tr>
+										<th scope="row">5</th>
+									   	<td>
+									   		<div class="data">
+									   			<img src="images/u5.png" alt="User" class="user">
+									   			<p>Oscar Cabera</p>
+									   			<p><span>OF . Hillsboro Hops . R</span> </p>
+									   		</div>
+									    </td>
+									    <td>$42.00</td>
+									    <td class="percent">+4.05%</td>
+									    <td>Minors</td>
+									    <td>10%</td>
+									    <td><a type="button" class="btn finbtn active">Invest</a></td>
+									</tr>
+									</tbody>
+						</table>
+				    </div>
+				</div>				
+
+			    </div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Invest in the world -->
+	<section class="section theworld">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 ">
+					<h3>Invest in the world's most promising athletes</h3>
+					<p>Finlete has future income agreements with promising athletes. We allow you to invest in the future of these athletes. You share in the financial success of your prospects. </p>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 2 -->
+	<section class="section theworld2"  style="background-image: url('images/Img-container.png');">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 ">-</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<div class="bs-example">
+					    <div class="panel-group" id="accordion">
+					        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <a data-toggle="collapse" data-parent="#accordion" href="#index" class="prospect">Choose the prospect</a>
+					                </h4>
+					            </div>
+					            <div id="index" class="panel-collapse collapse in">
+					                <div class="panel-body">
+					                   <p>Select a prospect we have available on our platform. Review terms, watch practice films, and review scouting reports.</p>
+					                </div>
+					            </div>
+					        </div>
+					        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <a data-toggle="collapse" data-parent="#accordion" href="#index2" class="collapsed purchase">Purchase Shares</a>
+					                </h4>
+					            </div>
+					            <div id="index2" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                  
+					                </div>
+					            </div>
+					        </div>
+					        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <a data-toggle="collapse" data-parent="#accordion" href="#index3" class="collapsed perks">Get Perks</a>
+					                </h4>
+					            </div>
+					            <div id="index3" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    
+					                </div>
+					            </div>
+					        </div>
+					        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <a data-toggle="collapse" data-parent="#accordion" href="#index4" class="collapsed paid">Get Paid</a>
+					                </h4>
+					            </div>
+					            <div id="index4" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    
+					                </div>
+					            </div>
+					        </div>
+					        
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- BLC “What If” Calculator -->
+	<section class="section Calculator">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<h3 class="titlesection">BLC “What If” Calculator</h3>
+					<p>Understand your investment with our calculator... Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+					<div class="calculateit">
+						<div class="row">
+							<div class="col-xs-6">
+								<label>Investment</label>
+								<input type="text" id="Investment" class="number_only" value="" placeholder="5,000">
+								<p class="errorp">Enter Investment Amount</p>
+							</div>
+							<div class="col-xs-6">
+								<label>Player</label>
+								<!-- <input type="text"  class="number_only" value="" placeholder="140,000,000"> -->
+								<select name="" id="Earnings">
+									<option selected="" value="0">Select Player</option>
+									<!-- <option value="20000000">test value</option> -->
+									<option value="63,406,300" class="active">Aaron Hill</option>
+									<option value="341,710,741" class="active">Albert Pujols</option>
+									<option value="90,906,462" class="active">Carlos Santana</option>
+									<option value="341474185" class="active">Fernando Tatis Jr</option>
+									<option value="159,411,648" class="active">Hanley Ramirez</option>
+									<option value="190,889,278" class="active">Jason Heyward</option>
+									<option value="41,295,891" class="active">Jurickson Profar</option>
+									<option value="176,356,370" class="nonactive">Mat Kemp</option>
+									<option value="480,340,125" class="active">Mike Trout</option>
+									<option value="251,969,330" class="active">Robinson Cano</option>
+								</select>
+								<p class="errorp">Enter Career Earnings</p>
+							</div>
+							
+							<div class="col-xs-12 calcbtn">
+							<button type="button"  id="Calculate" class="btn finbtn btn-block">Calculate <img src="images/arrow-whiteR.svg" alt=""></button>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 ">
+					<div class="result">
+						<h3>Results</h3>
+						<div class="invest result-col">
+							<ul>
+								<li><span>Investment</span><p id="Investment2" class="comma">$0</p></li>
+								<li><span>Share Price</span><p id="SharePrice">0.0</p></li>
+								<li><span>Shares</span><p id="Shares2">0 Shares</p></li>
+							</ul>
+						</div>
+						<div class="Earnings result-col">
+							<ul>
+								<li><span>Potential Career Earnings</span><p id="Earnings2" class="comma">$0</p></li>
+								<li><span>% of Earnings</span><p id="PercentageofEarnings2">0%</p></li>
+								<li><span>Payout</span><p id="Payout" class="comma">$0</p></li>
+							</ul>
+							<p class="spotresult">*Athlete is active and could earn more.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 disclaimer">
+					<p>*Disclaimer: This is just for examples and should not be taken or used as finanical advice. </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--  Join the waitlist -->
+	<section class="section Joinwaitlist" id="RequestEarly">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+
+					 <h3>Join our pre-launch waitlist today!</h3>
+					 <p>Enter your email gain access to our pre-launch.</p>
+						<form method="POST" action="https://meetlete.activehosted.com/proc.php" id="_form_5_" class="_form _form_5 _inline-form  _dark" novalidate>
+						    <input type="hidden" name="u" value="5" />
+						    <input type="hidden" name="f" value="5" />
+						    <input type="hidden" name="s" />
+						    <input type="hidden" name="c" value="0" />
+						    <input type="hidden" name="m" value="0" />
+						    <input type="hidden" name="act" value="sub" />
+						    <input type="hidden" name="v" value="2" />
+						    <input type="hidden" name="or" value="f2deb3a51b7fe755c7ac741a660f828b" />
+						    <div class="_form-content">
+						      
+						      <div class="_form_element _x25518848 form-inline">
+						        
+						        <div class="_field-wrapper ">
+						          <input type="text" id="email" name="email" placeholder="Email address" required/>
+						        </div>
+						      </div>
+						      <div class="_button-wrapper form-inline">
+						         <button id="_form_5_submit" class="_submit" type="submit">
+						          Get Early Access
+						        </button>
+						      </div>
+						      <div class="_clear-element">
+						      </div>
+						    </div>
+						    <div class="_form-thank-you" style="display:none;">
+						    </div>
+					  </form>
+					 	
+				</div> 		
+			</div>
+
+		</div>
+	</section>
+
+
+	<!--=================== Footer  area ================================== -->
+	<footer>
+	
+		<section class="footerNew meetleteGen">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-8 col-xs-12 col-sm-12  ftLink">
+						<ul>
+							<li><a href="#">About</a></li>
+		              		<li><a href="#">How it Works</a></li>
+		              		<li><a href="#">FAQs</a></li>
+		              		<li><a href="#">Privacy</a></li>
+		              		<li><a href="#">Terms</a></li>
+	              	  		<li><a href="#">News</a></li>
+						</ul>
+						<address>
+							©2021-2022, Meetlete, Inc. 704 J street, #216, San Diego, CA 92101
+						</address>
+					</div>
+
+					<div class="col-md-4 socialBot">
+						<a href="https://www.facebook.com/meetlete" title=""><img src="images/fb.svg" alt="Facebook"></a>
+    					<a href="https://www.instagram.com/meetleteme" title=""><img src="images/instagram.svg" alt="instagram"></a>
+    					<a href="https://twitter.com/meetlete" title=""><img src="images/twitter.svg" alt="twitter"></a>
+    					<a href="mailto:webhelp@meetlete.com?subject=question about meetlete" title=""><img src="images/mail.svg" alt="mail"></a>
+    				
+					</div>
+
+					
+				</div>
+			</div>
+		</section>
+		
+	</footer>
+
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/waitlist.js"></script>
+	<script type="text/javascript" src="js/cacl-dropdown.js?ver=1"></script>
+	<!-- Start of HubSpot Embed Code -->
+	  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/22238366.js"></script>
+	<!-- End of HubSpot Embed Code -->
 
-		<script type="text/javascript">
-			$('#Signin').click(function(event) {
-				$('.textcoming').css('display', 'none');
-				$('.formwrap').css('display', 'block');
-			});
-
-		 	$(document).ready(function(){
-		                 // on click Sign In Button checks that username =='admin' and password == 'password'
-		                 $(".login").click(function(){
-		                 if( $("#loginusername").val()=='admin' && $("#loginpassword").val()=='fin@@@') {
-		                        $("#first").hide();
-		                        //$("#second").show();
-		                        //$("#second").append("<p>Hello, admin</p> <br/><input type='button' class='logout' value='Log Out' />");
-		                        //$URL = ""
-		                        var token = "encquery%3DcFFMdo0m21rWc7MpLjDQYSnanAIL5LxIBKf6mBusRsig6ARZ5uS%2BU1MQFq1Q3OYrbAHTdCP2%2BI80RqYEa8h2PgD9zB5k28Hl3EnWrTvQrFO90ugFa9wWoT%2F3WQ7c%2BAFNYu9iSgnjZUM7kSX2mbnSrgy%2BEwlyXNK3ZidmfQJuFpPe0viUyu8zlSBCs%2Bz71WYzJPzb1kY5OYtcNfEKXsMPET7HQ5xavXkNrQxkQfXwtPfzD2%2Bj7WTKsaDYRDmbhr%2BOni7OCsLK61dU5HuS%2Fhi%2BctDloEjgiwhpKSfA60Rnz0JRyDFebtAUnQb6X%2FqOUlkt%20agentid%3Dobdxohs%20ver%3D1%20crmethod%3D2&ECID-Context=1.005sShduHDP8xkG6yzQ_MG000Mfn00H3U3%3BkXjE";
-		                        window.location.replace("dashboard.html?"+token);
-		                     }
-		                 else {
-		                     $('.alert-danger').css('display', 'block');
-		                 }
-		 
-		                 $(".logout").click(function() {
-		                 $("form")[0].reset();
-		                 $("#second").children('p, input').remove();
-		                 $("#first").show();
-		                 $("#second").hide();
-		             });
-		         });
-		 
-		     });
-		 
-		</script>
 </body>
 
 </html>
