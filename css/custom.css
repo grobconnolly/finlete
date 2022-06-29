@@ -83,7 +83,7 @@ h3.titlesection{
     margin-right: 40px;
 }
 .top-bar .topnavbar {
-    float: left;
+    float: right;
 }
 nav.mynav {
     background: transparent;
@@ -500,11 +500,19 @@ text-overflow: ellipsis;
   line-height: 160%;
   color: #5A5A5A;
 }
-.section.Calculator p.spotresult {
+.result-col p.spotresult {
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
     color: #059C69;
+    visibility: hidden;
+    transition: opacity 0.1s ease-in-out 0.15s; 
+    opacity: 0;
+}
+.result-col p.spotresult.active{
+  visibility: visible;
+  opacity: 1;
+  
 }
 .section.Calculator h3.titlesection{
     padding: 0;
@@ -560,7 +568,7 @@ text-overflow: ellipsis;
   color: #404040;
   display: block;
 }
-.calculateit input {
+.calculateit input ,.calculateit select{
   padding: 12px 16px 12px 30px;
   max-width: 284px;
   height: 53px;
@@ -574,7 +582,11 @@ text-overflow: ellipsis;
   background-position: 10px center;
   background-size: auto;
 }
-.calculateit input:focus{
+.calculateit select{
+  text-align:left;
+}
+.calculateit input:focus,
+.calculateit select:focus{
   border-color: #059C69;
   outline: none;
 }

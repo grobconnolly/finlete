@@ -17,7 +17,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="./images/flavicon.png" />
 	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="swiperlib/swiper-bundle.min.css" rel="stylesheet">
 	<!--=================== custom style css ================================== -->
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css?ver=1.0">
@@ -39,12 +38,12 @@
 			
 			<div class="container-fluid">
 				<div class="logo">
-					<a href="javascript:void(0)" title="Finlete"><img src="images/LogoNew.svg" alt="Finlete"></a>
+					<a href="javascript:void(0)" title="Finlete"><img src="images/LogoPrimary.svg" alt="Finlete"></a>
 				</div>
 				<div class="partnerlogo">
 					<img src="images/ComcastNBCU_SportsTech_Logo_3_Stacked_Black_HiRe.svg" alt="Comcast NBCU SportsTech">
 				</div>
-
+				<a type="button" href="#" class="btn finbtn">Get started</a>
 				<div class="topnavbar">
 
 					<nav class="navbar navbar-default mynav">
@@ -62,9 +61,8 @@
 				            <ul class="nav navbar-nav">
 				            	<li><a href="#">Players</a></li>
 				              	<li><a href="#">About</a></li>
-				              	<li><a href="#">How it Works</a></li>
-			              	  	<li><a href="#">News</a></li>
-			              	  	<li><a href="#" class="for-mb">Sign In</a></li>
+				              	<li><a href="#">Contact</a></li>
+			              	  	<!-- <li><a href="#" class="for-mb">Sign In</a></li> -->
 			              	  	<li><a href="#" class="for-mb">Get started</a></li>
 				            </ul>
 				                                             
@@ -75,12 +73,12 @@
 
 			    </div>
 			   	
-			    <a type="button" href="#" class="btn finbtn">Get started</a>
-			    <a type="button" href="index.html" class="btn finbtn signin">Sign In</a>
+			    
+			    <!-- <a type="button" href="index.html" class="btn finbtn signin">Sign In</a> -->
 			  
 			</div>  <!-- container end -->
 
-		</section><!-- tob section end -->
+	</section><!-- tob section end -->
 
 	
 
@@ -474,8 +472,22 @@
 								<p class="errorp">Enter Investment Amount</p>
 							</div>
 							<div class="col-xs-6">
-								<label>Potential Career Earnings</label>
-								<input type="text" id="Earnings" class="number_only" value="" placeholder="140,000,000">
+								<label>Player</label>
+								<!-- <input type="text"  class="number_only" value="" placeholder="140,000,000"> -->
+								<select name="" id="Earnings">
+									<option selected="" value="0">Select Player</option>
+									<!-- <option value="20000000">test value</option> -->
+									<option value="63,406,300" class="active">Aaron Hill</option>
+									<option value="341,710,741" class="active">Albert Pujols</option>
+									<option value="90,906,462" class="active">Carlos Santana</option>
+									<option value="341474185" class="active">Fernando Tatis Jr</option>
+									<option value="159,411,648" class="active">Hanley Ramirez</option>
+									<option value="190,889,278" class="active">Jason Heyward</option>
+									<option value="41,295,891" class="active">Jurickson Profar</option>
+									<option value="176,356,370" class="nonactive">Mat Kemp</option>
+									<option value="480,340,125" class="active">Mike Trout</option>
+									<option value="251,969,330" class="active">Robinson Cano</option>
+								</select>
 								<p class="errorp">Enter Career Earnings</p>
 							</div>
 							
@@ -491,16 +503,16 @@
 						<h3>Results</h3>
 						<div class="invest result-col">
 							<ul>
-								<li><span>Investment</span><p id="Investment2" class="comma">$5,000</p></li>
-								<li><span>Share Price</span><p id="SharePrice">$50.00</p></li>
-								<li><span>Token/Coin</span><p id="TokenCoin2">100 Coins</p></li>
+								<li><span>Investment</span><p id="Investment2" class="comma">$0</p></li>
+								<li><span>Share Price</span><p id="SharePrice">0.0</p></li>
+								<li><span>Shares</span><p id="Shares2">0 Shares</p></li>
 							</ul>
 						</div>
 						<div class="Earnings result-col">
 							<ul>
-								<li><span>Potential Career Earnings</span><p id="Earnings2" class="comma">$140,000,000</p></li>
-								<li><span>% of Earnings</span><p id="PercentageofEarnings2">0.001%</p></li>
-								<li><span>Payout</span><p id="Payout" class="comma">$140,000</p></li>
+								<li><span>Potential Career Earnings</span><p id="Earnings2" class="comma">$0</p></li>
+								<li><span>% of Earnings</span><p id="PercentageofEarnings2">0%</p></li>
+								<li><span>Payout</span><p id="Payout" class="comma">$0</p></li>
 							</ul>
 							<p class="spotresult">*Athlete is active and could earn more.</p>
 						</div>
@@ -598,9 +610,8 @@
 
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="swiperlib/swiper-bundle.min.js"></script>
 	<script type="text/javascript" src="js/waitlist.js"></script>
-	<script type="text/javascript" src="js/custom.js?ver=1"></script>
+	<script type="text/javascript" src="js/cacl-dropdown.js?ver=1"></script>
 
 </body>
 
