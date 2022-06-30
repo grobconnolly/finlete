@@ -1029,8 +1029,13 @@ section.footerNew ul li a:hover{
     overflow: visible;
   }
   .EarlyAccess h1{
-    font-size: 36px;
+    font-size: 40px;
+    text-align: left;
   }
+  section.section.EarlyAccess .btn, .Joinwaitlist .btn {
+    display: block;
+    margin-bottom: 16px;
+}
   .Joinwaitlist #_form_5_ ._submit {
       margin: 10px 0;
       font-size: 18px;
@@ -1046,18 +1051,18 @@ section.footerNew ul li a:hover{
     width: 16%;
     text-align: center;
   }
-  .name h1,.theworld h3,.Joinwaitlist h3 {
+  .name h1,.theworld h3 {
     font-size: 28px;
   }
   .name span,.invest-share h3 span,.more-about p,
   .section.Calculator p, .EarlyAccess p,.theworld p,.Joinwaitlist p{
     font-size: 14px;
   }
-  .invest-share h3,.more-about h4,.theworld2 .panel-title > a{
+  .invest-share h3,.more-about h4{
     font-size: 18px;
   }
   .theworld2 .panel-title > a::before, .theworld2 .panel-title > a::after{
-    top: 20px;
+    top: 25px;
   }
   .share .btn{
     margin: 0 5px 0 0;
@@ -1096,7 +1101,7 @@ section.footerNew ul li a:hover{
 .socialBot {
   text-align: left;
 }
-.top-bar .btn.finbtn{
+.top-bar .btn{
   display: none;
 }
 .search{
@@ -1141,12 +1146,28 @@ nav.mynav ul.navbar-nav {
   float: none;
   margin: 5px;
 }
-.partnerlogo {
-  float: left;
-  border-left: none;
-  padding-left: 0;
-  text-align: center;
-  width: 100%;
+.theworld h3,.section.Calculator h3.titlesection{
+  text-align: left;
+  font-size: 36px;
 }
+.Joinwaitlist h3{
+  font-size: 36px;
+}
+.theworld p,.EarlyAccess p{
+  text-align: left;
+  font-size: 18px;
+}
+.theworld2{
+  padding-top: 430px;
+  background-size: auto 400px;
+  margin-bottom: 60px;
+}
+.theworld2 .panel-title > a{
+  font-size: 24px;
+}
+.top-bar .logo{
+  margin-right: 10px;
+}
+
 
 }
