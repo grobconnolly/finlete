@@ -36,7 +36,7 @@ img{
 .btn.finbtn:focus{
   outline: none;
 }
-.btn+.btn{
+.btn + .btn{
   margin-left: 20px;
 }
 
@@ -1129,7 +1129,7 @@ nav.mynav ul.navbar-nav {
 .section.Calculator p.errorp{
   font-size: 12px;
 }
-.btn+.btn{
+.btn + .btn{
   margin-left: 0px;
   margin-top: 10px;
 }
