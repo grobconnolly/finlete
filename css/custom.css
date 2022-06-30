@@ -36,9 +36,41 @@ img{
 .btn.finbtn:focus{
   outline: none;
 }
-.btn.finbtn+.btn{
-  margin-left: 10px;
+.btn+.btn{
+  margin-left: 20px;
 }
+
+.btn.finbtn2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding: 10px 16px;
+    background: #44A647;
+    border-radius:0;
+    border: 1.6px solid #44A647;
+    border-color: #44A647;
+    box-shadow: none;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.btn.finbtn2:hover{
+   color: #fff;
+    background: #317836;
+    border: 1.6px solid #317836;
+}
+.btn.finbtn2.active{
+    color: #44A647;
+    background: #fff;
+    border: 1.6px solid #44A647;
+}
+.btn.finbtn2.active:hover{
+    background: #CFE5C9A3;
+}
+
 section.meetleteGen {
     padding: 100px 0;
 }
@@ -95,8 +127,8 @@ nav.mynav {
 nav.mynav ul.navbar-nav li a {
     border-radius:0;
     background: transparent;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 24px;
     line-height: 160%;
     color: #404040;
     outline: none;
@@ -116,18 +148,21 @@ nav.mynav ul.navbar-nav li{
 }
 nav.mynav  ul.navbar-nav{
     width: 100%;
-    padding:16px 0 0 0; 
+    padding:10px 0 0 0; 
 }
 
 nav.mynav ul.navbar-nav li a i {
     margin-left: 8px;
 }
-nav.mynav  ul.navbar-nav > .active > a, nav.mynav  ul.navbar-nav > .active > a:hover, nav.mynav  ul.navbar-nav li a:focus,nav.mynav  ul.navbar-nav > .active > a:focus,nav.mynav  ul.navbar-nav li a:hover{
+nav.mynav  ul.navbar-nav > .active > a, 
+nav.mynav  ul.navbar-nav > .active > a:hover, 
+nav.mynav  ul.navbar-nav li a:focus,nav.mynav  ul.navbar-nav > .active > a:focus,
+nav.mynav  ul.navbar-nav li a:hover{
     background: transparent;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 24px;
     line-height: 160%;
-    color: #059C69;
+    color: #44A647;
     outline: none;
     border:  none;
 }
@@ -182,9 +217,9 @@ nav.mynav ul.navbar-nav li .childmenu li a:hover{
 nav.mynav ul.navbar-nav li:hover ul.childmenu{
      display: block;
 }
-.top-bar .btn.finbtn{
-    min-width: 139px;
+.top-bar .btn {
     float: right;
+    margin-left: 20px;
 }
 .btn.finbtn.signin {
     background: #fff;
@@ -504,7 +539,7 @@ text-overflow: ellipsis;
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
-    color: #059C69;
+    color: #44A647;
     visibility: hidden;
     transition: opacity 0.1s ease-in-out 0.15s; 
     opacity: 0;
@@ -574,7 +609,7 @@ text-overflow: ellipsis;
   height: 53px;
   background-color: #FFF;
   border: 1px solid #9A9A9A;
-  border-radius: 12px;
+  border-radius: 4px;
   width: 100%;
   text-align: right;
   background-image: url('../images/dollar.svg');
@@ -608,11 +643,6 @@ text-overflow: ellipsis;
 .calcbtn .btn{
   font-size: 24px;
 }
-.calcbtn .btn:hover{
-  background: #059C69;
-  color: #fff;
-  opacity: 0.9;
-}
 .calculateit {
   padding-top: 24px;
 }
@@ -621,7 +651,8 @@ text-overflow: ellipsis;
 }
 /*=========== home  =========== */
 .EarlyAccess {
-    background: #F5FBF9;
+    background: #CFE5C9;
+    background: linear-gradient(180deg, #CFE5C9 0%, rgba(226, 246, 241, 0) 100%);
 }
 .EarlyAccess h1 {
     font-weight: 900;
@@ -656,9 +687,8 @@ text-overflow: ellipsis;
   filter: blur(12px);
   border-radius: 100px
 }
-.table.table-home .btn.finbtn,
-.table.table-home .btn.finbtn.active {
-    font-size: 16px;
+.table.table-home .finbtn2 {
+    font-size: 18px;
 }
 .table.table-home td,
 .table.table-home td p,
@@ -670,7 +700,7 @@ text-overflow: ellipsis;
   vertical-align: middle;
 }
 .table.table-home td.percent {
-    color: #059C69;
+    color: #44A647;
 }
 .table.table-home th{
   color: #9A9A9A;
@@ -797,28 +827,28 @@ text-overflow: ellipsis;
     background-image: url(../images/Vector3.png);
 }
 .theworld2 .panel-title > a.prospect::before {
-  background-image: url(../images/Vector1.png);
+  background-image: url(../images/chose.png);
 }
 .theworld2 .panel-title > a.prospect::after {
-  background-image: url(../images/Vector1.png);
+  background-image: url(../images/chose-active.png);
 }
 .theworld2 .panel-title > a.purchase::before {
-  background-image: url(../images/Vector2.png);
+  background-image: url(../images/purchase.png);
 }
 .theworld2 .panel-title > a.purchase::after {
-  background-image: url(../images/Vector2-active.png);
+  background-image: url(../images/purchase-active.png);
 }
 .theworld2 .panel-title > a.perks::before {
-  background-image: url(../images/Vector3.png);
+  background-image: url(../images/perk.png);
 }
 .theworld2 .panel-title > a.perks::after {
-  background-image: url(../images/Vector3-active.png);
+  background-image: url(../images/perk-active.png);
 }
 .theworld2 .panel-title > a.paid::before {
-  background-image: url(../images/Vector4.png);
+  background-image: url(../images/paid.png);
 }
 .theworld2 .panel-title > a.paid::after {
-  background-image: url(../images/Vector4-active.png);
+  background-image: url(../images/paid-active.png);
 }
 
 .theworld2 .panel-title > a.collapsed::before{
@@ -947,6 +977,10 @@ section.footerNew ul li a{
     display: block;
     padding: 10px 10px 10px 0;
 }
+section.footerNew ul li a:hover{
+  color: #44A647;
+}
+
 .ftCol {
     margin-bottom: 60px;
 }
@@ -1095,7 +1129,7 @@ nav.mynav ul.navbar-nav {
 .section.Calculator p.errorp{
   font-size: 12px;
 }
-.btn.finbtn+.btn{
+.btn+.btn{
   margin-left: 0px;
   margin-top: 10px;
 }
