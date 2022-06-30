@@ -1090,6 +1090,7 @@ section.footerNew ul li a:hover{
 }
 .calcbtn {
   padding-bottom: 40px;
+  padding-top: 0;
 }
 .result-col{
   min-width: auto;
@@ -1167,6 +1168,11 @@ nav.mynav ul.navbar-nav {
 }
 .top-bar .logo{
   margin-right: 10px;
+}
+.calculateit input, .calculateit select{
+  max-width: none;
+  text-align: left;
+  margin-bottom: 24px;
 }
 
 
