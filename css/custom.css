@@ -1174,6 +1174,19 @@ nav.mynav ul.navbar-nav {
   text-align: left;
   margin-bottom: 24px;
 }
+body .navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+body .navbar-default .navbar-toggle .icon-bar {
+    background-color: #404040;
+}
+
+body .navbar-toggle .icon-bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 4px;
+}
 
 
 }
