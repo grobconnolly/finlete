@@ -948,6 +948,74 @@ text-overflow: ellipsis;
   color: #e34e4e;
   text-align: left;
 }
+/*=========== Contact =========== */
+section.contact h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 69px;
+    line-height: 120%;
+    text-align: center;
+    color: #404040;
+}
+.Contact-info {
+    padding: 48px;
+    background: #172033;
+}
+.cnform {
+    padding: 48px;
+    filter: drop-shadow(0px 14px 118px rgba(68, 68, 68, 0.07)) drop-shadow(0px 4.22059px 35.5735px rgba(68, 68, 68, 0.0422631)) drop-shadow(0px 1.75302px 14.7754px rgba(68, 68, 68, 0.0353794)) drop-shadow(0px 0.634032px 5.34398px rgba(68, 68, 68, 0.0281322));
+    background: #fff;
+    border-radius: 8px;
+    float: right;
+}
+section.contact h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 135%;
+    color: #404040;
+    margin-bottom: 24px;
+}
+section.contact  p,section.contact label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #404040;
+}
+section.contact .Contact-info h3,
+section.contact .Contact-info p{
+  color: #fff;
+}
+section.contact .Contact-info a{
+  color: #fff;
+}
+section.contact .Contact-info img {
+    margin-top: 24px;
+}
+section.contact  .inquery{
+  margin-bottom: 16px;
+}
+section.contact  .contact-text {
+    padding-bottom: 90px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+section.contact input.form-control,
+section.contact select.form-control {
+    padding: 12px 16px;
+    height: 53px;
+    border: 1px solid #9A9A9A;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #404040;
+}
+section.contact  textarea.form-control {
+    height: 142px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    resize: none;
+}
 /*=========== footer v1 =========== */
 section.footerNew {
     padding: 64px 0;
@@ -1055,7 +1123,9 @@ section.footerNew ul li a:hover{
     font-size: 28px;
   }
   .name span,.invest-share h3 span,.more-about p,
-  .section.Calculator p, .EarlyAccess p,.theworld p,.Joinwaitlist p{
+  .section.Calculator p, .EarlyAccess p,.theworld p,.Joinwaitlist p,
+  section.contact p, section.contact label,
+  section.contact input.form-control, section.contact select.form-control{
     font-size: 14px;
   }
   .invest-share h3,.more-about h4{
@@ -1154,6 +1224,10 @@ nav.mynav ul.navbar-nav {
 .Joinwaitlist h3{
   font-size: 36px;
 }
+section.contact h1{
+  text-align: left;
+  font-size: 40px;
+}
 .theworld p,.EarlyAccess p{
   text-align: left;
   font-size: 18px;
@@ -1163,7 +1237,8 @@ nav.mynav ul.navbar-nav {
   background-size: auto 400px;
   margin-bottom: 60px;
 }
-.theworld2 .panel-title > a{
+.theworld2 .panel-title > a,
+section.contact h3{
   font-size: 24px;
 }
 .top-bar .logo{
@@ -1230,6 +1305,13 @@ body .navbar-toggle .icon-bar {
     background-position: center;
     background-size: auto;
 }
-
+.Contact-info,.cnform {
+    padding: 48px 15px;
+}
+section.contact .contact-text {
+    padding-bottom: 50px;
+    padding-left:15px;
+    padding-right:15px;
+}
 
 }
