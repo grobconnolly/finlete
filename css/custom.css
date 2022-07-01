@@ -1187,6 +1187,36 @@ body .navbar-toggle .icon-bar {
     height: 4px;
     border-radius: 4px;
 }
+.table.table-home thead {
+    display: none;
+}
+.TableAccess ul.nav.nav-tabs{
+  border:none;
+}
+.table.table-home td {
+    display: inline-block;
+    padding: 15px;
+}
+.table.table-home tr th + td {
+    width: 100%;
+    padding: 20px;
+}
+.table.table-home th[scope="row"] {
+    display: none;
+}
+.table.table-home .finbtn2 {
+    font-size: 12px;
+    padding: 8px 16px;
+}
+.table.table-home td, .table.table-home td p, .table.table-home th{
+  font-size: 12px;
+}
+.table.table-home td{
+  border:none;
+}
+.table.table-home tr {
+    border-bottom: 1px solid #D9D9D9;
+}
 
 
 }
