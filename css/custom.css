@@ -1217,6 +1217,19 @@ body .navbar-toggle .icon-bar {
 .table.table-home tr {
     border-bottom: 1px solid #D9D9D9;
 }
+.data::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    background-image: url(../images/star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
 
 
 }
