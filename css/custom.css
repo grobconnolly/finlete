@@ -628,7 +628,7 @@ text-overflow: ellipsis;
 .calculateit input.error{
   border-color: #d06868;
 }
-.section.Calculator p.errorp{
+.section.Calculator p.errorp,._error-inner{
   display: none;
   color: #e34e4e;
   font-size: 14px;
