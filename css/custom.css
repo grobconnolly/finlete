@@ -634,6 +634,9 @@ text-overflow: ellipsis;
   font-size: 14px;
   font-style: normal;
 }
+._error-inner{
+  display: block;
+}
 .section.Calculator .calculateit input.error+p{
   display: block;
 }
