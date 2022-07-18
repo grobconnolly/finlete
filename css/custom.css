@@ -1120,8 +1120,9 @@ section.footerNew ul li a:hover{
   }
   .details ul li {
     padding: 8px 10px;
-    width: 16%;
+    width: auto;
     text-align: center;
+    min-width: 66px;
   }
   .name h1,.theworld h3 {
     font-size: 28px;
