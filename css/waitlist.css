@@ -295,7 +295,8 @@ form#_form_5_ {
      clip:rect(0, 0, 0, 0);
      border:0;
 }
- #_form_5_ ._form-label,#_form_5_ ._form_element ._form-label {
+ #_form_5_ ._form-label,#_form_5_ ._form_element ._form-label,
+ .notify {
     font-weight:bold;
     margin-bottom:5px;
     display:block;
@@ -303,6 +304,10 @@ form#_form_5_ {
     font-size: 18px;
     line-height: 160%;
     color: #404040;
+}
+ .notify{
+    text-align: center;
+    margin-top: 15px;
 }
 
  #_form_5_ ._form_element {
