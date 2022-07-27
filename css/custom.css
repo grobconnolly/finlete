@@ -1065,6 +1065,13 @@ section.contact  textarea.form-control {
     border-radius: 4px;
     resize: none;
 }
+/*Join page*/
+#waitlist-join .btn{
+  width: 100%;
+  max-width: 300px;
+  margin-top: 30px;
+}
+
 /*=========== footer v1 =========== */
 section.footerNew {
     padding: 64px 0;
