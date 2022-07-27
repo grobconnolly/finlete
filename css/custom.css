@@ -8,9 +8,54 @@ body,html{
 }
 
 h1,h2,h3,h4,h5,h6,p{
-    margin: 0;
-    line-height: normal;
+  margin: 0 0 15px 0;
+  line-height: normal;
+  color: #404040;
+  font-family: 'Inter', sans-serif;
 }
+a{
+  color: #44A647;
+}
+a:hover{
+  color: #317836;
+}
+p{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  margin-bottom: 15px;
+}
+small{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+}
+h1{
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+}
+h2{
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 120%;
+}
+h3{
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 135%;
+}
+h4{
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 135%;
+}
+h5{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 150%;
+}
+
 img{
     max-width: 100%;
 }
@@ -1020,6 +1065,13 @@ section.contact  textarea.form-control {
     border-radius: 4px;
     resize: none;
 }
+/*Join page*/
+#waitlist-join .btn{
+  width: 100%;
+  max-width: 300px;
+  margin-top: 30px;
+}
+
 /*=========== footer v1 =========== */
 section.footerNew {
     padding: 64px 0;
@@ -1085,6 +1137,10 @@ section.footerNew ul li a:hover{
   margin-bottom: 40px;
 }
 
+/*==================== Privacy page   =====================*/
+.Privacy h4{
+  margin-top: 60px;
+}
 
 /*============== Media queries ==================*/
 
@@ -1317,6 +1373,9 @@ section.contact .contact-text {
     padding-bottom: 50px;
     padding-left:15px;
     padding-right:15px;
+}
+.Privacy h1{
+  font-size: 36px;
 }
 
 }
