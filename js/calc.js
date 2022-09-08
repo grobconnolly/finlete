@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
             var Earnings2 = $('#Earnings2').text("$"+Earnings);
           
             var TokenCoin = (Investment / SharePrice).toFixed(2);
-            var TokenCoin2 = $('#TokenCoin2').text(TokenCoin+" Coins");
+            var TokenCoin2 = $('#TokenCoin2').text(TokenCoin+" Shares");
           
             var PercentageofEarnings = (resultratio*TokenCoin).toFixed(5);
             var PercentageofEarnings2 = $('#PercentageofEarnings2').text(PercentageofEarnings+"%");
