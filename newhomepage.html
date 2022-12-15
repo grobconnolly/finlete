@@ -179,10 +179,10 @@
 	<section class="section EarlyAccess" style="background-image: url('images/home/herobg.png');">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-6 pull-right heroMini" style="background-image: url('images/home/Hero-img.png');">
+				<div class="col-xs-12 col-md-6 pull-right heroMini animate__slideInDown animate__animated" style="background-image: url('images/home/Hero-img.png');">
 					
 				</div>
-				<div class="col-xs-12 col-md-7 quickform">
+				<div class="col-xs-12 col-md-7 quickform animate__animated animate__slideInUp">
 					<h1>Discover & invest in the world's most promising athletes</h1>	
 					<form method="POST" action="https://meetlete.activehosted.com/proc.php" id="_form_5_" class="_form _form_5 _inline-form  _dark" novalidate>
 						<input type="hidden" name="u" value="5" />
@@ -530,7 +530,7 @@
 					<p>Finlete has future income agreements with promising athletes. We allow you to invest in the future of these athletes. You share in the financial success of your prospects. </p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row anim leftanim animate__animated">
 				<div class="col-md-3 col-xs-12">
 					<span class="icon"><img src="images/home/icons/seac.png" alt=""></span>
 					<h5>Choose the prospect</h5>
@@ -713,6 +713,42 @@
 			player.on('ended', function() {
 				document.getElementById("poster-image").style.opacity = "1";
 			});
+
+
+			$(document).on("scroll", function() {
+				var pageTop = $(document).scrollTop();
+				var pageBottom = pageTop + $(window).height();
+				var tags = $(".anim",this);
+
+				for (var i = 0; i < tags.length; i++) {
+					var tag = tags[i];
+
+					if ($(tag).position().top < pageBottom) {
+					$('.leftanim').addClass("animate__fadeInLeft");
+					$('.rightanim').addClass("animate__fadeInRight");
+					} else {
+					$(tag).removeClass("animate__fadeInLeft");
+					$(tag).removeClass("animate__fadeInRight");
+					}
+				}
+				});
+
+				// scroll animation up
+				$(document).on("scroll", function() {
+				var pageUp = $(document).scrollTop();
+				var pageBot = pageUp + $(window).height();
+				var tags = $(".anim2",this);
+
+				for (var i = 0; i < tags.length; i++) {
+					var tag = tags[i];
+
+					if ($(tag).position().top < pageBot) {
+					$('.upanim').addClass("animate__fadeInUp");
+					} else {
+					$(tag).removeClass("animate__fadeInUp");
+					}
+				}
+				});
 
 	</script>
 </body>
