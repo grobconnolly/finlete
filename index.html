@@ -19,9 +19,10 @@
 	<!--=================== custom style css ================================== -->
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css?ver=1.0">
+	<link rel="stylesheet" href="css/homeDec22.css">
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -70,22 +71,18 @@
 	<!-- End Google Tag Manager (noscript) -->
 
 	<!--=================== top nav ================================== -->
-	<header>
-		
-		
-
+	<header id="transHeader">
 
 	<section class="top-bar" id="">
 			
-			<div class="container-fluid">
+			<div class="container">
 				<div class="logo">
-					<a href="index.html" title="Finlete"><img src="images/LogoPrimary.svg" alt="Finlete"></a>
+					<a href="index.html" title="Finlete"><img src="images/home/Logo-white.png" alt="Finlete" width="200"></a>
 				</div>
 				<div class="partnerlogo">
-					<img src="images/ComcastNBCU_SportsTech_Logo_3_Stacked_Black_HiRe.svg" alt="Comcast NBCU SportsTech">
+					<img src="images/home/ComcastNBCU_SportsTech_Logo_3_Stacked_Black_HiRes.png" alt="Comcast NBCU SportsTech" width="60">
 				</div>
 				<a type="button" href="waitlist.html" class="btn finbtn2">Get started</a>
-				<a type="button" href="signin.html" class="btn finbtn2 active">Login</a>
 				<div class="topnavbar">
 
 					<nav class="navbar navbar-default mynav">
@@ -101,10 +98,9 @@
 				        
 				        <div id="navbar" class="navbar-collapse collapse ">
 				            <ul class="nav navbar-nav">
-				            	<li><a href="./about.html">Players</a></li>
+				            	<li><a href="./about.html">Find Players</a></li>
 				              	<li><a href="./about.html">About</a></li>
 				              	<li><a href="contact.html">Contact</a></li>
-			              	  	<li><a href="signin.html" class="for-mb">Login</a></li>
 			              	  	<li><a href="waitlist.html" class="for-mb">Get started</a></li>
 				            </ul>
 				                                             
@@ -122,29 +118,132 @@
 
 	</section><!-- tob section end -->
 
-	
-
-
 	</header>
 
+	<!-- mOBILE -->
+	<header id="generalHeader">
+		
+		
+
+
+		<section class="top-bar" id="">
+				
+				<div class="container-fluid">
+					<div class="logo">
+						<a href="index.html" title="Finlete"><img src="images/home/logoicon.png" alt="Finlete"></a>
+					</div>
+					<div class="partnerlogo">
+						<img src="images/ComcastNBCU_SportsTech_Logo_3_Stacked_Black_HiRe.svg" alt="Comcast NBCU SportsTech">
+					</div>
+					<a type="button" href="waitlist.html" class="btn finbtn2">Get started</a>
+					<div class="topnavbar">
 	
+						<nav class="navbar navbar-default mynav">
+	
+							 <div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbarMb" aria-expanded="false" aria-controls="navbar">
+								  <span class="sr-only">Toggle navigation</span>
+								  <span class="icon-bar"></span>
+								  <span class="icon-bar"></span>
+								  <span class="icon-bar"></span>
+								</button>
+							</div>
+							
+							<div id="navbarMb" class="navbar-collapse collapse ">
+								<ul class="nav navbar-nav">
+									<li><a href="./about.html">Find Players</a></li>
+									<li><a href="./about.html">About</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="waitlist.html" class="for-mb">Get started</a></li>
+								</ul>
+																 
+							</div>
+							<!--/.nav-collapse -->
+	
+						  </nav>
+	
+					</div>
+					   
+					
+					<!-- <a type="button" href="index.html" class="btn finbtn2 signin">Sign In</a> -->
+				  
+				</div>  <!-- container end -->
+	
+		</section><!-- tob section end -->
+	
+		
+	
+	
+	</header>
 	<!-- Request Early Access -->
-	<section class="section EarlyAccess">
+	<section class="section EarlyAccess" style="background-image: url('images/home/herobg.png');">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 ">
-					<h1>Invest in some of the world's most promising athletes!</h1>
-					<p>We allow fans to invest in and support some of the world's most promising and exciting athletes. Fans who invest in athletes on Finlete get a small percentage of that athlete's future on-the-field earnings. </p>
+				<div class="col-xs-12 col-md-6 pull-right heroMini animate__slideInDown animate__animated" style="background-image: url('images/home/Hero-img.png');">
 					
 				</div>
-				<div class="col-xs-12 text-center">
-					<a type="button" class="btn finbtn2" href="waitlist.html">Request Early Access Today!</a>
-					<!-- <a type="button" class="btn finbtn2 active" data-toggle="modal" data-target="#learnVideo"><img src="images/play.svg" alt=""> Learn more</a> -->
+				<div class="col-xs-12 col-md-7 quickform animate__animated animate__slideInUp">
+					<h1>Discover & invest in the world's most promising athletes.</h1>	
+					<form method="POST" action="https://meetlete.activehosted.com/proc.php" id="_form_5_" class="_form _form_5 _inline-form  _dark" novalidate>
+						<input type="hidden" name="u" value="5" />
+						<input type="hidden" name="f" value="5" />
+						<input type="hidden" name="s" />
+						<input type="hidden" name="c" value="0" />
+						<input type="hidden" name="m" value="0" />
+						<input type="hidden" name="act" value="sub" />
+						<input type="hidden" name="v" value="2" />
+						<input type="hidden" name="or" value="9b38b8913a28ed3a624dc13684073f92" />
+							<div class="_form-content">
+							  
+							  <div class="_form_element _x25518848 _full_width " >
+								
+								<div class="_field-wrapper">
+								  <input type="text" id="email" name="email" placeholder="Enter your email" required/>
+								</div>
+							  </div>
+							  <div class="_button-wrapper _full_width">
+							  
+								 <button id="_form_5_submit" class="_submit" type="submit">
+									Join now 
+								</button>
+							  </div>
+							  <div class="_clear-element">
+							  </div>
+							</div>
+							<div class="_form-thank-you" style="display:none;">
+							</div>
+					</form>
+					<p class="notify">Join our waitlist now and get our upcoming athletes. <br/>
+						100% spam-free.</p>			
 				</div>
+				
 			</div>
 		</div>
 	</section>
 
+
+	<!-- Video -->
+	<section class="section video">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 videoText">
+					<h3>Finlete is an athlete investment platform for fans!					<h3>
+					<p>Finlete allows fans to invest and support some of the world's most promising and exciting athletes and get a small percentage of that athlete's future on-the-field earnings.</p>
+				</div>
+			</div>
+		</div>
+		<div style="padding:56.25% 0 0 0;position:relative;">
+			<div id="poster-image"></div>
+			<iframe 
+			src="https://player.vimeo.com/video/781343185?h=133c1004ff&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+			frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
+			allowfullscreen 
+			style="position:absolute;top:0;left:0;width:100%;height:100%;background-image:url('images/home/Videebg.png');" 
+			title="Finlete"></iframe>
+			
+		</div>
+		
+	</section>
 	<!-- Table Access -->
 	<section class="section TableAccess">
 
@@ -422,78 +521,35 @@
 		</div>
 	</section>
 	
-	<!-- Invest in the world -->
-	<section class="section theworld">
+	<section class="section process" style="background-image: url('images/home/processbg.svg');">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 ">
-					<h3>Invest in the world's most promising athletes</h3>
-					<p>Finlete is creating SEC-regulated securities through a Reg A+. These securities are backed by future earning contracts with some of the most promising athletes in the world.</p>
-					
+				<div class="col-md-12 processtext">
+					<h3>Invest in the world's most promising athletes
+					</h3>
+					<p>Finlete has future earning agreements with promising athletes. We then register those contracts with the SEC through a Reg A+. Fans that invest in athletes with Finlete own a percentage of their future on-the-field earnings.</p>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- 2 -->
-	<section class="section theworld2"  style="background-image: url('images/Img-container.png');">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-6 "></div>
-
-				<div class="col-xs-12 col-sm-12 col-md-6">
-					<div class="bs-acc">
-					    <div class="panel-group" id="accordion">
-					        <div class="panel panel-default">
-					            <div class="panel-heading">
-					                <h4 class="panel-title" id="a1">
-					                    <a data-toggle="collapse" data-parent="#accordion" href="#index" class="prospect">Choose the prospect</a>
-					                </h4>
-					            </div>
-					            <div id="index" class="panel-collapse collapse in">
-					                <div class="panel-body">
-					                   <p>Select a prospect we have available on our platform. Review terms, watch practice films, and review scouting reports.</p>
-					                </div>
-					            </div>
-					        </div>
-					        <div class="panel panel-default">
-					            <div class="panel-heading">
-					                <h4 class="panel-title" id="a2">
-					                    <a data-toggle="collapse" data-parent="#accordion" href="#index2" class="collapsed purchase">Purchase Shares</a>
-					                </h4>
-					            </div>
-					            <div id="index2" class="panel-collapse collapse">
-					                <div class="panel-body">
-					                  <p>If you are interested in investing in that athlete, select the amount you want to invest, and complete your transaction.</p>
-					                </div>
-					            </div>
-					        </div>
-					        <div class="panel panel-default">
-					            <div class="panel-heading">
-					                <h4 class="panel-title" id="a3">
-					                    <a data-toggle="collapse" data-parent="#accordion" href="#index3" class="collapsed perks">Get Perks</a>
-					                </h4>
-					            </div>
-					            <div id="index3" class="panel-collapse collapse">
-					                <div class="panel-body">
-					                    <p>The more you invest, the more perks you will receive. Items include private athlete pages, signed merch, private virtual Q&A sessions, meet-and-greets, and other awesome items. </p>
-					                </div>
-					            </div>
-					        </div>
-					        <div class="panel panel-default">
-					            <div class="panel-heading">
-					                <h4 class="panel-title" id="a4">
-					                    <a data-toggle="collapse" data-parent="#accordion" href="#index4" class="collapsed paid">Get Paid</a>
-					                </h4>
-					            </div>
-					            <div id="index4" class="panel-collapse collapse">
-					                <div class="panel-body">
-					                    <p>If your athletes make it to the pros, you will start receiving a % of that player's paychecks through a future earnings contract. The amount you receive will be based on how many shares you have and the dollar amount of their contract. </p>
-					                </div>
-					            </div>
-					        </div>
-					        
-					    </div>
-					</div>
+			<div class="row anim leftanim animate__animated">
+				<div class="col-md-3 col-xs-12">
+					<span class="icon"><img src="images/home/icons/seac.png" alt=""></span>
+					<h5>Choose the prospect</h5>
+					<p>Select a prospect we have available on our platform. Review terms, watch practice films, and review scouting reports.</p>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<span class="icon"><img src="images/home/icons/monetization_on.png" alt=""></span>
+					<h5>Purchase Shares</h5>
+					<p>If you are interested in investing in that athlete, select the amount you want to invest and complete your transaction.</p>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<span class="icon"><img src="images/home/icons/local_activity.png" alt=""></span>
+					<h5>Get Perks</h5>
+					<p>The more you invest, the more perks you will receive. Items include private athlete pages and other extraordinary items.</p>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<span class="icon"><img src="images/home/icons/insights.png" alt=""></span>
+					<h5>Get Paid</h5>
+					<p>If your athletes make it to the pros, you'll start receiving a % of that player's paychecks through a future earnings contract.</p>
 				</div>
 			</div>
 		</div>
@@ -506,11 +562,11 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-6">
 					<h3 class="titlesection">Finlete “What If” Calculator</h3>
-					<p>Use this "What If" calculator to show what your payout could have been if you had invesed in the following athletes as prospects. Just input a the amount you would of invested, select the athlets, and calculate.</p>
+					<p>This "What If" calculator shows you what a potential payout could have been if you had invested in the following athletes as prospects. Just input an amount you would have invested, select the athletes, and calculate.</p>
 					<div class="calculateit">
 						<div class="row">
 							<div class="col-xs-12 col-sm-6 col-md-6">
-								<label>Investment</label>
+								<label>Your Investment</label>
 								<input type="text" id="Investment" class="number_only" value="" placeholder="500">
 								<p class="errorp">Enter Investment Amount</p>
 							</div>
@@ -538,7 +594,9 @@
 							<button type="button"  id="Calculate" class="btn finbtn2 btn-block">Calculate <img src="images/arrow-whiteR.svg" alt=""></button>
 							</div>
 						</div>
-						
+						<div class="disclaimer">
+							<p>*Disclaimer: This is just for examples and should not be taken or used as financial advice. </p>
+						</div>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 ">
@@ -546,7 +604,7 @@
 						<h3>Results</h3>
 						<div class="invest result-col">
 							<ul>
-								<li><span>Investment</span><p id="Investment2" class="comma">$0</p></li>
+								<li><span>Your Investment</span><p id="Investment2" class="comma">$0</p></li>
 								<li><span>Share Price</span><p id="SharePrice">0.0</p></li>
 								<li><span>Shares</span><p id="Shares2">0 Shares</p></li>
 							</ul>
@@ -562,9 +620,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-12 disclaimer">
-					<p>*Disclaimer: This is just for examples and should not be taken or used as finanical advice. </p>
-				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -578,7 +634,7 @@
 				<div class="col-xs-12 col-sm-12 col-md-12">
 
 					<h3>Join our pre-launch waitlist today!</h3>
-					<p style="margin-bottom: 40px">Enter your email gain access to our pre-launch.</p>
+					<p style="margin-bottom: 40px">Please enter your email to gain access to our pre-launch.</p>
 						
 					<a type="button" class="btn finbtn2" href="waitlist.html">Request Early Access</a>
 					 	
@@ -588,21 +644,6 @@
 		</div>
 	</section>
 
-	<!-- Modal -->
-	<!-- <div id="learnVideo" class="modal fade" role="dialog">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	    
-	      <div class="modal-body">
-	        <p><iframe src="https://player.vimeo.com/video/731055421?h=bc72f8cfa9" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width: 100%"></iframe>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-
-	  </div>
-	</div> -->
 
 	<!--=================== Footer  area ================================== -->
 	<footer>
@@ -644,29 +685,72 @@
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/cacl-dropdown.js?ver=1"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			
-			$('.panel-group').on('click', '#a2', function() { 
-			    $('.theworld2').css('background-image','url(images/a2.png)');
-			});
-			$('.panel-group').on('click', '#a3', function() { 
-			     $('.theworld2').css('background-image','url(images/a3.png)');
-			});
-			$('.panel-group').on('click', '#a4', function() { 
-			     $('.theworld2').css('background-image','url(images/a4.png)');
-			});
-			$('.panel-group').on('click', '#a1', function() { 
-			     $('.theworld2').css('background-image','url(images/Img-container.png)');
-			});
-
-		});
-
-	</script>
+	
+	<!-- Vimeo player -->
+	<script src="https://player.vimeo.com/api/player.js"></script>
+	<!-- wait lis form -->
+	<script type="text/javascript" src="js/waitlist.js"></script>
 	<!-- Start of HubSpot Embed Code -->
 	<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/22238366.js"></script>
 	<!-- End of HubSpot Embed Code -->
+	<script>
+			
 
+
+		document.getElementById("poster-image").onclick = function() { fadeImage() };
+		function fadeImage() {
+		document.getElementById("poster-image").style.opacity = "0";
+		}
+
+		var player = new Vimeo.Player(document.querySelector('.video iframe'));
+			document.querySelector('#poster-image').addEventListener('click', function() {
+				player.play();
+			});
+
+			var iframe = $('.video iframe');
+			var player = new Vimeo.Player(iframe);
+
+			player.on('ended', function() {
+				document.getElementById("poster-image").style.opacity = "1";
+			});
+
+
+			$(document).on("scroll", function() {
+				var pageTop = $(document).scrollTop();
+				var pageBottom = pageTop + $(window).height();
+				var tags = $(".anim",this);
+
+				for (var i = 0; i < tags.length; i++) {
+					var tag = tags[i];
+
+					if ($(tag).position().top < pageBottom) {
+					$('.leftanim').addClass("animate__fadeInLeft");
+					$('.rightanim').addClass("animate__fadeInRight");
+					} else {
+					$(tag).removeClass("animate__fadeInLeft");
+					$(tag).removeClass("animate__fadeInRight");
+					}
+				}
+				});
+
+				// scroll animation up
+				$(document).on("scroll", function() {
+				var pageUp = $(document).scrollTop();
+				var pageBot = pageUp + $(window).height();
+				var tags = $(".anim2",this);
+
+				for (var i = 0; i < tags.length; i++) {
+					var tag = tags[i];
+
+					if ($(tag).position().top < pageBot) {
+					$('.upanim').addClass("animate__fadeInUp");
+					} else {
+					$(tag).removeClass("animate__fadeInUp");
+					}
+				}
+				});
+
+	</script>
 </body>
 
 </html>
