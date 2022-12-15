@@ -1,0 +1,359 @@
+header#transHeader {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    display: none;
+}
+header#transHeader section.top-bar {
+    background: transparent;
+    box-shadow: none;
+}
+header#transHeader .top-bar .logo {
+    margin-right: 15px;
+}
+header#transHeader .partnerlogo {
+    border-color:#fff;
+}
+header#transHeader nav.mynav ul.navbar-nav li a{
+    color: #FFFFFF;
+}
+header#transHeader nav.mynav ul.navbar-nav li a:hover{
+    color: #2B445C;
+}
+header#transHeader .btn.finbtn2 {
+    background: #2B445C;
+    border-color: #2B445C;
+}
+header#transHeader .btn.finbtn2:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #2B445C;
+}
+.EarlyAccess h1 {
+    text-align: left;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.EarlyAccess {
+    background:none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top:250px;
+    padding-bottom: 230px;
+    position: relative;
+}
+.quickform form input[type="text"]{
+    height: 68px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px 0px 0px 4px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 150%;
+    color: #787878;
+    margin-top: 1px;
+    padding: 15px 24px;
+}
+.quickform form button._submit {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding: 16px 24px;
+    width: 151px;
+    height: 68px;
+    background: #2B445C;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    margin-left: -4px;
+}
+.quickform  ._form-content>div {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+}
+.quickform ._field-wrapper {
+    position: relative;
+}
+
+.quickform form input[type="text"]._has_error,.quickform form textarea._has_error {
+    border:#f37c7b 1px solid;
+}
+.quickform form input[type="checkbox"]._has_error {
+    outline:#f37c7b 1px solid;
+}
+.EarlyAccess .notify {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 15px;
+}
+.heroMini {
+    background-image: url(images/home/Hero-img.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    width: 700px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+.btn.finbtn2.active {
+    border-radius: 4px;
+}
+.section.video h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 135%;
+    text-align: center;
+    color: #1F2F42;
+}
+.section.video p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #404040;
+}
+.videoText{
+    padding-bottom: 90px;
+}
+#poster-image {
+  background: url('../images/home/Videebg.png') center center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  opacity: 1.0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+transition: all 0.3s ease-in;
+}
+section.section.process {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding-top:400px;
+    padding-bottom:400px;
+}
+section.section.process h3{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+section.section.process h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+section.section.process .processtext p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #F0F0F0;
+}
+section.section.process p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #F0F0F0;
+}
+.processtext {
+    padding-bottom: 60px;
+}
+span.icon img {
+    width: 45px;
+}
+.section.Calculator {
+    background: #F6F7F8;
+}
+.disclaimer {
+    padding-top: 10px;
+}
+h3.titlesection {
+    font-size: 40px;
+}
+.section.Calculator p,
+.calculateit label {
+    font-size: 16px;
+}
+.calculateit label {
+    font-size: 14px;
+}
+.Earnings.result-col {
+    padding-left: 10px;
+}
+.calculateit {
+    padding-top: 0;
+}
+.result {
+    background: #FFFFFF;
+    padding: 40px 24px;
+    box-shadow: 0px 27px 145px rgb(51 51 51 / 7%), 0px 8.13971px 43.7133px rgb(51 51 51 / 5%), 0px 3.38082px 18.1562px rgb(51 51 51 / 4%), 0px 1.22278px 6.56676px rgb(51 51 51 / 2%);
+    border-radius: 8px;
+}
+@media screen and (min-width:1600px) {
+    section.section.process {
+        padding-top:600px;
+        padding-bottom:600px;
+    }
+}
+
+@media screen and (min-width:767px) {
+    
+.quickform form ._error {
+    display:block;
+    position:absolute;
+    font-size:14px;
+    z-index:10000001;
+}
+.quickform form ._error._above {
+    padding-bottom:4px;
+    bottom: 64px;
+    right:0;
+}
+.quickform form ._error._below {
+    padding-top:4px;
+    top:100%;
+    right:0;
+}
+.quickform form ._error._above ._error-arrow {
+    bottom:0;
+    right:15px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #f37c7b;
+}
+.quickform form ._error._below ._error-arrow {
+    top:0;
+    right:15px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom:5px solid #f37c7b;
+}
+.quickform form ._error-inner {
+    padding:8px 12px;
+    background-color:#f37c7b;
+    font-size:14px;
+    font-family:arial, sans-serif;
+    color:#fff;
+    text-align:center;
+    text-decoration:none;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+.quickform form ._error-inner._form_error {
+    margin-bottom:5px;
+    text-align:left;
+}
+.quickform form ._button-wrapper ._error-inner._form_error {
+    position:static;
+}
+.quickform form ._error-inner._no_arrow {
+    margin-bottom:10px;
+}
+.quickform form ._error-arrow {
+    position:absolute;
+    width:0;
+    height:0;
+}
+header#transHeader {
+    display: block;
+}
+header#generalHeader{
+    display: none;
+}
+
+}
+
+@media screen and (max-width:767px) {
+    .EarlyAccess {
+        padding-top: 450px;
+        padding-bottom: 40px;
+        background: #F6F7F8 !important;
+    }
+    .heroMini {
+        background-image: url('../images/home/mb/Hero-img.png') !important;
+        height: 440px;
+        width: 100%;
+        top: 30px;
+        right: 0;
+    }
+    .EarlyAccess .notify{
+        color: #404040;
+        font-size: 14px;
+    }
+    .EarlyAccess h1{
+        font-size: 32px;
+        color: #172033;
+    }
+    .quickform form input[type="text"] {
+        height: 45px;
+        background: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        border-radius: 4px 0px 0px 4px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 150%;
+        color: #787878;
+        margin-top: 1px;
+        padding: 8px 15px;
+        width: 230px;
+    }
+    .quickform form button._submit {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: #FFFFFF;
+        padding: 8px 10px;
+        width: 110px;
+        height: 46px;
+        background: #2B445C;
+        border: none;
+        border-radius: 0px 4px 4px 0px;
+        margin-left: -4px;
+    }
+    section.section.process {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: #1F2F42 !important;
+    }
+section.section.process h3,
+.section.video h3{
+    font-size: 28px;
+    line-height: 35px;
+    text-align: left;
+}
+section.section.process h5,
+.section.video p{
+    font-size: 20px;
+    text-align: left;
+}
+section.section.process .processtext p{
+    font-size: 16px;
+    text-align: left;
+}
+section.section.process p{
+    font-size: 14px;
+    line-height: 19px;
+}
+
+
+}
