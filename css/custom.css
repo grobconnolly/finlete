@@ -1377,5 +1377,9 @@ section.contact .contact-text {
 .Privacy h1{
   font-size: 36px;
 }
+body .result {
+  padding:40px 15px;
+}
+
 
 }
