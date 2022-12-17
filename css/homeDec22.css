@@ -357,6 +357,8 @@ section.section.process p{
 body .result {
     padding:40px 15px;
 }
-
+.notify br {
+    display: none;
+}
 
 }
