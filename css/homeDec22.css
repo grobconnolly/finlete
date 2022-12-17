@@ -290,7 +290,7 @@ header#generalHeader{
         background: #F6F7F8 !important;
     }
     .heroMini {
-        background-image: url('../images/home/mb/Hero-img.png') !important;
+        background-image: url('../images/home/mb/Hero-img.svg') !important;
         height: 440px;
         width: 100%;
         top: 30px;
