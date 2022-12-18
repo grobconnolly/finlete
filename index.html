@@ -242,7 +242,7 @@
 	<section class="section video">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 videoText animate__animated animate__slideInUp">
+				<div class="col-xs-12 videoText anim2 upanim animate__animated">
 					<h3>Finlete is an athlete investment platform for fans!					<h3>
 					<p>Finlete allows fans to invest and support some of the world's most promising and exciting athletes and get a small percentage of that athlete's future on-the-field earnings.</p>
 				</div>
@@ -707,7 +707,7 @@
 	<!-- wait lis form -->
 	<script type="text/javascript" src="js/waitlist.js"></script>
 	<!-- Start of HubSpot Embed Code -->
-	<!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/22238366.js"></script> -->
+	<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/22238366.js"></script>
 	<!-- End of HubSpot Embed Code -->
 	<script>
 			
@@ -759,9 +759,9 @@
 					var tag = tags[i];
 
 					if ($(tag).position().top < pageBot) {
-					$('.upanim').addClass("animate__fadeInUp");
+					$('.upanim').addClass("animate__slideInUp");
 					} else {
-					$(tag).removeClass("animate__fadeInUp");
+					$(tag).removeClass("animate__slideInUp");
 					}
 				}
 				});
