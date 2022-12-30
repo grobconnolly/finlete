@@ -308,7 +308,7 @@ window._load_script = function(url, callback) {
             var serialized = _form_serialize(document.getElementById('_form_5_')).replace(/%0A/g, '\\n');
       var err = form_to_submit.querySelector('._form_error');
       err ? err.parentNode.removeChild(err) : false;
-      _load_script('https://finlete.activehosted.com/proc.php?' + serialized + '&jsonp=true');
+     // _load_script('https://finlete.activehosted.com/proc.php?' + serialized + '&jsonp=true');
     }
     return false;
   };
