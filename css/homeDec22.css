@@ -208,6 +208,29 @@ h3.titlesection {
     box-shadow: 0px 27px 145px rgb(51 51 51 / 7%), 0px 8.13971px 43.7133px rgb(51 51 51 / 5%), 0px 3.38082px 18.1562px rgb(51 51 51 / 4%), 0px 1.22278px 6.56676px rgb(51 51 51 / 2%);
     border-radius: 8px;
 }
+.more-about .text-success {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    color: #44A647;
+    margin: 0;
+    height: auto;
+}
+.video2 h4 {
+    font-weight: 700;
+    font-size: 22px;
+    color: #2B445C;
+}
+.btn.style2{
+    background: #2B445C;
+    border-radius: 4px;
+    border-color:#2B445C;
+    color: #FFFFFF;
+}
+.btn.style2:hover{
+    color: #2B445C;
+}
+
 @media screen and (min-width:1600px) {
     section.section.process {
         padding-top:600px;
