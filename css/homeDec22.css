@@ -227,10 +227,46 @@ h3.titlesection {
     border-color:#2B445C;
     color: #FFFFFF;
 }
+.btn.style2.active{
+    background:transparent;
+    border-color:#2B445C;
+    color: #2B445C;
+    box-shadow: none;
+}
 .btn.style2:hover{
     color: #2B445C;
 }
-
+.investor-average .btn + .btn {
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.investor-average .invest-term {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #404040;
+    padding: 10px 0;
+}
+.investor-average {
+    text-align: center;
+    background: #F7FBF7;
+    border: 1px solid #44A647;
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin: 0;
+}
+.investor-average h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 135%;
+    color: #404040;
+}
+.investor-average p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #5A5A5A;
+}
 @media screen and (min-width:1600px) {
     section.section.process {
         padding-top:600px;
