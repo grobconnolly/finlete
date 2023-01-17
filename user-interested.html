@@ -17,8 +17,10 @@
 	<link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<!--=================== custom style css ================================== -->
+	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css?ver=1.1">
+	<link rel="stylesheet" href="css/homeDec22.css?1.2">
 
 
 
@@ -64,9 +66,9 @@
 
 </head>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"26a2b4e99a4349e2922f82ad1484f13b5d22874a2fba44b1128fcf475d6ebfb5", values:{},ready:function(){$zoho.salesiq.floatbutton.visible('hide');}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
-	</script>
+	</script> -->
 
 <body class="">
 
@@ -128,20 +130,220 @@
 
 	</header>
 
+	 <!-- breadcrumbs -->
+	 <div class="container">
+		<ol class="breadcrumb">
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">Players</a>
+			</li>
+			<li>
+				<a href="#">Baseball</a>
+			</li>
+			
+			<li class="active">Yerry Rodríguez</li>
+		</ol>
+			
+	</div>
 	
-	
-	<!--  Join the waitlist -->
-	<section class="section" id="waitlist-join">
+	<!-- Invdestor profile -->
+
+	<section class="invest-profile userprofile">
 		<div class="container">
-
 			<div class="row">
-
-				<iframe class="airtable-embed" src="https://airtable.com/embed/shrGATdZGqUOQYbHC?backgroundColor=blue" frameborder="0" onmousewheel="" width="100%" height="1000" style="background: transparent; border: 1px solid #ccc;"></iframe>
 				
-			</div>
+				<!-- profile -->
+				<div class="col-xs-12 col-sm-12 col-md-9">
+					<div class="userp">
+						<div class="img" style="background-image: url('./images/user.png');"></div>
+						<div class="name">
+							<h1>Yerry Rodríguez</h1>
+                            <!-- tags -->
+                            <div class="tag">
+                                <span>P</span>
+                                <span>Texas Rangers</span>
+                                <span>ETA 2022</span>
+                                <span>B/T: R/R</span>
+                                <span>H/W: 6’2”/ 198</span>
+                                <span>Age: 25</span>
+                                <span>From: Santiago, DR</span>
+                            </div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- end profile -->
 
+                <div class="col-xs-12 col-sm-12 col-md-3">
+					<a href="#" title="Back to Offer" class="btn finbtn style3">Back to Offer</a>
+				</div>
+			</div>
 		</div>
 	</section>
+
+		<!--  -->
+		<div class="container textcalc">
+			<div class="col-xs-10">
+				<h3>Interested in investing?</h3>
+				<p>This is not a financial commitment. This is simply a way for us to gauge interest. To stay connected, please fill out the information below.</p>
+			</div>
+		</div>
+
+	<!-- BLC “What If” Calculator -->
+	<section class="section Calculator Calc2">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<h3 class="titlecalc">Indicate Potential Amount</h3>
+					<div class="calculateit">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<label>My Investment (non-binding)</label>
+								<input type="text" id="Investment" class="number_only" value="" placeholder="500" readonly>
+								<p class="errorp">Enter Investment Amount</p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<label>Share Price</label>
+								<input type="text"  id="Earnings" class="number_only" value="" placeholder="9" readonly>
+								
+								<p class="errorp">Enter Career Earnings</p>
+								
+							</div>
+							
+							<div class="col-xs-12 calcbtn">
+								<p>Athlete Potential Career Earnings (Slide the circle over to see possabilities)</p>
+							<!-- <button type="button"  id="Calculate" class="btn finbtn2 btn-block">Calculate <img src="images/arrow-whiteR.svg" alt=""></button> -->
+							<div class="slider-box priceslider-cover">
+								<div id="price-range" class="slider"></div>
+								<div class="filler" style="width:4%;"></div>
+							  </div>
+
+						</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 ">
+					<div class="resultCalc">
+						<h3 class="titlecalc" >What if Calculator</h3>
+						<h4>Results</h4>
+						<div class="invest result-col">
+							<ul>
+								<!-- <li><span>Your Investment</span><p id="Investment2" class="comma">$0</p></li> -->
+								<li><span>Share Price</span><p id="SharePrice">0.0</p></li>
+								<li><span>Shares</span><p id="Shares2">0 Shares</p></li>
+								<!-- <li><span>Potential Career Earnings</span><p id="Earnings2" class="comma">$0</p></li> -->
+								<li><span>% of Future Earnings</span><p id="PercentageofEarnings2">0%</p></li>
+								<li><span>My Potential Payout *</span><p id="Payout" class="comma">$0</p></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="section reserverform">
+		<div class="container">
+			<h3>Reserve my interest</h3>
+			<div class="row">
+				
+				<div class="col-md-12">
+				
+					<form action="https://getform.io/f/aa40f720-f3cd-4513-89a4-cbdb833e635f" method="POST">
+					<div class="row">
+						<!-- group 1 -->
+						<div class="form-group">
+							<div class="col-md-4">
+								<input type="text" name="name" placeholder="First Name" required>
+							</div>
+							<div class="col-md-4">
+							<input type="text" name="lastname" placeholder="Last Name">
+							</div>
+							<div class="col-md-4">
+								<input type="email" name="email" placeholder="Email address" required>
+							</div>
+						</div>
+						<!-- group 2 -->
+						<div class="form-group">
+							<div class="col-md-6">
+								<input type="text" name="city" placeholder="City" required>
+							</div>
+							<div class="col-md-6">
+								<input type="text" name="state" placeholder="State" required>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+						<!-- group 3 -->
+						<div class="form-group row">
+							<div class="col-md-6">
+								<div class="col-md-12">
+									<h5><strong> I am an accredited investor?</strong></h5>
+									<p>You don’t need to be an accredited investor to participate in this indication of interest.</p>
+									<!-- add hidden Honeypot input to prevent spams -->
+									<input type="hidden" name="_gotcha" style="display:none !important">
+									<!-- checkbox handle -->
+									<input type="hidden" name="subscribe" value="no">
+									<!-- radio button handle -->
+									<label for="Yes">
+										Yes
+										<input type="radio" name="interest" value="Yes" checked>
+									</label>
+									
+									<label for="No">
+										NO
+									<input type="radio" name="interest" value="No">
+									</label>
+									<label for="No">
+										I don't know
+									<input type="radio" name="interest" value="idk">
+										</label>
+									<!-- checkbox handle -->
+									
+								</div>
+								<div class="col-md-12" style="margin-top: 30px;">
+									<label for="subscribe">
+										<input type="checkbox" name="subscribe" value="yes" checked>
+										Receive future offering
+									</label>
+									<br>
+									<button type="submit" class="btn finbtn btn-block" style="max-width:280px;">Send</button>
+								</div>
+								
+							</div>
+							
+							<div class="col-md-6 resterms">
+								<h5>Terms: </h5>
+								<ul>
+									<li>5% of all MLB earnings as a player.</li>
+									<li>Term 25 Years.</li>
+									<li>MLB and some International Leagues Included.</li>
+									<li>Does not include Minor League Pay.</li>
+									<li>Does not include marketing and endorsement deals.</li>
+								</ul>
+								<p><a href="#">Have a question?</a></p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			
+				
+			</form>
+			</div>
+			
+			<div class="discl">
+				<p>Finlete must first qualify the Yerry Rodriguez, LLC offering with Federal regulators, before investment into this Regulation A deal can occur. Prior to doing so, Finlete is “testing the waters” to gauge market demand from potential investors for an Offering under Regulation A. No money or other consideration is being solicited, and if sent in response, it will not be accepted. Offers to buy securities cannot be accepted, and no part of the purchase price can be received, until an offering circular on Form 1-A is qualified. Any offer can be withdrawn or revoked at any time before notice of its acceptance is given after the qualification date of the offering circular. No sales of securities will be made or commitment to purchase accepted until qualification of the offering statement by the Securities and Exchange Commission and approval of any other required government or regulatory agency. An indication of interest made by a prospective investor is non-binding and involves no obligation or commitment of any kind. No offer of securities will be made without a qualified offering circular registration statement.</p>
+			</div>
+		</div>
+	</section>
+
 
 
 	<!--=================== Footer  area ================================== -->
@@ -183,6 +385,26 @@
 
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script>
+		
+	$(function() {
+		$("#price-range").slider({
+			min: 0, 
+			max: 300, 
+			values: [0],
+			slide: function(event, ui)
+				{$("#Investment").val(ui.values);}
+			});
+			// + " - " + $("#price-range").slider("values", 1) 
+			$("#Investment").val($("#price-range").slider("values", 0));
+  
+	});
+	
+
+	</script>
+	<script type="text/javascript" src="js/calc-slide.js"></script>
 
 	<!-- Start of HubSpot Embed Code -->
 	<!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/22238366.js"></script> -->

@@ -29,6 +29,9 @@ header#transHeader .btn.finbtn2:hover {
     border-color: #fff;
     color: #2B445C;
 }
+p{
+    font-weight: 400;
+}
 .EarlyAccess h1 {
     text-align: left;
     margin-bottom: 40px;
@@ -236,6 +239,14 @@ h3.titlesection {
 .btn.style2:hover{
     color: #2B445C;
 }
+.btn.style3 {
+    background: #fff;
+    color: #5A5A5A;
+    border-color: #5A5A5A;
+}
+.btn.style3:hover{
+    color: #5A5A5A;
+}
 .investor-average .btn + .btn {
     margin-top: 20px;
     margin-left: 0px;
@@ -288,6 +299,157 @@ section.userprofile {
 }
 section.uservideo {
     padding-top: 50px;
+}
+.resultCalc .result-col{
+    width: 100%;
+}
+.resultCalc .result-col ul li p {
+    float: right;
+}
+.section.Calculator .resultCalc .result-col ul li {
+    border-bottom: 1px solid #D9D9D8;
+    padding-bottom: 8px;
+}
+.section.Calculator .resultCalc .result-col ul li p {
+    float: right;
+    color: #44A647;
+    font-weight: 700;
+}
+.section.Calculator .resultCalc .result-col ul li span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #787878;
+}
+.ui-widget.ui-widget-content {
+    background: none;
+    border-radius: 22px;
+    border: none;
+}
+.priceslider-cover {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 396px;
+}
+body .ui-state-default, 
+body .ui-state-focus, 
+body .ui-widget-content .ui-state-default,
+body .ui-widget-content .ui-state-focus, 
+body .ui-widget-header .ui-state-default, 
+body .ui-widget-header .ui-state-focus, 
+body .ui-widget-header .ui-state-hover {
+    border: 2px solid #059C69 !important; 
+    background: #fff !important;
+    font-weight: 400 !important;
+    color: #fff !important;
+    width: 27px !important;
+    height: 27px !important;
+    cursor: ew-resize !important;
+    outline: 0 !important;
+    z-index: 9;
+    border-radius: 100%;
+    top: -8px;
+    margin-left: -2px;
+   
+}
+.ui-widget.ui-widget-content::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#D9D9D9;
+    border-radius: 22px;
+}
+.priceslider-cover .filler {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    border-radius: 22px;
+    background: #059C69;
+    opacity: 0.7;
+}
+h3.titlecalc {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 135%;
+    color: #404040;
+}
+.resultCalc h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #404040;
+}
+.textcalc {
+    padding:40px 0 0;
+}
+.textcalc h3{
+    font-weight: 700;
+}
+.section .calcbtn p {
+    color: #404040;
+    font-size: 14px;
+}
+.Calc2 input#Earnings {
+    background-color: #F0F0F0;
+    border: 1px solid #D9D9D9;
+}
+.Calc2 .calculateit input, .Calc2 .calculateit select{
+    text-align: left;
+}
+.resterms {
+    background: #2B445C;
+    border-radius: 8px;
+    color: #fff;
+    padding: 20px;
+}
+.resterms h5 {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.resterms a{
+    color: #fff;
+    text-decoration: underline;
+}
+.resterms li{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+section.reserverform {
+    background: #F6F7F8;
+}
+.discl {
+    border-top: 1px solid #BBBBBB;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+section.Calculator.Calc2 {
+    background: #fff;
+}
+
+section.reserverform input[type="text"], 
+section.reserverform input[type="email"] {
+    padding: 12px 16px;
+    width: 100%;
+    height: 53px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.reserverform label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #404040;
 }
 @media screen and (min-width:1600px) {
     section.section.process {
