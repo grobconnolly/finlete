@@ -193,6 +193,7 @@
 
 	<!-- BLC “What If” Calculator -->
 	<section class="section Calculator Calc2">
+		
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-6">
@@ -231,12 +232,12 @@
 						<h4>Results</h4>
 						<div class="invest result-col">
 							<ul>
-								<!-- <li><span>Your Investment</span><p id="Investment2" class="comma">$0</p></li> -->
+								<li><span>Your Investment</span><p id="Investment2" class="comma">$0</p></li>
 								<li><span>Share Price</span><p id="SharePrice">0.0</p></li>
 								<li><span>Shares</span><p id="Shares2">0 Shares</p></li>
-								<!-- <li><span>Potential Career Earnings</span><p id="Earnings2" class="comma">$0</p></li> -->
+								<li><span>Potential Career Earnings</span><p id="Earnings2" class="comma">$0</p></li>
 								<li><span>% of Future Earnings</span><p id="PercentageofEarnings2">0%</p></li>
-								<li><span>My Potential Payout *</span><p id="Payout" class="comma">$0</p></li>
+								<li><span>My Potential Payout *</span><p id="Payout2" class="comma">$0</p></li>
 							</ul>
 						</div>
 						
@@ -385,25 +386,8 @@
 
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="js/jquery-ui.js"></script>
-	<script>
-		
-	$(function() {
-		$("#price-range").slider({
-			min: 0, 
-			max: 300, 
-			values: [0],
-			slide: function(event, ui)
-				{$("#Investment").val(ui.values);}
-			});
-			// + " - " + $("#price-range").slider("values", 1) 
-			$("#Investment").val($("#price-range").slider("values", 0));
-  
-	});
 	
-
-	</script>
 	<script type="text/javascript" src="js/calc-slide.js"></script>
 
 	<!-- Start of HubSpot Embed Code -->
