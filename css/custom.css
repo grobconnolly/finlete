@@ -1,6 +1,5 @@
 /*=========== general=====================*/
 
-
 body,html{
     font-family: 'Inter', sans-serif;
     overflow-x:hidden; 
@@ -761,6 +760,10 @@ text-overflow: ellipsis;
   width: 56px;
   height: 56px;
   border-radius: 100px
+}
+.table.table-home .user,
+.table.table-home td p{
+   filter: blur(6px);
 }
 .table.table-home .finbtn2 {
     font-size: 18px;
