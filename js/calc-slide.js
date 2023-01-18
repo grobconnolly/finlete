@@ -19,15 +19,17 @@ $(document).ready(function() {
         //step: 7,
         slide: function(event, ui) {
             update(1,ui.value); //changed
-            $(".filler").width(ui.value * incrementWidthM + "%");
-            $(".tooltipslider").css('left', ui.value * incrementWidthM + "%");	
-            
         }
     }).slider("pips", {
+      
         rest: "label",
         step:50,
         prefix: "$",
-        suffix: "M"
+        suffix: "M",
+    }).slider("float", {
+      slide: function(event, ui) {
+        update(1,ui.value); //changed
+    }
     });
     //Added, set initial value.
     $("#Earnings").val(0);
@@ -39,6 +41,7 @@ $(document).ready(function() {
 
     //changed. now with parameter
     function update(slider,val) {
+      $(".filler").width(val * incrementWidthM + "%");
       //changed. Now, directly take value from ui.value. if not set (initial, will use current value.)
       var $PotentialCareerEarnings = slider == 1?val:$("#Earnings").val();
       var $total = $PotentialCareerEarnings*$1M;
