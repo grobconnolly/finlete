@@ -311,7 +311,7 @@
 
 				<div class="col-md-6">
 
-					<form action="https://getform.io/f/aa40f720-f3cd-4513-89a4-cbdb833e635f" method="POST">
+					<form action="https://hooks.airtable.com/workflows/v1/genericWebhook/appDBJeeUzsOdwUm1/wflz2QMMezrvmCfKs/wtr7tqcSjE6mW12Vh" method="POST">
 						<div class="row">
 							<!-- group 1 -->
 							<div class="form-group">
@@ -319,7 +319,7 @@
 									<input type="text" name="name" placeholder="First Name" required>
 								</div>
 								<div class="col-md-6">
-									<input type="text" name="lastname" placeholder="Last Name">
+									<input type="text" name="lastname" placeholder="Last Name" required>
 								</div>
 							</div>
 							<!-- group 2 -->
@@ -351,22 +351,22 @@
 									<p>You don’t need to be an accredited investor to participate in this indication of
 										interest.</p>
 									<!-- add hidden Honeypot input to prevent spams -->
-									<input type="hidden" name="_gotcha" style="display:none !important">
+									<input type="hidden" name="investor-type" style="display:none !important">
 									<!-- checkbox handle -->
-									<input type="hidden" name="subscribe" value="no">
+									<input type="hidden" name="hidden" value="no" required>
 									<!-- radio button handle -->
-									<label for="Yes">
+									<label for="Accredited">
 										Yes
-										<input type="radio" name="interest" value="Yes" checked>
+										<input type="radio" name="investor-type" value="Accredited">
 									</label>
 
-									<label for="No">
-										NO
-										<input type="radio" name="interest" value="No">
+									<label for="Non-Accredited">
+										No
+										<input type="radio" name="investor-type" value="Non-Accredited">
 									</label>
-									<label for="No">
+									<label for="IDK">
 										I don't know
-										<input type="radio" name="interest" value="idk">
+										<input type="radio" name="investor-type" value="IDK">
 									</label>
 									<!-- checkbox handle -->
 
