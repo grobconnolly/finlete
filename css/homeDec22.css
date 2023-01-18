@@ -395,6 +395,7 @@ h3.titlecalc {
 .section .calcbtn p {
     color: #404040;
     font-size: 14px;
+    margin-bottom: 30px;
 }
 .Calc2 input#Earnings {
     background-color: #F0F0F0;
