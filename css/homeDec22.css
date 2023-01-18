@@ -302,6 +302,7 @@ section.uservideo {
 }
 .resultCalc .result-col{
     width: 100%;
+    max-width: none;
 }
 .resultCalc .result-col ul li p {
     float: right;
@@ -330,7 +331,6 @@ section.uservideo {
     position: relative;
     display: inline-block;
     width: 100%;
-    max-width: 396px;
 }
 body .ui-state-default, 
 body .ui-state-focus, 
@@ -387,7 +387,7 @@ h3.titlecalc {
     color: #404040;
 }
 .textcalc {
-    padding:40px 0 0;
+    padding:0px 0 40px;
 }
 .textcalc h3{
     font-weight: 700;
@@ -423,9 +423,7 @@ h3.titlecalc {
     line-height: 160%;
     color: #FFFFFF;
 }
-section.reserverform {
-    background: #F6F7F8;
-}
+
 .discl {
     border-top: 1px solid #BBBBBB;
     padding-top: 40px;
@@ -433,8 +431,11 @@ section.reserverform {
 }
 section.Calculator.Calc2 {
     background: #fff;
+    padding-top: 40px;
 }
-
+button#nextstep.error {
+    display: none;
+}
 section.reserverform input[type="text"], 
 section.reserverform input[type="email"] {
     padding: 12px 16px;
@@ -450,6 +451,12 @@ section.reserverform input[type="email"] {
     font-size: 18px;
     line-height: 160%;
     color: #404040;
+}
+.nextstep{
+    padding-top: 50px;
+}
+section.reserverform h3{
+    font-weight: 700;
 }
 @media screen and (min-width:1600px) {
     section.section.process {
@@ -527,6 +534,7 @@ header#generalHeader{
 }
 
 @media screen and (max-width:767px) {
+
     .EarlyAccess {
         padding-top: 450px;
         padding-bottom: 40px;
@@ -602,6 +610,15 @@ body .result {
 }
 .notify br {
     display: none;
+}
+section.userprofile .finbtn.style3 {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+section.reserverform h3 {
+    font-size: 24px;
 }
 
 }
