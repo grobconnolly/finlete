@@ -20,6 +20,8 @@ $(document).ready(function() {
         slide: function(event, ui) {
             update(1,ui.value); //changed
             $(".filler").width(ui.value * incrementWidthM + "%");
+            $(".tooltipslider").css('left', ui.value * incrementWidthM + "%");	
+            
         }
     }).slider("pips", {
         rest: "label",
@@ -40,6 +42,9 @@ $(document).ready(function() {
       //changed. Now, directly take value from ui.value. if not set (initial, will use current value.)
       var $PotentialCareerEarnings = slider == 1?val:$("#Earnings").val();
       var $total = $PotentialCareerEarnings*$1M;
+
+      $(".tooltipslider").html("<i></i> "+$PotentialCareerEarnings + "M");
+      
 
       $( "#Earnings-label" ).text("$"+ $total);
       $( "#Earnings" ).val($total);
