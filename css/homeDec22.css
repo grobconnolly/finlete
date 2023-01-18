@@ -617,8 +617,11 @@ section.userprofile .finbtn.style3 {
     display: block;
     margin: 0 auto;
 }
-section.reserverform h3 {
+section.reserverform h3,h3.titlesection {
     font-size: 24px;
+}
+section.TableAccess {
+    display: none;
 }
 
 }
