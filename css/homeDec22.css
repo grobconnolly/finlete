@@ -366,7 +366,7 @@ body .ui-widget-header .ui-state-hover {
 .priceslider-cover .filler {
     content: '';
     position: absolute;
-    height: 100%;
+    height: 11px;
     left: 0;
     top: 0;
     z-index: 0;
@@ -466,7 +466,9 @@ section.reserverform h3{
 }
 
 @media screen and (min-width:767px) {
-    
+    .resultCalc {
+        padding-left: 40px;
+    }
 .quickform form ._error {
     display:block;
     position:absolute;
@@ -625,3 +627,19 @@ section.TableAccess {
 }
 
 }
+
+#prefix-suffix-slider .ui-slider-label {
+    margin-left: -1.75em; 
+  }
+body .ui-slider-pips [class*=ui-slider-pip-selected] {
+    font-weight: 400;
+    color: #44A647;
+}
+  /* We also use a media query so the pips do not crowd-over each other
+      when we get to a small screen size */
+                      
+  @media screen and (max-width: 1040px) {
+      #prefix-suffix-slider .ui-slider-pip:nth-of-type(2n+1) .ui-slider-label {
+          display: none; 
+      } 
+  }

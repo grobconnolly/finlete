@@ -1,8 +1,8 @@
-var incrementWidthM = 100/(350);
+var incrementWidthM = 100/(300);
 var SharePrice = "9";
 var ratio = "0.05";
 var ratiobased = "100000";
-var $1M = 1000000;
+var $1M =10000000;
 
 
 $(document).ready(function() {
@@ -13,13 +13,19 @@ $(document).ready(function() {
     $("#price-range").slider({
         animate: true,
         value:1,
-        min: 1,
-        max: 350,
+        min: 0,
+        max: 300,
+        // step:30,
         //step: 7,
         slide: function(event, ui) {
             update(1,ui.value); //changed
             $(".filler").width(ui.value * incrementWidthM + "%");
         }
+    }).slider("pips", {
+        rest: "label",
+        step:50,
+        prefix: "$",
+        suffix: "M"
     });
     //Added, set initial value.
     $("#Earnings").val(0);
@@ -27,14 +33,7 @@ $(document).ready(function() {
     
     update();
     
-}).each(function() {
-    var opt = $(this).data().uiSlider.options;
-    var vals = (opt.max - opt.min) / 1000;
-    for (var i = 0; i <= vals; i++) {
-        var el = $('<label class="value-label">'+(i+1)+'TB</label>').css('left', 'calc('+(i/vals*100)+'% - 10px)');
-        $(this).append(el);
-    }
-});
+})
 
     //changed. now with parameter
     function update(slider,val) {
@@ -47,7 +46,7 @@ $(document).ready(function() {
         
       
         var Investment =$('#Investment').val().replace(/,/g, "");
-        var PotentialCareerEarnings = $('#Earnings').val().replace(/,/g, "");
+        var $PotentialCareerEarnings = $('#Earnings').val().replace(/,/g, "");
     
           if($('#Investment').is(":visible")){
             $('#Investment').addClass("error");
@@ -74,7 +73,7 @@ $(document).ready(function() {
           
           var $payout = ($total * PercentageofEarnings).toFixed(4);
 
-          var $payoutotal = ($payout) - (Investment);
+          var $payoutotal = parseFloat($payout - Investment);
 
           $('#Payout-label').text("$"+ $payoutotal);
 
