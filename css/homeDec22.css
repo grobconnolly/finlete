@@ -538,11 +538,16 @@ header#generalHeader{
 }
 
 @media screen and (max-width:767px) {
-
+    .home .videoText {
+        margin-top: -40px;
+    }
+    .home .videoText {
+        padding-bottom: 50px;
+    }
     .EarlyAccess {
-        padding-top: 450px;
-        padding-bottom: 40px;
-        background: #F6F7F8 !important;
+        padding-top: 50px;
+        padding-bottom: 150px;
+        /* background: #F6F7F8 !important; */
     }
     .heroMini {
         background-image: url('../images/home/mb/Hero-img.svg') !important;
@@ -550,14 +555,15 @@ header#generalHeader{
         width: 100%;
         top: 30px;
         right: 0;
+        display: none !important;
     }
     .EarlyAccess .notify{
-        color: #404040;
+        color: #ffff;
         font-size: 14px;
     }
     .EarlyAccess h1{
         font-size: 32px;
-        color: #172033;
+        color: #FFFFFF;
     }
     .quickform form input[type="text"] {
         height: 45px;
@@ -596,16 +602,19 @@ section.section.process h3,
     line-height: 35px;
     text-align: left;
 }
-section.section.process h5,
 .section.video p{
     font-size: 20px;
     text-align: left;
+}
+section.section.process h5{
+    font-size: 15px;
 }
 section.section.process .processtext p{
     font-size: 16px;
     text-align: left;
 }
-section.section.process p{
+section.section.process p,
+.section.video p{
     font-size: 14px;
     line-height: 19px;
 }
@@ -621,10 +630,11 @@ section.userprofile .finbtn.style3 {
     display: block;
     margin: 0 auto;
 }
-section.reserverform h3,h3.titlesection {
+section.reserverform h3,h3.titlesection,
+.section.video h3 {
     font-size: 24px;
 }
-section.TableAccess {
+body.user section.TableAccess {
     display: none;
 }
 

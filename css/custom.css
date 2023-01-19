@@ -965,6 +965,9 @@ text-overflow: ellipsis;
 .Joinwaitlist{
   text-align: center;
 }
+section.Joinwaitlist.darkjoin {
+  background: #1F2F42;
+}
 .Joinwaitlist #_form_5_ ._form_element input[type="text"] {
     display: block;
     width: 100%;
@@ -1008,6 +1011,10 @@ text-overflow: ellipsis;
   text-align: center;
   color: #404040;
   margin-bottom: 16px;
+}
+.Joinwaitlist.darkjoin h3,
+.Joinwaitlist.darkjoin p{
+  color: #fff;
 }
 .Joinwaitlist p{
   font-weight: 400;
@@ -1175,7 +1182,56 @@ section.footer-dark address{
 .Privacy h4{
   margin-top: 60px;
 }
-
+/*==================== News page   =====================*/
+section.news h3{
+  font-weight: bold;
+}
+section.news h3 a {
+  font-size: 24px;
+  line-height: 150%;
+  color: #44A647;
+  float: right;
+  font-weight:400;
+}
+.tagsLink, .tagsLink a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  color: #44A647;
+}
+section.news .newsimage {
+  background-repeat: no-repeat;
+  height: 256px;
+  background-size: cover;
+  background-color: #404040;
+  margin-bottom: 20px;
+}
+section.news h5{
+  font-weight: 700;
+    color: #404040;
+    text-transform: none;
+    margin-top: 14px;
+    height: 70px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+section.news p {
+  height: 85px;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+}
+section.news h1 {
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 80px;
+}
 /*============== Media queries ==================*/
 
 @media screen and (min-width: 768px) {
@@ -1320,13 +1376,13 @@ nav.mynav ul.navbar-nav {
   font-size: 26px;
 }
 .Joinwaitlist h3{
-  font-size: 36px;
+  font-size: 28px;
 }
 section.contact h1{
   text-align: left;
   font-size: 40px;
 }
-.theworld p,.EarlyAccess p{
+.theworld p,.EarlyAccess p,section.news h3 a{
   text-align: left;
   font-size: 18px;
 }
@@ -1336,7 +1392,7 @@ section.contact h1{
   margin-bottom: 60px;
 }
 .theworld2 .panel-title > a,
-section.contact h3{
+section.contact h3,section.news h3{
   font-size: 24px;
 }
 .top-bar .logo{
@@ -1368,7 +1424,7 @@ body .navbar-toggle .icon-bar {
 }
 .table.table-home td {
     display: inline-block;
-    padding: 15px;
+    padding: 12px;
 }
 .table.table-home tr th + td {
     width: 100%;
@@ -1379,13 +1435,20 @@ body .navbar-toggle .icon-bar {
 }
 .table.table-home .finbtn2 {
     font-size: 12px;
-    padding: 8px 16px;
+    padding: 8px 14px;
 }
 .table.table-home td, .table.table-home td p, .table.table-home th{
   font-size: 12px;
 }
 .table.table-home td{
   border:none;
+  width: 62px;
+}
+.TableAccess .nav-tabs > li > a,
+.TableAccess .nav-tabs > li.active > a, 
+.TableAccess .nav-tabs > li.active > a:hover, 
+.TableAccess .nav-tabs > li.active > a:focus{
+  border-radius: 0;;
 }
 .table.table-home tr {
     border-bottom: 1px solid #D9D9D9;
@@ -1416,6 +1479,12 @@ section.contact .contact-text {
 }
 body .result {
   padding:40px 15px;
+}
+#inThenewshome .row .col-md-4 {
+  display: none;
+}
+#inThenewshome .row .col-md-4:first-of-type {
+  display: block;
 }
 
 }

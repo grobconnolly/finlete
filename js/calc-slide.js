@@ -21,7 +21,6 @@ $(document).ready(function() {
             update(1,ui.value); //changed
         }
     }).slider("pips", {
-      
         rest: "label",
         step:50,
         prefix: "$",
