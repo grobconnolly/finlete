@@ -150,6 +150,18 @@ section.section.process {
     padding-top:400px;
     padding-bottom:400px;
 }
+.home .TableAccess,.home section.process {
+    background-color: #F6F7F8;
+}
+.home section.video {
+    padding: 0;
+}
+.home .TableAccess {
+    padding-bottom: 0;
+}
+.home .section.Calculator{
+    padding-top: 0;
+}
 section.section.process h3{
     font-weight: 700;
     font-size: 44px;
