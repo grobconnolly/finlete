@@ -1113,6 +1113,7 @@ section.footerNew {
 }
 section.meetleteGen.footer-dark {
   background: #1F2F42;
+  border-top: 1px solid #fff;
 }
 section.footerNew h4,.teaminNew h4{
     font-weight: bold;
