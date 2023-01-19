@@ -1105,7 +1105,21 @@ section.contact  textarea.form-control {
   max-width: 300px;
   margin-top: 30px;
 }
-
+.usersocial a {
+  display: inline-block;
+  margin: 20px 30px;
+  width: 80px;
+}
+.user-success h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  text-align: center;
+  color: #404040;
+}
+.usersocial {
+  padding: 50px 0;
+}
 /*=========== footer v1 =========== */
 section.footerNew {
     padding: 64px 0;
@@ -1274,7 +1288,7 @@ section.news h1 {
     text-align: center;
     min-width: 66px;
   }
-  .name h1,.theworld h3 {
+  .name h1,.theworld h3,.user-success h1 {
     font-size: 28px;
   }
   .name span,.invest-share h3 span,.more-about p,
