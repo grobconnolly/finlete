@@ -343,26 +343,26 @@
                     <form id="interest-form-1" onsubmit="formSubmit()" action="https://hooks.airtable.com/workflows/v1/genericWebhook/appDBJeeUzsOdwUm1/wfl77eKaCKN1S772H/wtren1wrY9tEXVHBh" method="POST">
 
                         <div class="row">
+                            <input type="hidden" id="investment" name="investment" placeholder="investment" value="">
                             <!-- group 1 -->
                             <div class="form-group">
                                 <div class="col-md-6">
-                                    <input type="text" name="name" placeholder="First Name" required>
-                                    <input type="hidden" id="investment" name="investment" placeholder="investment" value="">
+                                    <input id="fname" type="text" name="name" placeholder="First Name" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" name="lastname" placeholder="Last Name" required>
+                                    <input id="lname" type="text" name="lastname" placeholder="Last Name" required>
                                 </div>
                             </div>
                             <!-- group 2 -->
                             <div class="form-group">
                                 <div class="col-md-12">
-                                    <input type="email" name="email" placeholder="Email address" required>
+                                    <input id="email" type="email" name="email" placeholder="Email address" required>
                                 </div>
                             </div>
                             <!-- group 3 -->
                             <div class="form-group">
                                 <div class="col-md-12">
-                                    <input type="text" name="city" placeholder="City" required>
+                                    <input id="city" type="text" name="city" placeholder="City" required>
                                 </div>
 
                             </div>
@@ -435,7 +435,7 @@
                                     <p>You don’t need to be an accredited investor to participate in this indication of interest.
                                     </p>
                                     <!-- add hidden Honeypot input to prevent spams -->
-                                    <input type="hidden" name="investor-type" style="display:none !important">
+                                    <input type="hidden" name="investor-type-hidden" style="display:none !important">
                                     <!-- checkbox handle -->
                                     <input type="hidden" name="hidden" value="no" required>
                                     <!-- radio button handle -->
@@ -457,7 +457,7 @@
                                 </div>
                                 <div class="col-md-12" style="margin-top: 30px;">
                                     <label for="subscribe">
-										<input type="checkbox" name="subscribe" value="yes" checked>
+										<input id="mailinglist" type="checkbox" name="subscribe" value="yes" checked>
 										Receive future offering
 									</label>
                                     <br>
@@ -564,27 +564,38 @@
     <script>
         function formSubmit() {
             event.preventDefault();
-            $(this).serialize();
-            const form = $("#interest-form-1");
-            const data = form.serialize();
-
-            fetch('https://hooks.airtable.com/workflows/v1/genericWebhook/appDBJeeUzsOdwUm1/wfl77eKaCKN1S772H/wtren1wrY9tEXVHBh', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-                    },
-                    body: data
-                })
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data);
-                    if (data.success) {
-                        console.log("succes");
-                        window.location.href = "thankyou3.html";
-                    } else {
-                        alert("Error submitting form");
-                    }
-                });
+            const data = {
+                    "records": [
+                        {
+                            "fields": {
+                                "Investment": parseInt($("#investment").val().replace(/\,/g,'')),
+                                "First Name": $("#fname").val(),
+                                "Last Name": $("#lname").val(),
+                                "Investor": $('input[name="investor-type"]:checked').val(),
+                                "Athlete": "Yerry Rodriguez",
+                                "Email": $("#email").val(),
+                                "City": $("#city").val(),
+                                "State": $("#state").val(),
+                                "Mailing List": $("#mailinglist").is(":checked")? "yes": "no"
+                            }
+                        }
+                    ]
+                };
+            fetch("https://api.airtable.com/v0/appDBJeeUzsOdwUm1/Testing%20The%20Waters", {
+                method: "POST",
+                headers: {
+                    Authorization: "Bearer pat63yaxetM26Qztk.8b4888c528deab06e1957813131e0cbdf84177b05b0dabb95590e91314fff12d",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            }).then(response => response.json())
+            .then(data => {
+                if (data.records !== undefined) {
+                    window.location.href = "thankyou3.html";
+                } else {
+                    alert("Error submitting form");
+                }
+            });
 
         }
     </script>
