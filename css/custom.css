@@ -517,10 +517,14 @@ text-overflow: ellipsis;
 }
 
 /*====================== Recent Investors ============================*/
+div#investors-details {
+  display: flex;
+  overflow: auto;
+}
 .investorinfo {
   text-align: center;
   display: inline-block;
-  min-width: 160px;
+  width: 180px;
   height: 260px;
   background: #FFFFFF;
   border: 1px solid #D9D9D9;
@@ -535,6 +539,7 @@ text-overflow: ellipsis;
 }
 .investorinfo.new .btn{
     margin-top: 10px;
+    font-size: 14px;
 }
 .investorinfo:last-of-type{
     margin-right: 0;
@@ -568,14 +573,14 @@ text-overflow: ellipsis;
 }
 .investorinfo .desig {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 160%;
   color: #5A5A5A;
 }
 .investorinfo .investPrice {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 160%;
   color: #059C69;
 }
@@ -1342,7 +1347,38 @@ section.news h1 {
   max-width: 190px;
 }
 .invest.result-col{
-  max-width: 115px;
+  max-width: none;
+  width: 100%;
+}
+.result-col ul li span{
+  font-size: 12px;
+}
+.result .invest.result-col {
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid #D9D9D9;
+  margin-bottom: 20px;
+}
+.result-col ul{
+  display: flex;
+}
+
+.result-col ul li {
+  width: 33%;
+  padding: 0 10px;
+}
+.Earnings.result-col ul {
+  display: block;
+  width: 100%;
+}
+.Earnings.result-col {
+  padding-left: 10px;
+  width: 100%;
+  max-width: none;
+}
+.Earnings.result-col ul li {
+  width: 100%;
+  padding-left: 0;
 }
 .socialBot {
   text-align: left;
