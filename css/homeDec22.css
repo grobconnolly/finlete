@@ -469,6 +469,9 @@ section.reserverform select{
   border-radius: 4px;
   margin-bottom: 20px;
 }
+section.reserverform button {
+  margin: 15px 0;
+}
 .reserverform label {
   font-weight: 400;
   font-size: 18px;
