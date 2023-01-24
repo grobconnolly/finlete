@@ -90,7 +90,7 @@ function update(slider, val) {
 
   $("#Investment-label").text("$" + Investment);
 
-  var Shares = (Investment / SharePrice).toFixed(4);
+  var Shares = (Investment / SharePrice).toFixed(2);
 
   $("#Shares-label").text(Shares + " Shares");
 
