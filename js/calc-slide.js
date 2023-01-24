@@ -2,7 +2,7 @@ var incrementWidthM = 100 / 300;
 var SharePrice = "9";
 var ratio = "0.05";
 var ratiobased = "100000";
-var $1M = 10000000;
+var $1M = 1000000;
 let value;
 
 $(document).ready(function () {
@@ -100,9 +100,14 @@ function update(slider, val) {
 
   var $payout = ($total * PercentageofEarnings).toFixed(4);
 
-  var $payoutotal = parseFloat($payout - Investment);
+  // var $payoutotal = parseFloat($payout - Investment);
 
-  $("#Payout-label").text("$" + $payoutotal);
+  $("#Payout-label").text("$" + parseFloat($payout));
+  if (parseFloat($payout) < parseFloat(Investment)) {
+    $("#Payout-label").css("color", "#ff0000");
+  } else {
+    $("#Payout-label").css("color", "#44a647");
+  }
 
   //$('#slider a').html('<label>'+$Investment+'</label>');
   $.fn.digits = function () {
