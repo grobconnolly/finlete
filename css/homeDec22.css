@@ -678,7 +678,7 @@ section.section.RecentInvestors {
   .notify br {
     display: none;
   }
-  section.userprofile .finbtn.style3 {
+  section.userprofile #BackOffer {
     width: 100%;
     max-width: 400px;
     display: block;
@@ -692,7 +692,45 @@ section.section.RecentInvestors {
   body.user section.TableAccess {
     display: none;
   }
- 
+  section.Calculator.Calc2 {
+    padding-top: 10px;
+}
+.textcalc h3 {
+  font-size: 24px;
+}
+section.Calculator.Calc2 .textcalc p {
+  font-size: 18px;
+  color: #404040;
+}
+h3.titlecalc{
+  font-size: 26px;
+}
+.section .calcbtn p{
+  font-weight: 500;
+}
+.resultCalc {
+  margin-top: 40px;
+}
+.resultCalc h4,
+.section.Calculator .resultCalc .result-col ul li span,
+.section.Calculator .resultCalc .result-col ul li p,.discl p{
+  font-size: 14px;
+}
+.resultCalc .result-col ul, .resultCalc .result-col ul li {
+  width: 100%;
+  padding: 0;
+  display: block;
+}
+section.reserverform button {
+  max-width: none !important;
+  width: 100%;
+}
+section.reserverform input[type="text"], section.reserverform input[type="email"], section.reserverform select {
+  padding: 5px 16px;
+  height: 38px;
+  margin-bottom: 15px;
+}
+
 }
 
 #prefix-suffix-slider .ui-slider-label {
