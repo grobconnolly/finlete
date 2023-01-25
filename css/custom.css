@@ -131,6 +131,9 @@ body .breadcrumb a {
   line-height: 160%;
   color: #404040;
 }
+.breadcrumb > li.disabled {
+  color: #BBBBBB;
+}
 h3.titlesection{
   font-weight: 700;
   font-size: 44px;
