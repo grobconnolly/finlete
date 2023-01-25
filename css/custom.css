@@ -100,6 +100,7 @@ img{
     -ms-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
+    border-radius: 4px;
 }
 .btn.finbtn2:hover{
    color: #fff;
@@ -119,7 +120,7 @@ section.meetleteGen {
     padding: 100px 0;
 }
 body .breadcrumb {
-  padding: 40px 0px 25px;
+  padding: 50px 0px 25px;
   background: #fff;
   margin: 0;
   clear: both;
@@ -337,7 +338,7 @@ top: 12px;
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 2px solid #059C69;
+  /* border: 2px solid #059C69; */
   border-radius: 100px;
   position: absolute;
   left: 0;
@@ -346,6 +347,20 @@ top: 12px;
   position: relative;
   padding-left: 90px;
   margin-bottom: 20px;
+  margin-top: 20px;
+}
+.sumarryuser {
+  padding-top: 30px;
+}
+.sumarryuser .compare-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #44A647;
+  margin: 0;
+}
+.sumarryuser .table {
+  margin-bottom: 10px;
 }
 .tag {
   margin-top: 20px;
@@ -356,9 +371,7 @@ top: 12px;
   font-size: 14px;
   line-height: 160%;
   color: #404040;
-  padding: 5px;
-  height: 30px;
-  background: #FFFFFF;
+  padding: 2px 8px;
   border: 1px solid #404040;
   border-radius: 4px;
   margin:1px;
@@ -529,7 +542,7 @@ div#investors-details {
   background: #FFFFFF;
   border: 1px solid #D9D9D9;
   border-radius: 4px;
-  padding: 20px;
+  padding: 20px 10px;
   vertical-align: top;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -592,12 +605,13 @@ div#investors-details {
 }
 .seeall {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 140%;
-  color: #059C69;
+  color: #44A647;
   float: right;
-  padding-right: 30px;
-  padding-bottom: 15px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 .seeall:hover{
     color: #059C69;
@@ -660,7 +674,7 @@ div#investors-details {
   line-height: 160%;
   color: #9A9A9A;
 }
-.result-col ul li p{
+.section.Calculator .result-col li p{
   font-weight: 400;
   font-size: 28px;
   line-height: 140%;
@@ -673,12 +687,15 @@ div#investors-details {
   color: #404040;
   margin-bottom: 20px;
 }
-.calculateit label{
+.calculateit label {
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
   color: #404040;
   display: block;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 13px;
 }
 .calculateit input ,.calculateit select{
   padding: 12px 16px 12px 30px;
@@ -693,6 +710,8 @@ div#investors-details {
   background-repeat: no-repeat;
   background-position: 10px center;
   background-size: auto;
+  font-size: 18px;
+    color: #404040;
 }
 .calculateit select{
   text-align:left;
@@ -720,9 +739,7 @@ div#investors-details {
 .calcbtn {
   padding-top: 40px;
 }
-.calcbtn .btn{
-  font-size: 24px;
-}
+
 .calculateit {
   padding-top: 24px;
 }
@@ -1287,11 +1304,13 @@ section.news h1 {
       margin: 10px 0;
       font-size: 18px;
   }
-  .userp{
-    padding-top: 40px;
-  }
-  .tag span,.details p,.details h4 {
+
+  .details p,.details h4 {
     font-size: 10px;
+  }
+  .name .tag span{
+    font-size: 12px;
+    margin: 5px 1px;
   }
   .details ul li {
     padding: 8px 10px;
@@ -1309,7 +1328,7 @@ section.news h1 {
     font-size: 14px;
   }
   .invest-share h3,.more-about h4{
-    font-size: 18px;
+    font-size: 24px;
   }
   .theworld2 .panel-title > a::before, .theworld2 .panel-title > a::after{
     top: 25px;
@@ -1321,9 +1340,12 @@ section.news h1 {
   font-size: 24px;
   }
   body .seeall {
-    padding: 10px;
+    padding:6px 0 0 0;
     float: right;
-    font-size: 12px;
+    font-size: 18px;
+    width: 61px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .Investors-profiles{
   display: flex;
@@ -1332,6 +1354,9 @@ section.news h1 {
 .investorinfo{
   flex-shrink: 0;
 }
+.investorinfo .investPrice{
+  font-size: 18px;
+}
 .section {
   padding: 40px 0;
 }
@@ -1339,7 +1364,7 @@ section.news h1 {
   font-size: 12px;
 }
 .calcbtn {
-  padding-bottom: 40px;
+  padding-bottom:0px;
   padding-top: 0;
 }
 .result-col{
@@ -1542,6 +1567,22 @@ body .result {
 }
 #inThenewshome .row .col-md-4:first-of-type {
   display: block;
+}
+body .breadcrumb{
+  padding: 30px 0px 25px;
+}
+.calculateit input, .calculateit select {
+  padding: 5px 10px 5px 30px;
+  font-size: 14px;
+  height: 38px;
+}
+.calcbtn button.btn {
+  font-size: 18px;
+  padding: 8px 16px;
+}
+.section.Calculator .result-col li p{
+  font-size: 16px;
+  margin-top: 5px;
 }
 
 }

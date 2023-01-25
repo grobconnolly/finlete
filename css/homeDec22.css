@@ -201,20 +201,16 @@ span.icon img {
   background: #f6f7f8;
 }
 .disclaimer {
-  padding-top: 10px;
+  padding-top: 20px;
+}
+.section.Calculator .disclaimer p{
+ color: #404040;
 }
 h3.titlesection {
   font-size: 40px;
 }
 section.video2{
   padding-top: 0;
-}
-.section.Calculator p,
-.calculateit label {
-  font-size: 16px;
-}
-.calculateit label {
-  font-size: 14px;
 }
 .Earnings.result-col {
   padding-left: 10px;
@@ -273,10 +269,13 @@ section.video2{
 }
 .investor-average .invest-term {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 150%;
   color: #404040;
-  padding: 10px 0;
+  padding: 10px 0 10px 10px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 12px;
 }
 .investor-average {
   text-align: center;
@@ -313,9 +312,11 @@ section.video2{
   padding: 10px;
   color: #404040;
 }
-section.userprofile {
-  border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 50px;
+
+body hr{
+  border-top: 1px solid #d9d9d9;
+  margin-top: 60px;
+  margin-bottom: 0;
 }
 section.uservideo {
   padding-top: 50px;
@@ -498,9 +499,13 @@ section.reserverform h3 {
   display: inline-block;
   padding: 10px;
 }
-.share-social p.link {
+.share-social .link {
   background: #fff;
 }
+section.section.RecentInvestors {
+  padding-top: 40px;
+}
+
 @media screen and (min-width: 1600px) {
   section.section.process {
     padding-top: 600px;
@@ -578,6 +583,12 @@ section.reserverform h3 {
 }
 
 @media screen and (max-width: 767px) {
+  .investor-average{
+    margin-top: 25px;
+  }
+  .investor-average .invest-term{
+    font-size: 11px;
+  }
   .home .videoText {
     margin-top: -40px;
   }
@@ -678,9 +689,7 @@ section.reserverform h3 {
   body.user section.TableAccess {
     display: none;
   }
-  .section.Calculator p, .calculateit label {
-    font-size: 12px;
-}
+ 
 }
 
 #prefix-suffix-slider .ui-slider-label {
