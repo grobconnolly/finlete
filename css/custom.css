@@ -1274,7 +1274,7 @@ section.news h1 {
   font-weight: 800;
   margin-bottom: 80px;
 }
-section.news news-col{
+section.news .news-col{
   margin-bottom: 30px;
 }
 /*============== Media queries ==================*/
