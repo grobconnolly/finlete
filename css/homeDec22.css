@@ -336,10 +336,11 @@ section.uservideo {
   float: right;
   color: #44a647;
   font-weight: 700;
+  font-size: 18px;
 }
 .section.Calculator .resultCalc .result-col ul li span {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 160%;
   color: #787878;
 }
@@ -505,7 +506,9 @@ section.reserverform h3 {
 section.section.RecentInvestors {
   padding-top: 40px;
 }
-
+#BackOffer {
+  margin-top: 30px;
+}
 @media screen and (min-width: 1600px) {
   section.section.process {
     padding-top: 600px;
