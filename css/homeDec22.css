@@ -730,7 +730,12 @@ section.reserverform input[type="text"], section.reserverform input[type="email"
   height: 38px;
   margin-bottom: 15px;
 }
-
+.home .section.Calculator{
+  padding-top: 40px;
+}
+.home .TableAccess{
+  padding-bottom: 40px;
+}
 
 }
 
