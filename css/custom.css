@@ -1585,5 +1585,9 @@ body .breadcrumb{
   font-size: 16px;
   margin-top: 5px;
 }
+section#sucess-user {
+  padding-bottom: 100px;
+}
+
 
 }
