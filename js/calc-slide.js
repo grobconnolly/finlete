@@ -92,7 +92,7 @@ function update(slider, val) {
 
   var Shares = (Investment / SharePrice).toFixed(2);
 
-  $("#Shares-label").text(Shares + " Shares");
+  $("#Shares-label").text(Shares);
 
   var PercentageofEarnings = (resultratio * Shares).toFixed(5);
 

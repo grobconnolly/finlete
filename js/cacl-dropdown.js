@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
             var Earnings2 = $('#Earnings2').text("$"+Earnings);
           
             var Shares = (Investment / SharePrice).toFixed(2);
-            var Shares2 = $('#Shares2').text(Shares+" Shares");
+            var Shares2 = $('#Shares2').text(Shares);
           
             var PercentageofEarnings = (resultratio*Shares).toFixed(5);
             var PercentageofEarnings2 = $('#PercentageofEarnings2').text(PercentageofEarnings+"%");
