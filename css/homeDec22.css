@@ -513,7 +513,9 @@ section.AllInvestors .investorinfo.new {
   width: 100%;
 }
 
-section.RecentInvestors .investorinfo:nth-child(4){
+section .investorinfo:nth-child(4),
+section .investorinfo:nth-child(8),
+section .investorinfo:nth-child(12){
   margin-right: 0;
 }
 section.RecentInvestors  .investorinfo.new {
