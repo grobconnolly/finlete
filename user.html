@@ -298,20 +298,22 @@
       <div class="row">
         <h3 class="titlesection">
           Recent Investors
-          <a href="#" title="See All Investors" class="seeall">See All Investors</a>
+          <a href="all-investor.html" title="See All Investors" class="seeall">See All Investors</a>
         </h3>
 
-        <div class="col-md-12 col-xs-12 Investors-profiles" id="investors-details">
+        <div class="col-md-9 col-xs-12 Investors-profiles" id="investors-details">
 
-          <!-- loop -->
+        </div>
+        <div class="col-md-3 col-xs-12 text-right">
+         <!-- Add new -->
           <div class="investorinfo new">
             <div class="profileImg"><img src="images/6.png" alt="" /></div>
             <p class="name">You?</p>
             <p class="desig">Your name could be here.</p>
             <a type="button" href="user-interested.html" class="btn finbtn style2">I’m Interested</a>
           </div>
-          <!-- end loop -->
         </div>
+         <!-- ./Add new -->
 
       </div>
     </div>
@@ -646,12 +648,12 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
 
 
-  <script>
+  <script  type="text/javascript">
     $("#socialShare").click(function () { 
       $(".share-social").toggleClass('visible')
     });
   </script>
-  <script>
+  <script  type="text/javascript">
     $(document).ready(function () {
       console.log("Airtable");
       fetch(
@@ -685,7 +687,7 @@
     });
     function addinvestorCard(data) {
       let dt = luxon.DateTime.fromJSDate(new Date(data.createdTime));
-      return `<div class="investorinfo">
+      return `<div class="investorinfo" style="display:none">
           <div class="profileName">${data.fields["First Name"].substr(
         0,
         1
@@ -701,10 +703,20 @@
         </div>`;
     }
   </script>
-
+<script type="text/javascript">  
+  $(document).ready(function () {
+    setTimeout(function() { 
+      $("#investors-details .investorinfo").slice(0,4).css('display','inline-block');
+    }, 2000);
+  });  
+     
+    
+  
+   
+  </script>
  
   <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/22238366.js"></script>
+  <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/22238366.js"></script> -->
   <!-- End of HubSpot Embed Code -->
 </body>
 

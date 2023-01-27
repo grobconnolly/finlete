@@ -533,10 +533,7 @@ text-overflow: ellipsis;
 }
 
 /*====================== Recent Investors ============================*/
-div#investors-details {
-  display: flex;
-  overflow: auto;
-}
+
 .investorinfo {
   text-align: center;
   display: inline-block;
@@ -596,7 +593,7 @@ div#investors-details {
 .investorinfo .investPrice {
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 160%;
   color: #059C69;
 }
