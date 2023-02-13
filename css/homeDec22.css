@@ -518,6 +518,16 @@ section.RecentInvestors .investorinfo:nth-child(12){
 .investorsall-text {
   padding-bottom: 30px;
 }
+section.RecentInvestors .investorinfo {
+  display: none;
+}
+section.RecentInvestors .investorinfo:nth-child(1),
+section.RecentInvestors .investorinfo:nth-child(2),
+section.RecentInvestors .investorinfo:nth-child(3),
+section.RecentInvestors .investorinfo:nth-child(4){
+  display:inline-block;
+}
+
 @media screen and (min-width: 1600px) {
   section.section.process {
     padding-top: 600px;
