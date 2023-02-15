@@ -18,7 +18,7 @@
   <!--=================== custom style css ================================== -->
   <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
   <link rel="stylesheet" type="text/css" href="css/custom.css?ver=1.14" />
-  <link rel="stylesheet" href="css/homeDec22.css?1.12" />
+  <link rel="stylesheet" href="css/homeDec22.css?1.13" />
 
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -306,7 +306,7 @@
         </div>
         <div class="col-md-3 col-xs-12 text-right">
          <!-- Add new -->
-          <div class="investorinfo new">
+          <div class="investorinfo new" style="width: 100%;">
             <div class="profileImg"><img src="images/6.png" alt="" /></div>
             <p class="name">You?</p>
             <p class="desig">Your name could be here.</p>
@@ -684,10 +684,10 @@
           $("#shares_pledged").html(`${parseInt(sum / 9)}`);
           $("#investors_count").html(`${data.records.length}`);
         });
-    });
+    
     function addinvestorCard(data) {
       let dt = luxon.DateTime.fromJSDate(new Date(data.createdTime));
-      return `<div class="investorinfo" style="display:none">
+      return `<div class="investorinfo">
           <div class="profileName">${data.fields["First Name"].substr(
         0,
         1
@@ -702,20 +702,12 @@
           <p class="timecount">${dt.toRelative()}</p>
         </div>`;
     }
+  });
 </script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/22238366.js"></script>
+<!-- End of HubSpot Embed Code -->
 
-<!-- show invetor column count-->
-<script type="text/javascript">  
-  $(document).ready(function () {
-    setTimeout(function() { 
-      $("#investors-details .investorinfo").slice(0,4).css('display','inline-block');
-    }, 2000);
-  });  
-</script>
- 
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/22238366.js"></script>
-  <!-- End of HubSpot Embed Code -->
 </body>
 
 </html>
