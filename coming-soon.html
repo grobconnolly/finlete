@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Join the Finlete Waitlist!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="Rob" content="Finlete-theme">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/waitlist.css" rel="stylesheet">
+	
+	<!--=================== custom style css ================================== -->
+ 
+
+	<style>
+		section#coming-join {
+		  height: 100vh;
+		  padding: 20vh 0;
+	  }
+	  form#comingsoonForm p {
+		  text-align: left;
+		  padding-left: 2px;
+		  font-size: 16px;
+		  font-weight: 700;
+	  }
+	   form#comingsoonForm   .form-group {
+		  display: flex;
+		  justify-content: space-around;
+	  }
+		form#comingsoonForm {
+		  width: 100%;
+		  max-width: 550px;
+		  display: block;
+		  padding-top: 30px;
+		  padding-bottom: 30px;
+	  }
+	  form #email {
+		  padding: 12px 16px;
+		  height: 53px;
+		  border: 1px solid #9A9A9A;
+		  width: 66%;
+		  border-radius: 4px;
+		  font-size: 18px;
+		  color: #404040;
+	  }
+	  form input[type="submit"]{
+		  font-weight: 500;
+		  font-size: 18px;
+		  line-height: 150%;
+		  color: #FFFFFF;
+		  padding: 10px 16px;
+		  background: #44A647;
+		  border-radius: 0;
+		  border: 1.6px solid #44A647;
+		  border-color: #44A647;
+		  box-shadow: none;
+		  -webkit-transition: all .25s ease-in-out;
+		  -moz-transition: all .25s ease-in-out;
+		  -ms-transition: all .25s ease-in-out;
+		  -o-transition: all .25s ease-in-out;
+		  transition: all .25s ease-in-out;
+		  border-radius: 4px;
+		  width: 180px;
+	  }
+	  p.intro {
+		  margin-top: 30px;
+		  font-weight: 400;
+		  font-size: 16px;
+		  line-height: 160%;
+		  color: #404040;
+	  }
+	  .socialBot a {
+		margin: 10px 10px 0 0;
+		}
+	  .alert-success {
+		  padding: 5px;
+	  }
+	  .socialBot {
+		margin-top: 30px;
+		}
+		#myVideo {
+		position: absolute;
+		right: -70%;
+		width: auto;
+		height: 100vh;
+		top: 0;
+		}
+		.baseball {
+		overflow: hidden;
+		}
+		.baseball::after {
+			display: none;
+		}
+	  
+	  @media screen and (max-width: 767px) {
+		form#comingsoonForm .form-group {
+		  display: block;
+	  }
+	  form #email,
+	  form input[type="submit"]{
+		width: 100%;
+		margin-bottom: 10px;
+	  }
+	  }
+	  </style>
+</head>
+
+
+<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 waitlistform">
+
+				 <!-- <p><a href="index.html" title="" id="goback">Go back!</a></p> -->
+				 <h1>Coming soon.</h1>
+				 <p>Welcome to Finlete - Empowering Athletes and Fans: Join us as we revolutionize the world of sports,
+					creating exciting opportunities for athletes and their passionate supporters! </p>
+					<form action="" id="comingsoonForm" onsubmit="formSubmit()">
+						<p>Get notified when we launch.</p>
+						<div class="form-group">
+						  <input type="text" name="email" id="email" required placeholder="Your email address">
+						  <input type="submit" value="Subscribe">
+						</div>
+						<div id="successMessage" style="display: none;" class="alert-success">Form submitted successfully!</div>
+					  </form>
+					<p class="notify" style="text-align: left;">Limited space available. We never share your info!</p>
+					<div class="socialBot">
+						<a href="https://facebook.com/finletepro" title=""><img src="images/fb.svg" alt="Facebook"></a>
+						<a href="https://www.instagram.com/finlete" title=""><img src="images/instagram.svg" alt="instagram"></a>
+						<a href="https://twitter.com/finlete" title=""><img src="images/twitter.svg" alt="twitter"></a>
+						<a href="mailto:rob@finlete.com?subject=question about finlete" title=""><img src="images/mail.svg" alt="mail"></a>
+					  
+					  </div>
+			</div> 		
+		</div>
+
+		<div class="baseball" style="background-image: url('images/sl2.jpeg');">
+			<video autoplay muted loop id="myVideo">
+				<source src="images/coming-soon/professional-basebal.mp4" type="video/mp4">
+			  </video>
+		</div>	
+
+</div>
+
+
+<!-- Start of HubSpot Embed Code -->
+<!-- End of HubSpot Embed Code -->
+
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+  <script>
+    function formSubmit() {
+        event.preventDefault();
+        const data = {
+            "records": [
+                {
+                    "fields": {
+                        "Email": $("#email").val(),
+                    }
+                }
+            ]
+        };
+        
+        fetch("https://api.airtable.com/v0/appZhDg25NgDgyVOJ/Table%201?maxRecords=3&view=Coming%20soon%20Finlete", {
+            method: "POST",
+            headers: {
+                Authorization: "Bearer patr5M18efJfQvWJB.a53a72efa40b2cc026f0929c31d7806ea27da193cd48e4feed34e510f4a4751a",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        }).then(response => response.json())
+            .then(data => {
+                if (data.records !== undefined) {
+                   // Show the success message
+                   document.getElementById("successMessage").style.display = "block";
+                   document.getElementById("comingsoonForm").reset();
+                } else {
+                    alert("Error submitting form");
+                }
+            });
+
+    }
+</script>
+</body>
+
+</html>
