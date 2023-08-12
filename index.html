@@ -81,14 +81,16 @@ p.intro {
     color: #404040;
 }
 .socialBot a {
-    margin: 0 10px;
+  margin: 0 10px;
+  display: inline-block;
+  padding: 15px 10px;
 }
 .alert-success {
     padding: 5px;
 }
 .socialBot {
   position: fixed;
-  bottom: 50px;
+  bottom: 40px;
   text-align: center;
   width: 100%;
   left: 0;
@@ -103,6 +105,21 @@ video#myVideo {
 @media screen and (max-width: 767px) {
   form#comingsoonForm .form-group {
     display: block;
+}
+body .socialBot {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+}
+body .socialBot a {
+  margin: 0 4px;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  min-width: 35px;
 }
 form #email,
 form input[type="submit"]{
