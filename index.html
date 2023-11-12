@@ -16,6 +16,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 	<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="./css/waitlist.css" rel="stylesheet">
 	<!--=================== custom style css ================================== -->
 
 
@@ -24,7 +25,7 @@
 <style>
   section#coming-join {
     height: 100vh;
-    padding: 20vh 0;
+    padding: 15vh 0 0;
 }
 form#comingsoonForm p {
     text-align: left;
@@ -41,7 +42,7 @@ form#comingsoonForm p {
     max-width: 550px;
     display: block;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 30px;
 }
 form #email {
@@ -80,28 +81,51 @@ p.intro {
     color: #404040;
 }
 .socialBot a {
-    margin: 0 10px;
+  margin: 0 10px;
+  display: inline-block;
+  padding: 15px 10px;
 }
 .alert-success {
     padding: 5px;
 }
 .socialBot {
   position: fixed;
-  bottom: 50px;
+  bottom: 40px;
   text-align: center;
   width: 100%;
   left: 0;
 }
 video#myVideo {
-    position: fixed;
+    position: fixed ;
     top: 0;
     left: 0;
     height: 100vh;
     width: auto;
 }
 @media screen and (max-width: 767px) {
+    body video#myVideo {
+        left: -150%;
+    }
+    body section#coming-join {
+    padding: 12vh 0 0;
+    }
   form#comingsoonForm .form-group {
     display: block;
+}
+body .socialBot {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+}
+body .socialBot a {
+  margin: 0 4px;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  min-width: 35px;
 }
 form #email,
 form input[type="submit"]{
@@ -112,6 +136,7 @@ form input[type="submit"]{
 </style>
 
 <body class="">
+      
 
 	<!--=================== top nav ================================== -->
 
@@ -119,8 +144,8 @@ form input[type="submit"]{
 	
 	<!--  Join the waitlist -->
 	<section class="section" id="coming-join">
-        <video autoplay muted loop id="myVideo">
-            <source src="images/coming-soon/professional-basebal.mp4" type="video/mp4">
+        <video autoplay loop muted playsinline id="myVideo">
+            <source src="images/bball-video.mov" type="video/mp4">
           </video>
 		<div class="container">
 
@@ -199,6 +224,7 @@ form input[type="submit"]{
 
     }
 </script>
+<script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "siq20d5d5bb1de61a9fe1f2279742d98a0b7edaa4249621d17076957648bbf3e5fc", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zohopublic.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
 </body>
 
 </html>
