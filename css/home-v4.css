@@ -53,6 +53,12 @@ body h2{
     font-weight: 700;
     line-height: 120%; /* 67.2px */
 }
+body h4{
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%; /* 37.8px */
+}
 body p{
     font-size: 24px;
     font-style: normal;
@@ -325,6 +331,31 @@ section.Diagram .swiper-button-prev {
 body .container-fluid {
     max-width:1600px;
 }
+/* Discover */
+section.Discover {
+    background: #1E1E1E;
+    padding: 150px 0;
+}
+section.Discover .disc {
+    border-radius: 12px;
+    border: 1px solid #404040;
+    background: #1E1E1E;
+    position: relative;
+    min-height: 460px;
+    overflow: hidden;
+    margin-top: 45px;
+}
+.textDisc {
+    padding: 64px;
+    max-width: 550px;
+}
+.disc h4{
+    color:#FAFAFA;
+}
+.disc p{
+    color:#E7E5E4;
+}
+
 @media screen and (min-width:1400px) {
     .container {
         width: 1320px;
