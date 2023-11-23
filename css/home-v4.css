@@ -238,10 +238,6 @@ body .btn.btn-primary:focus {
 img{
     max-width: 100%;
 }
-section{
-    clear: both;
-    padding:40px 0;
-}
 section.Hero {
     background-color: #1E1E1E;
 }
@@ -477,7 +473,7 @@ section.Team {
 }
 section.FAQ {
     background: #1e1e1e;
-    padding: 90px 0;
+    padding: 150px 0;
 }
 section.FAQ div#MTaccordion {
     max-width: 1050px;
@@ -543,6 +539,75 @@ h4.panel-title::after {
 }
 .panel.active h4.panel-title::after {
     background-image: url(../images/home-v4/remove.svg);
+}
+/* Join us on this incredible journey */
+section.incredible {
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+section.incredible::after{
+    position: absolute;
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #1E1E1E 1.74%, rgba(30, 30, 30, 0.00) 50.23%, #1E1E1E 97.75%);
+}
+/* Footer */
+section.footerNew {
+    background: #262626;
+    padding: 64px 0;
+}
+section.footerNew p,
+section.footerNew address{
+    text-align: left
+}
+section.footerNew ul{
+    padding: 0;
+}
+span.finlete-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 24px;
+}
+section.footerNew ul li{
+    display: inline-block;
+}
+section.footerNew ul li a,
+section.footerNew address {
+    font-weight: bold;
+    font-size: 18px;
+    line-height:29px;
+    color: #FAFAFA;
+    display: block;
+    padding: 10px 20px 10px 0;
+}
+section.footerNew ul li a:hover{
+  color: #44A647;
+}
+section.footerNew address {
+    font-weight: 400;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+section.footerNew .icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 8px;
+    background: #317836;
+    margin-left: 24px;
+}
+section.footerNew .socialBot {
+    padding-top: 50px;
+    text-align: right;
 }
 @media screen and (min-width:1440px) {
     .container {
