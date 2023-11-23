@@ -70,3 +70,15 @@ if ($('#MTaccordion').length) {
     });
 }
 
+$(document).ready(function() {
+    // Create a new Date object
+    var currentDate = new Date();
+
+    // Get the current year
+    var currentYear = currentDate.getFullYear();
+
+    // Set the current year to the span with id "year"
+    $("#dateYear").text(currentYear);
+
+    console.log(currentYear);
+});
