@@ -339,7 +339,7 @@ section.Discover {
 section.Discover .disc {
     border-radius: 12px;
     border: 1px solid #404040;
-    background: #1E1E1E;
+    background-color: #1E1E1E;
     position: relative;
     min-height: 460px;
     overflow: hidden;
@@ -349,11 +349,42 @@ section.Discover .disc {
     padding: 64px;
     max-width: 550px;
 }
+.bgDisc {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 100%;
+}
 .disc h4{
     color:#FAFAFA;
 }
 .disc p{
     color:#E7E5E4;
+}
+/* Features */
+div#Features {
+    margin-top: 150px;
+}
+.features {
+    border-radius: 12px;
+    border: 1px solid  #404040;
+    background: #262626;
+    padding: 24px;
+}
+.features h4,.features p{
+    font-size: 18px;
+}
+.features h4{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #FAFAFA;
+}
+.features p{
+    color: #E7E5E4;
 }
 
 @media screen and (min-width:1400px) {
