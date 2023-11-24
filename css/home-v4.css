@@ -71,7 +71,9 @@ body p{
 .btn svg {
     display: inline-block;
     vertical-align: middle;
-    height: 64px;
+}
+.incredible{
+    height: 48px;
     width: auto;
 }
 /*===========nav style=====================*/
