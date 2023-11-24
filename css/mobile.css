@@ -1,0 +1,221 @@
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+    background-image: url(../images/home-v4/Burger-menu.svg);
+}
+.navbar-default .navbar-toggle {
+    border: none;
+    background-image: url(../images/home-v4/Burger-menu.svg);
+    background-color: transparent;
+    width: 50px;
+    height: 40px;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    margin-right: 0;
+}
+nav.mynav .navbar-collapse {
+    padding: 0;
+    position: absolute;
+    background: #1e1e1e;
+    width: 110%;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 4%), 0px 2px 6px rgb(0 0 0 / 4%), 0px 0px 1px rgb(0 0 0 / 4%);
+    padding-bottom: 30px;
+    border: none;
+    top: 66px;
+    left: -15px;
+    right: auto;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+    display: none !important;
+}
+@media screen and (max-width:767px) {
+    .for-dt{
+        display: none !important;
+    }
+    section.Diagram,.sliderRow{
+        padding: 40px 0;
+    }
+    .top-bar .logo {
+        margin-top: 8px;
+    }
+    body h1 {
+        font-size: 32px;
+    }
+    body h2{
+        font-size: 26px;
+    }
+    body p{
+        font-size: 14px;
+    }    
+    nav.mynav ul.navbar-nav {
+        margin: 0;
+    }
+     nav.mynav ul.navbar-nav {
+        padding: 30px 0 0 0;
+    }
+    section.topBar {
+        padding: 12px 0px;
+    }
+    section.topBar .topLink {
+        padding: 0;
+    }
+    .topLink a {
+        font-size: 12px;
+        padding: 5px;
+    }
+    span.sm-circle {
+        width: 5px;
+        height: 5px;
+        background: #fff;
+        display: inline-block;
+        border-radius: 10px;
+        margin: 0;
+    }
+    .top-bar .topnavbar {
+        float: none;
+    }
+    nav.mynav ul.navbar-nav li a, 
+    nav.mynav ul.navbar-nav li a:hover, 
+     nav.mynav ul.navbar-nav li a {
+        color: #fafafa;
+        font-size: 20px;
+        padding: 20px 30px;
+        border-bottom: 1px solid #fafafa;
+
+    }
+    section.Hero .heroText {
+        padding: 48px 20px;
+    }
+    section.Hero p{
+        font-size: 18px;
+    }
+    body .btn, body .btn-default, body .btn.btn-primary, body .btn-group-lg > .btn {
+        padding: 12px 18px !important;
+        font-size: 18px !important;
+    }
+    section.Hero .btn-group-lg {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .btn-group-lg .btn+.btn {
+        margin-left: 10px;
+    }
+    .swiperControls {
+        margin-top: 24px;
+        text-align: right;
+        padding: 20px;
+    }
+    section.swiperSlider .swiper {
+        padding-top: 0;
+    }
+    .imagePlayer{
+        width: 286px;
+        height: 256px;
+    }
+    .slidin{
+        width: 286px;
+    }
+    section.Discover {
+        padding: 70px 0;
+    }
+    .textDisc {
+        padding: 24px;
+        max-width: 100%;
+    }
+    .disc h4 {
+        font-size: 24px;
+    }
+    .bgDisc {
+        position: relative;
+        width: 100%;
+        height: 370px;
+        background-position: center bottom;
+    background-size: contain;
+    }
+    section.Discover .disc{
+        background-image: none !important;
+    }
+    .slidin p {
+        font-size: 18px;
+    }
+    .features{
+        padding: 14px;
+    }
+    .features img {
+        width: 40px;
+    }
+    .features h4 {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .features p{
+        font-size: 12px;
+    }
+    section.Interested{
+        padding: 40px;
+    }
+    .Interested h2,section.Team h2,section.FAQ h2 {
+        font-size: 36px;
+    }
+    form#deckForm input {
+        padding: 12px 20px;
+    }
+    .team-member h4 {
+        font-size: 18px;
+    }
+    .team-member p{
+        font-size: 14px;
+    }
+    .team-member .member {
+        padding: 16px;
+    }
+    .teamText {
+        padding-bottom: 40px;
+    }
+    section.FAQ{
+        padding: 80px 0;
+    }
+    section.FAQ h4.panel-title {
+        font-size: 18px;
+    }
+    h4.panel-title::after{
+        background-size: 25px;
+    }
+    section.FAQ h4.panel-title a{
+        padding-left: 30px;
+    }
+    section.FAQ .panel-default > .panel-heading{
+        padding: 16px;
+        box-shadow: none;
+    }
+    section.FAQ .panel-default > .panel-heading + .panel-collapse > .panel-body{
+        padding-left: 30px;
+        box-shadow: none;
+    }
+    section.FAQ .panel-group .panel{
+        box-shadow: none;
+        background-color:#1e1e1e;
+    }
+    .btn svg {
+        width: auto;
+        height: 40px;
+    }
+    section.footerNew address {
+        padding: 0;
+        font-size: 14px;
+        padding-top: 24px;
+    }
+    section.footerNew .icon{
+        margin-left: 15px;
+    }
+    section.footerNew .icon:first-of-type {
+        margin-left: 0;
+    }
+    section.footerNew .socialBot {
+        text-align: center;
+    }
+    .ftLink {
+        border-bottom: 1px solid #525252;
+    }
+}

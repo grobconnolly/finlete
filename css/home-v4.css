@@ -71,6 +71,8 @@ body p{
 .btn svg {
     display: inline-block;
     vertical-align: middle;
+    height: 64px;
+    width: auto;
 }
 /*===========nav style=====================*/
 .top-bar {
@@ -341,6 +343,9 @@ section.Diagram .swiper-button-prev {
 body .container-fluid {
     max-width:1600px;
 }
+section{
+    clear: both;
+}
 /* Discover */
 section.Discover {
     background: #1E1E1E;
@@ -508,6 +513,8 @@ section.FAQ .panel-group .panel {
     margin-bottom: 0;
     border-radius: 0;
     border: none;
+    box-shadow: none;
+    background-color:#1e1e1e;
 }
 section.FAQ .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border: none;
@@ -649,5 +656,11 @@ section.footerNew .socialBot {
 @media screen and (min-width:980px) {
     .btn-group-lg .btn+.btn {
         margin-left: 30px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .for-mb{
+        display: none !important;
     }
 }
