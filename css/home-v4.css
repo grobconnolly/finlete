@@ -293,7 +293,7 @@ section.swiperSlider .swiper{
     padding-top: 50px;
 }
 .sliderRow {
-    padding-top: 90px;
+    padding-top: 0;
 }
 .diagramRow{
     padding-bottom: 90px;
