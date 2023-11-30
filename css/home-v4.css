@@ -649,7 +649,52 @@ section.footerNew .socialBot {
 .icon.dsc-icn{
     background-position:-320px 0;
 }
-
+/* Calendly widget*/
+.Calendlywidget {
+    border-radius: 16px;
+    background: #F5F5F5;
+    overflow: hidden;
+    padding: 45px;
+}
+.calendly-inline-widget {
+    height: 500px;
+    max-width: 380px;
+    width: 100%;
+    overflow-y: hidden;
+    display: inline-block;
+    margin-left: 40px;
+}
+.profileRob {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+.Calendlywidget  .ownerRob {
+    color: #1E1E1E;
+    font-family: 'Inter',sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.Calendlywidget .brandName {
+    color:#3B82F6;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%
+}
+.Calendlywidget  .timeCall {
+    color:  #737373;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.timeCall svg{
+    vertical-align: middle;
+}
 @media screen and (min-width:1440px) {
     .container {
         width: 1360px;

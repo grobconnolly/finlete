@@ -152,7 +152,34 @@
         font-size: 12px;
     }
     section.Interested{
-        padding: 40px;
+        padding: 40px 0;
+    }
+    .Calendlywidget {
+        padding: 20px;
+        margin-top: 24px;
+    }
+    .profileRob{
+        width: 100%;
+    }
+    .profileRob img {
+        display: inline-block;
+        width: 40px;
+    }
+    .Calendlywidget .brandName {
+        font-size: 18px;
+    }
+    .Calendlywidget .ownerRob{
+        display: inline;
+        font-size: 14px;
+    }
+    .Calendlywidget .brandName {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .calendly-inline-widget{
+        max-width: 100%;
+        margin: 0;
     }
     .Interested h2,section.Team h2,section.FAQ h2 {
         font-size: 36px;
