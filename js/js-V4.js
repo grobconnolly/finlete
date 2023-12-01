@@ -49,7 +49,7 @@ var swiper = new Swiper(".swiper", {
 
 // FAQ accord
 
-if ($('#MTaccordion').length) {
+if ($('#MTaccordion,#MTaccordionA,#MTaccordionB').length) {
 
     var $panels = $('.panel');
 

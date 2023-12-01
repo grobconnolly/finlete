@@ -695,6 +695,83 @@ section.footerNew .socialBot {
 .timeCall svg{
     vertical-align: middle;
 }
+/* FAQ page */
+section.FaqHero {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.overlayBanner {
+    opacity: 0.8;
+    background: var(--colors-neutral-200, #262626);
+    mix-blend-mode: multiply;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+section.FaqHero h1 {
+    color: #FAFAFA;
+}
+section.FaqHero .heroText{
+    z-index: 1;
+}
+section.optionsFaq {
+    background: #1E1E1E;
+    padding: 90px 0 40px;
+}
+section.optionsFaq div.MTaccordion {
+    max-width: 100% !important;
+    padding-top: 40px;
+}
+.tab-content > .tab-pane {
+    color: #fafafa;
+}
+section.optionsFaq .nav-tabs > li {
+    width: 33.33%;
+}
+section.optionsFaq  .nav-tabs {
+    overflow: hidden;
+    background: #D9D9D9;
+    border-bottom: none;
+    border-radius: 16px;
+}
+section.optionsFaq  .nav-tabs > li > a {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    color: #9A9A9A;
+    padding: 16px 24px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+}
+section.optionsFaq  .nav-tabs > li.active > a, 
+section.optionsFaq  .nav-tabs > li.active > a:hover, 
+section.optionsFaq  .nav-tabs > li.active > a:focus {
+    color: #fafafa;
+    cursor: default;
+    background-color: #44A647;
+    border: none;
+}
+section.faqCta {
+    background: #1E1E1E;
+    padding-bottom: 90px;
+}
+.coverCta {
+    border-radius: 24px;
+    background: #262626;
+    color: #fff;
+    padding: 64px;
+    text-align: center;
+}
+.coverCta .btn{
+    margin-top: 30px;
+}
 @media screen and (min-width:1440px) {
     .container {
         width: 1360px;
@@ -703,6 +780,9 @@ section.footerNew .socialBot {
 @media screen and (min-width:980px) {
     .btn-group-lg .btn+.btn {
         margin-left: 30px;
+    }
+    section.FaqHero h1 {
+        font-size: 80px;
     }
 }
 
