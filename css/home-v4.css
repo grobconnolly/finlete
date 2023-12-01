@@ -772,6 +772,73 @@ section.faqCta {
 .coverCta .btn{
     margin-top: 30px;
 }
+/* Players page */
+section.detailPlayer {
+    background: #1E1E1E;
+    padding: 64px 0;
+}
+h3.player-title {
+    color: #FFF;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.badge-wrap .badge {
+    background: #404040;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    color: #FAFAFA;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+div#Playerslide {
+    padding-top: 35px;
+}
+div#Playerslide .carousel-inner {
+    border-radius: 8px;
+    overflow: hidden;
+}
+div#Playerslide .item img {
+    width: 100%;
+    border-radius: 8px;
+}
+.overlaySlide {
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.00) 0%, rgba(30, 30, 30, 0.80) 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    background-color: #FAFAFA;
+    border: 1px solid #FAFAFA;
+    border-radius: 12px;
+    opacity: 0.3;
+    margin: 0 2px;
+}
+.carousel-indicators li.active{
+    opacity: 1;
+}
+.content-slider {
+    color: #fff;
+    padding: 32px 0;
+    font-size: 18px;
+}
+.content-slider p{
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    font-family: 'Inter',sans-serif;
+}
 @media screen and (min-width:1440px) {
     .container {
         width: 1360px;
