@@ -914,6 +914,60 @@ h5.sc-title {
     -webkit-line-clamp: 2;
     align-self: stretch;
 }
+.rightPlayer aside {
+    border-radius: 8px;
+    background: var(--colors-neutral-200, #262626);
+    box-shadow: 0px 14px 18.2px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    padding: 24px;
+}
+aside p {
+color: #E7E5E4;
+font-family: 'Inter',sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 22.4px */
+}
+aside p span {
+    color: #FAFAFA;
+    font-size: 18px;
+    font-weight: 700;
+}
+aside h5 {
+    color:  #FAFAFA;
+    font-family: 'Inter',sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+.percentagePlayer {
+    height: 16px;
+    border-radius: 69.798px;
+    background: var(--primary-10, #F7FBF7);
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.perk {
+    border-radius: 8.376px;
+    border: 0.698px solid var(--colors-neutral-300, #404040);
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+aside .btn {
+    margin-bottom: 12px;
+}
+.seprator {
+    height: 0.698px;
+    margin: 24px 0;
+    background: #404040;
+}
+aside h6 {
+    font-weight: 700;
+}
 @media screen and (min-width:1440px) {
     .container {
         width: 1360px;
