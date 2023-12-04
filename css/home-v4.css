@@ -1036,19 +1036,19 @@ body section.prelaunchHero .icon {
     width: 50px;
     height: 50px;
 }
-.icon.tw-icn {
+section.prelaunchHero .icon.tw-icn {
     background-position: -78px 0px;
 }
-.icon.yt-icn {
+section.prelaunchHero .icon.yt-icn {
     background-position: -158px 0;
 }
-.icon.lkn-icn {
+section.prelaunchHero .icon.lkn-icn {
     background-position: -238px 0;
 }
-.icon.fb-icn {
+section.prelaunchHero .icon.fb-icn {
     background-position: -320px 0;
 }
-.icon.dsc-icn {
+section.prelaunchHero .icon.dsc-icn {
     background-position: -400px 0;
 }
 /* End */
