@@ -295,5 +295,7 @@ section.optionsFaq div.MTaccordion {
 .coverCta p{
     font-size: 18px;
 }
-
+section.incredible{
+    background-image: url(../images/home-v4/mobile/incBG-mb.png) !important;
+}
 }
