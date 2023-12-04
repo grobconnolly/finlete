@@ -298,4 +298,30 @@ section.optionsFaq div.MTaccordion {
 section.incredible{
     background-image: url(../images/home-v4/mobile/incBG-mb.png) !important;
 }
+section.prelaunchHero input[type="submit"], section.prelaunchHero input#email {
+    border-radius: 8px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 12px;
+    background-image: none !important;
+    padding: 12px 24px;
+    height: 54px;
+    font-size: 18px;
+}
+section.prelaunchHero {
+    background-image: none !important;
+}
+section.prelaunchHero .heroText {
+    padding: 48px 24px;
+}
+form#comingsoonForm {
+    padding-top: 24px;
+}
+body section.prelaunchHero .icon{
+    margin: 0 1px;
+}
+section.prelaunchHero .socialBot{
+    text-align: center;
+}
+
 }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+	<title>Join Pre-Launch Finlete: Future Earning Contracts with Athletes! </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Buy Future Earning Contracts Directly from Athletes and Share in Their Journey and Success.">
+	<meta name="Rob" content="Finlete-theme">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+	<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="swiperlib/swiper-bundle.min.css" rel="stylesheet">
+    <!--=================== custom style css ================================== -->
+    <link href="css/home-v4.css?version=1.2" rel="stylesheet">
+    <link rel="stylesheet" href="css/mobile.css?version=1.2">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+
+<body class="Pre-Launch-v4">
+  
+
+    <header>
+        <section class="top-bar" id="">
+                
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a href="/" title="Finlete">
+                            <img src="images/finlete-hat.png" alt="Finlete" width="175">
+                        </a>
+                    </div>
+                 
+                    <div class="topnavbar">
+
+                        <nav class="navbar navbar-default mynav">
+
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            
+                            <div id="navbar" class="navbar-collapse collapse ">
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <a href="mailto:support@finlete.com">Email Us </a></li>
+                                    <li>
+                                        <a href="https://calendly.com/finlete/finlete-website-meeting?hide_event_type_details=1&month=2023-11" target="_blank">Schedule a Meeting </a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:16192897787" style="color: #44A647;">+1-619-289-7787</a>
+                                    </li>
+                                </ul>
+                                                                
+                            </div>
+                            <!--/.nav-collapse -->
+
+                        </nav>
+
+                    </div>
+                    
+                                
+                </div>  <!-- container end -->
+
+        </section>
+	</header>
+
+    <!-- Hero -->
+    <section class="prelaunchHero" style="background-image: url(./images/home-v4/Right-container.png);">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="heroText col-md-6">
+                    <span class="coming-title">COMING SOONG</span>
+                    <h2 class="welcom-title">Welcome to Finlete</h2>
+                    <p>Empowering Athletes and Fans: Join us as we revolutionize the world of sports, creating exciting opportunities for athletes and their passionate supporters! Get notified when we launch.</p>
+                    <form action="" id="comingsoonForm" onsubmit="formSubmit()">
+                        <div class="form-group">
+                          <input type="text" name="email" id="email" required placeholder="Enter your email address">
+                          <input type="submit" value="Notify Me!" style="background-image: url(./images/home-v4/campaign.svg);">
+                        </div>
+                        <div id="successMessage" style="display: none;" class="alert-success" >Form submitted successfully!</div>
+                    </form>
+                    <div class="socialBot">
+    					<a href="https://www.instagram.com/finlete" title="" class="icon ins-icn"></a>
+    					<a href="https://twitter.com/finleteme" title="" class="icon tw-icn"></a>
+                        <a href="#" title="" class="icon yt-icn"></a>
+                        <a href="#" title="" class="icon lkn-icn"></a>
+                        <a href="https://www.facebook.com/finlete" title="" class="icon fb-icn"></a>
+                        <a href="#" title="" class="icon dsc-icn"></a>
+    				
+					</div>
+                </div>
+                
+            </div>
+           
+        </div>
+        <!-- <div class="overlayBanner"></div>  -->
+    </section>
+
+    
+
+    <!-- Footer -->
+    <!-- script -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <script>
+        function formSubmit() {
+            event.preventDefault();
+            const data = {
+                "records": [
+                    {
+                        "fields": {
+                            "Email": $("#email").val(),
+                        }
+                    }
+                ]
+            };
+            
+            fetch("https://api.airtable.com/v0/appZhDg25NgDgyVOJ/Table%201?maxRecords=3&view=Coming%20soon%20Finlete", {
+                method: "POST",
+                headers: {
+                    Authorization: "Bearer patr5M18efJfQvWJB.a53a72efa40b2cc026f0929c31d7806ea27da193cd48e4feed34e510f4a4751a",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            }).then(response => response.json())
+                .then(data => {
+                    if (data.records !== undefined) {
+                       // Show the success message
+                       document.getElementById("successMessage").style.display = "block";
+                       document.getElementById("comingsoonForm").reset();
+                    } else {
+                        alert("Error submitting form");
+                    }
+                });
+    
+        }
+    </script>
+  
+
+</body>
+
+</html>

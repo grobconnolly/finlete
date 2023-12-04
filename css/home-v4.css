@@ -466,6 +466,7 @@ section.Team {
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
+    min-height: 262px;
 }
 .team-member img {
     margin-bottom: 20px;
@@ -516,6 +517,7 @@ section.FAQ  .panel-default > .panel-heading {
     border: none;
     border-radius: 0;
     padding: 18px 24px;
+    border-bottom: 1px solid #525252;
 }
 section.FAQ .panel-group .panel {
     margin-bottom: 0;
@@ -619,7 +621,7 @@ section.footerNew address {
     padding-bottom: 10px;
     margin: 0;
 }
-section.footerNew .icon {
+body .icon {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -628,12 +630,12 @@ section.footerNew .icon {
     margin-left: 24px;
     background-image: url(../images/home-v4/Socmed-icons.svg);
 }
-section.footerNew .icon:hover{
+body .icon:hover{
     background-color: #44A647;
     opacity: 0.9;
 }
 
-section.footerNew .socialBot {
+body .socialBot {
     padding-top: 50px;
     text-align: right;
 }
@@ -968,6 +970,89 @@ aside .btn {
 aside h6 {
     font-weight: 700;
 }
+/* Pre launch */
+section.prelaunchHero {
+    background-color: #1E1E1E;
+    color: #fafafa;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+}
+span.coming-title {
+    color: #525252;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+form#comingsoonForm {
+    padding-top: 64px;
+    display: inline-block;
+}
+
+section.prelaunchHero input#email {
+    padding: 16px 24px;
+    background: #fff;
+    border: none;
+    color: #525252;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    height: 72px;
+    margin-top: -1px;
+    min-width: 300px;
+    outline: none;
+}
+section.prelaunchHero input#email:focus{
+    outline: none;
+    border: none;
+}
+section.prelaunchHero input[type="submit"] {
+    background-repeat: no-repeat;
+    background-color: #44A647;
+    padding: 16px 48px;
+    color: #FAFAFA;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    line-height: 150%;
+    margin-left: -4px;
+    background-position: 15px center;
+    padding-left: 70px;
+    height: 72px;
+    margin-top: -1px;
+}
+section.prelaunchHero .socialBot {
+    text-align: left;
+    padding-top: 160px;
+}
+body section.prelaunchHero .icon {
+    background-image: url(../images/home-v4/Socmed-icons-white.svg);
+    background-color: #262626;
+    width: 50px;
+    height: 50px;
+}
+.icon.tw-icn {
+    background-position: -78px 0px;
+}
+.icon.yt-icn {
+    background-position: -158px 0;
+}
+.icon.lkn-icn {
+    background-position: -238px 0;
+}
+.icon.fb-icn {
+    background-position: -320px 0;
+}
+.icon.dsc-icn {
+    background-position: -400px 0;
+}
+/* End */
+
 @media screen and (min-width:1440px) {
     .container {
         width: 1360px;
@@ -979,6 +1064,14 @@ aside h6 {
     }
     section.FaqHero h1 {
         font-size: 80px;
+    }
+    form#comingsoonForm .form-group {
+        overflow: hidden;
+        border-radius: 16px;
+        height: 70px;   
+        background: #fff;
+        border: none;
+    
     }
 }
 
