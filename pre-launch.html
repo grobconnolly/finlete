@@ -87,6 +87,7 @@
                           <input type="submit" value="Notify Me!" style="background-image: url(./images/home-v4/campaign.svg);">
                         </div>
                         <div id="successMessage" style="display: none;" class="alert-success" >Form submitted successfully!</div>
+                        <div id="failMessage" style="display: none;" class="alert-danger" >Error submitting form!</div>
                     </form>
                     <div class="socialBot">
     					<a href="https://www.instagram.com/finlete" title="" class="icon ins-icn"></a>
@@ -138,7 +139,7 @@
                        document.getElementById("successMessage").style.display = "block";
                        document.getElementById("comingsoonForm").reset();
                     } else {
-                        alert("Error submitting form");
+                        document.getElementById("failMessage").style.display = "block";
                     }
                 });
     
