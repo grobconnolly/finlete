@@ -974,10 +974,10 @@ aside h6 {
 section.prelaunchHero {
     background-color: #1E1E1E;
     color: #fafafa;
-    height: 100vh;
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: right bottom;
     background-size: auto;
+    min-height: 100vh;
 }
 span.coming-title {
     color: #525252;
