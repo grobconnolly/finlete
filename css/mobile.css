@@ -335,13 +335,17 @@ section.prelaunchHero .heroText {
     padding: 48px 24px;
 }
 form.comingsoonForm {
-    padding-top:40px;
+    padding-top:70px;
 }
 body section.prelaunchHero .icon{
     margin: 0 1px;
 }
 section.prelaunchHero .socialBot{
     text-align: center;
+}
+#_form_5_ ._error._above,#_form_5_ ._error._above {
+    bottom: auto;
+    top: -50px;
 }
 
 }
