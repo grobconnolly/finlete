@@ -1,33 +1,43 @@
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    body {
+        /* Common styles for the body at this screen size */
+    }
 
-@media screen and (max-width:1024px) {
     body h1 {
         font-size: 36px;
     }
-    body h2{
+
+    body h2 {
         font-size: 26px;
     }
-    body p{
+
+    body p {
         font-size: 14px;
-    }    
-    body .btn, body .btn-default, body .btn.btn-primary, body .btn-group-lg > .btn {
+    }
+
+    body .btn,
+    body .btn-default,
+    body .btn.btn-primary,
+    body .btn-group-lg > .btn {
         padding: 12px 18px !important;
         font-size: 18px !important;
     }
+
     section.Hero .btn-group-lg {
         margin-top: 24px;
         margin-bottom: 24px;
     }
+
     .btn-group-lg .btn+.btn {
         margin-left: 10px;
     }
-    .bgDisc{
-        background-position: center;
-        width: 50%;
-    }
-    .heroText {
+
+    body .heroText {
         padding: 40px;
     }
 }
+
+
 @media screen and (max-width:767px) {
     .for-dt{
         display: none !important;
@@ -115,25 +125,33 @@
     .slidin{
         width: 286px;
     }
+    section.Discover .disc{
+        flex-direction: column;
+    }
     section.Discover {
         padding: 70px 0;
     }
     .textDisc {
         padding: 24px;
         max-width: 100%;
+        padding-bottom: 80px;
     }
     .disc h4 {
         font-size: 24px;
     }
-    .bgDisc {
-        position: relative;
-        width: 100%;
-        height: 370px;
-        background-position: center bottom;
-    background-size: contain;
+    body section.Discover .disc{
+        height: auto;
+        background-position: bottom;
     }
-    section.Discover .disc{
-        background-image: none !important;
+    body .textDisc,body .bgDisc{
+        flex: 100%;
+    }
+    div#iphone1 {
+        margin-top: 0;
+        margin-bottom: -50px;
+    }
+    div#iphone2 {
+        margin-top: -50px;
     }
     .slidin p {
         font-size: 18px;
@@ -325,3 +343,4 @@ section.prelaunchHero .socialBot{
 }
 
 }
+

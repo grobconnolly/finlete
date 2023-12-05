@@ -369,21 +369,28 @@ section.Discover .disc {
     margin-top: 45px;
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
+    display: flex;
+    height: 465px;
 }
 .textDisc {
     padding: 64px;
     max-width: 550px;
+    flex: 45%;
+}
+div#iphone2 {
+   padding:10px;
+   flex: 50%;
+}
+div#iphone1 {
+    padding:10px;
+    flex: 50%;
 }
 .bgDisc {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right top;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 65%;
-    height: 100%;
+    position: relative;
+    flex: 55%;
+    display: flex;
+    justify-content: space-around;
 }
 .disc h4{
     color:#FAFAFA;
@@ -391,6 +398,15 @@ section.Discover .disc {
 .disc p{
     color:#E7E5E4;
 }
+
+/* #iphone2 {
+    position: absolute;
+    right: 0;
+    top: -110px;
+    height: 100%;
+    width: 290px;
+} */
+
 /* Features */
 div#Features {
     margin-top: 150px;
@@ -1051,6 +1067,26 @@ section.prelaunchHero .icon.fb-icn {
 section.prelaunchHero .icon.dsc-icn {
     background-position: -400px 0;
 }
+
+/* Thank you page */
+section.preThankyou {
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    color: #fff;
+}
+section.preThankyou .btn {
+    margin-top: 64px;
+}
+section.preThankyou .heroText {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 40px;
+}
+
 /* End */
 
 @media screen and (min-width:1440px) {
@@ -1071,8 +1107,11 @@ section.prelaunchHero .icon.dsc-icn {
         height: 70px;   
         background: #fff;
         border: none;
-    
     }
+    div#iphone2 {
+        margin-top: -212px;
+    }
+   
 }
 
 @media screen and (min-width:768px) {
