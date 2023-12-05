@@ -138,6 +138,10 @@
                        // Show the success message
                        document.getElementById("successMessage").style.display = "block";
                        document.getElementById("comingsoonForm").reset();
+                       // Redirect to pre-thankyou.html after a short delay (e.g., 1 seconds)
+                        setTimeout(function () {
+                            window.location.href = "pre-thankyou.html";
+                        }, 1000); // 1000 milliseconds (1 seconds) delay
                     } else {
                         document.getElementById("failMessage").style.display = "block";
                     }
