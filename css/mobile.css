@@ -316,6 +316,7 @@ section.optionsFaq div.MTaccordion {
 section.incredible{
     background-image: url(../images/home-v4/mobile/incBG-mb.png) !important;
 }
+
 section.prelaunchHero input[type="submit"],
 section.prelaunchHero button[type="submit"], 
 section.prelaunchHero input#email {
@@ -327,6 +328,7 @@ section.prelaunchHero input#email {
     padding: 12px 24px;
     height: 54px;
     font-size: 18px;
+    text-align: center;
 }
 section.prelaunchHero {
     background-image: none !important;
@@ -346,6 +348,9 @@ section.prelaunchHero .socialBot{
 #_form_5_ ._error._above,#_form_5_ ._error._above {
     bottom: auto;
     top: -50px;
+}
+._form-inner {
+    position: relative;
 }
 
 }

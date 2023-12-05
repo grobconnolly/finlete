@@ -1058,8 +1058,8 @@ section.prelaunchHero input#email {
     line-height: 150%;
     height: 72px;
     margin-top: -1px;
-    min-width: 300px;
     outline: none;
+    width: 60%;
 }
 section.prelaunchHero input#email:focus{
     outline: none;
@@ -1069,7 +1069,7 @@ section.prelaunchHero input[type="submit"],
 section.prelaunchHero button[type="submit"] {
     background-repeat: no-repeat;
     background-color: #44A647;
-    padding: 16px 48px;
+    padding: 16px 16px;
     color: #FAFAFA;
     font-size: 24px;
     font-style: normal;
@@ -1082,6 +1082,8 @@ section.prelaunchHero button[type="submit"] {
     height: 72px;
     margin-top: -1px;
     float: right;
+    width: 40%;
+    text-align: left;
 }
 section.prelaunchHero .socialBot {
     text-align: left;
