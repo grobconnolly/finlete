@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">    
     <link href="swiperlib/swiper-bundle.min.css" rel="stylesheet">
     <!--=================== custom style css ================================== -->
     <link href="css/home-v4.css?version=1.6" rel="stylesheet">
@@ -81,14 +81,39 @@
                     <span class="coming-title">COMING SOONG</span>
                     <h2 class="welcom-title">Welcome to Finlete</h2>
                     <p>Empowering Athletes and Fans: Join us as we revolutionize the world of sports, creating exciting opportunities for athletes and their passionate supporters! Get notified when we launch.</p>
-                    <form action="" id="comingsoonForm" onsubmit="formSubmit()">
+                    <!-- <form action="" id="comingsoonForm" class="comingsoonForm" onsubmit="formSubmit()">
                         <div class="form-group">
                           <input type="text" name="email" id="email" required placeholder="Enter your email address">
                           <input type="submit" value="Notify Me!" style="background-image: url(./images/home-v4/campaign.svg);">
                         </div>
                         <div id="successMessage" style="display: none;" class="alert-success" >Form submitted successfully!</div>
                         <div id="failMessage" style="display: none;" class="alert-danger" >Error submitting form!</div>
+                    </form> -->
+                    <form method="POST" action="https://finlete.activehosted.com/proc.php" id="_form_5_" class="_form _form_5 _inline-form comingsoonForm" novalidate>
+                        <input type="hidden" name="u" value="5" />
+                        <input type="hidden" name="f" value="5" />
+                        <input type="hidden" name="s" />
+                        <input type="hidden" name="c" value="0" />
+                        <input type="hidden" name="m" value="0" />
+                        <input type="hidden" name="act" value="sub" />
+                        <input type="hidden" name="v" value="2" />
+                        <input type="hidden" name="or" value="9b38b8913a28ed3a624dc13684073f92" />
+                            <div class="_form-content">
+                              
+                                <div class="form-group">
+                                    <input type="text" id="email" name="email" placeholder="Enter your email address" required/>
+                                
+                                    <button id="_form_5_submit" class="_submit" type="submit" style="background-image: url(./images/home-v4/campaign.svg);">
+                                       Notify Me! 
+                                    </button>
+                                 </div>
+                                <div class="_clear-element">
+                                </div>
+                            </div>
+                            <div class="_form-thank-you" style="display:none;">
+                            </div>
                     </form>
+
                     <div class="socialBot">
     					<a href="https://www.instagram.com/finlete" title="" class="icon ins-icn"></a>
     					<a href="https://twitter.com/finleteme" title="" class="icon tw-icn"></a>
@@ -111,44 +136,8 @@
     <!-- Footer -->
     <!-- script -->
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/waitlist.js"></script>
 
-    <script>
-        function formSubmit() {
-            event.preventDefault();
-            const data = {
-                "records": [
-                    {
-                        "fields": {
-                            "Email": $("#email").val(),
-                        }
-                    }
-                ]
-            };
-            
-            fetch("https://api.airtable.com/v0/appZhDg25NgDgyVOJ/Table%201?maxRecords=3&view=Coming%20soon%20Finlete", {
-                method: "POST",
-                headers: {
-                    Authorization: "Bearer patr5M18efJfQvWJB.a53a72efa40b2cc026f0929c31d7806ea27da193cd48e4feed34e510f4a4751a",
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(data),
-            }).then(response => response.json())
-                .then(data => {
-                    if (data.records !== undefined) {
-                       // Show the success message
-                       document.getElementById("successMessage").style.display = "block";
-                       document.getElementById("comingsoonForm").reset();
-                       // Redirect to pre-thankyou.html after a short delay (e.g., 1 seconds)
-                        setTimeout(function () {
-                            window.location.href = "pre-thankyou.html";
-                        }, 1000); // 1000 milliseconds (1 seconds) delay
-                    } else {
-                        document.getElementById("failMessage").style.display = "block";
-                    }
-                });
-    
-        }
-    </script>
   
 
 </body>
