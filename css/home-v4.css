@@ -585,6 +585,7 @@ section.incredible {
     background-size: cover;
     background-position: center;
     position: relative;
+    background-attachment: fixed;
 }
 section.incredible::after{
     position: absolute;
