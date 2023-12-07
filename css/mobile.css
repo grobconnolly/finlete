@@ -213,7 +213,10 @@
     }
     .team-member .member {
         padding: 16px 10px;
-        min-height: 310px;
+        min-height: 300px;
+    }
+    .team-member.Legal .member {
+        min-height: 340px;
     }
     .teamText {
         padding-bottom: 40px;
