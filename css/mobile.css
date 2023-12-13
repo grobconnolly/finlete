@@ -370,6 +370,12 @@ section.prelaunchHero .socialBot{
 .conditions li {
     font-size: 14px;
 }
+.terms-and-privacy .top-bar .logo {
+    margin-top: 0;
+}
+.terms-and-privacy .btn-term{
+    font-size: 14px;
+}
 
 }
 
