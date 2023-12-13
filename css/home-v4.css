@@ -1131,6 +1131,77 @@ section.preThankyou .heroText {
     padding: 40px;
 }
 
+/* Privacy and Term page */
+.terms-and-privacy header {
+    background: #262626;
+    padding: 13px 0;
+}
+.terms-and-privacy .btn-term{
+    border-radius: 8px;
+    border: 1px solid var(--colors-primary, #44A647);
+    padding: 8px 20px;
+    color: var(--colors-color-text-primary, #FAFAFA);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+.terms-and-privacy .btn-term svg{
+    vertical-align: middle;
+}
+.terms-and-privacy .btn-term{
+    float: right;
+}
+section.legal {
+    padding: 90px 0;
+    background-color: #1E1E1E;
+}
+ul.privacy-terms {
+    padding: 0;
+}
+ul.privacy-terms a {
+    color: var(--colors-neutral-300, #404040);
+    font-family: 'Inter',sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    border-left: 4px solid #404040;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ul.privacy-terms .active a{
+    color:#FAFAFA;
+    border-color: #44A647;
+}
+.conditions h4,.terms-and-privacy h3,.terms-and-privacy h4{
+    color:#FAFAFA;
+}
+.conditions p,.conditions ul,.conditions li {
+    color: var(--colors-color-text-secondary, #E7E5E4);
+    font-family: 'Inter',sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.content-right {
+    border-left: 1px solid #404040;
+    padding-left: 40px;
+}
+.terms-and-privacy h4.term-sub-title {
+    color: #E7E5E4;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+.terms-and-privacy h3{
+    font-weight: 500;
+}
+h3.term-title {
+    margin: 0;
+}
 /* End */
 
 @media screen and (min-width:1440px) {

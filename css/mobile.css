@@ -356,6 +356,20 @@ section.prelaunchHero .socialBot{
 ._form-inner {
     position: relative;
 }
+.content-right {
+    border: none;
+    padding: 0;
+}
+.content-right h3.term-title {
+    font-size: 28px;
+}
+.terms-and-privacy h4.term-sub-title,.conditions h4{
+    font-size: 18px;
+}
+.conditions p,
+.conditions li {
+    font-size: 14px;
+}
 
 }
 
