@@ -1445,6 +1445,30 @@ div#WhoIn .cont-ath h4 {
     margin: 0;
     font-weight: 500;
 }
+.filter-btn {
+    border-radius: 8px;
+    border: 1px solid var(--Colors-Neutral-300, #404040);color: #fafafa;
+}
+.filter-btn span:not(.downangle) {
+    float: left;
+    color: var(--Colors-Neutral-500, #737373);
+    font-family: 'Inter',sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    background: #262626;
+    height: 100%;
+    padding: 8px 12px;
+}
+.Investors-col {
+    text-align: right;
+}
+.filter-btn .dropdown-toggle {
+    background: transparent !important;
+    font-size: 18px !important;
+    padding: 8px 12px !important;
+}
 /* End */
 
 @media screen and (min-width:1440px) {
