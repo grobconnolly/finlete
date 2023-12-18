@@ -1410,8 +1410,24 @@ body .ui-state-default, body .ui-state-focus, body .ui-widget-content .ui-state-
     border-bottom: 1px solid #404040;
     padding: 24px 0;
 }
-.cont-ath {
-    
+.timecounter {
+    display: flex;
+    margin-bottom: 15px;
+}
+.timecounter div {
+    border-radius: 8px;
+    border: 1px solid var(--Colors-Neutral-300, #404040);
+    padding: 8px 12px;
+    text-align: center;
+    margin-right: 8px;
+    font-size: 8px;
+    text-transform: uppercase;
+    min-width: 60px;
+}
+.timecounter div span {
+    width: 100%;
+    display: block;
+    font-size: 18px;
 }
 .img-ath {
     min-width: 90px;
