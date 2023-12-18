@@ -1405,6 +1405,30 @@ body .ui-state-default, body .ui-state-focus, body .ui-widget-content .ui-state-
     display: flex;
     justify-content: space-between;
 }
+.list-athletes {
+    display: flex;
+    border-bottom: 1px solid #404040;
+    padding: 24px 0;
+}
+.cont-ath {
+    
+}
+.img-ath {
+    min-width: 90px;
+}
+.img-ath img {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+}
+div#WhoIn h4 {
+    margin-bottom: 40px;
+}
+div#WhoIn .cont-ath h4 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 500;
+}
 /* End */
 
 @media screen and (min-width:1440px) {
