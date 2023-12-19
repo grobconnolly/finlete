@@ -488,6 +488,9 @@ div#WhoIn .cont-ath h4,
 li.getstarted {
     border-top: 1px solid #404040;
 }
+body .top-bar .container-fluid {
+    padding: 0;
+}
 
 }
 
