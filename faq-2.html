@@ -96,17 +96,14 @@
 
     <section class="optionsFaq FAQ" id="FAQ">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <ul class="privacy-terms">
-                        <li class="active"><a href="#" title="About Finlete">About Finlete</a></li>
-                        <li><a href="#" title="Investor FAQ">Investor FAQ</a></li>
-                        <li><a href="#" title="Athlete FAQ">Athlete FAQ</a></li>
-                    </ul>
-                </div>
+			<ul class="nav nav-tabs">
+			    <li class="active"><a data-toggle="tab" href="#AboutFinlete">About Finlete</a></li>
+			    <li><a data-toggle="tab" href="#Investors">Investors</a></li>
+			    <li><a data-toggle="tab" href="#Athletes">Athletes</a></li>
+			</ul>	
+	  		<div class="tab-content">
                 <!-- Window 1 -->
-			    <div class="col-md-9">
-                    <div class="content-right">
+			    <div id="AboutFinlete" class="tab-pane fade in active">
                     <div class="panel-group MTaccordion" id="MTaccordion">
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -305,21 +302,59 @@
                         </div>
     
                       
-                    </div>
-			        </div>
-                <!-- cta -->
-                <div class="col-md-12 coverCta">
-                    <h2>Still have a Question?</h2>
-                    <p>You can submit your question or request through our contact from. Please provide as much detail as possible so that we can assist you effectively.</p>
-                    <a href="https://calendly.com/finlete/finlete-website-meeting?hide_event_type_details=1&month=2023-11" target="_blank" class="btn btn-default">Get in Touch</a>
-                </div>
-                </div><!--  Window 1 end -->
+                    </div><!-- Tab end -->
+			    </div><!--  Window 1 end -->
                 
-            </div>
+                <!-- Window 2 -->
+			    <div id="Investors" class="tab-pane fade">
+                    <div class="panel-group MTaccordion" id="MTaccordionA">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" class="collapsed" data-parent="#MTaccordionA" href="#collapseOne">Investors</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body">
+    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+			    </div><!-- Window 2 end -->
+			    <!-- Window 3 -->
+                <div id="Athletes" class="tab-pane fade">
+                    <div class="panel-group MTaccordion" id="MTaccordionB">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" class="collapsed" data-parent="#MTaccordionB" href="#collapse1A">Athletes</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1A" class="panel-collapse collapse">
+                                <div class="panel-body">
+    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div> <!-- Window 3 end-->
+			    
+			</div>
 		</div>
     </section>
 
-  
+    <section class="faqCta">
+        <div class="container">
+            <div class="col-md-12 coverCta">
+                <h2>Still have a Question?</h2>
+                <p>You can submit your question or request through our contact from. Please provide as much detail as possible so that we can assist you effectively.</p>
+                <a href="https://calendly.com/finlete/finlete-website-meeting?hide_event_type_details=1&month=2023-11" target="_blank" class="btn btn-default">Get in Touch</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
 	<footer>
