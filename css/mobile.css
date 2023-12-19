@@ -442,6 +442,49 @@ ul.privacy-terms {
 section.legal{
     padding: 40px 0;
 }
+.content-slider .nav-tabs > li > a {
+    font-size: 14px;
+    padding: 10px;
+}
+div#WhoIn h4 {
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+.filter-btn span:not(.downangle),
+.filter-btn .dropdown-toggle{
+    font-size: 12px !important;
+    padding:10px;
+}
+div#WhoIn .cont-ath h4,
+.leftPlayer h4,.scout2 h5.sc-title{
+    font-size: 18px;
+}
+.content-slider p{
+    font-size: 12px;
+}
+.scout2 .cardSc p {
+    font-size: 14px;
+}
+.player2 h3.player-title {
+    font-size: 24px;
+}
+.player2 .badge-wrap {
+    padding-left: 15px;
+}
+.player2 .badge-wrap .badge,.social-player a {
+    font-size: 10px;
+}
+.badge-wrap .badge{
+    padding: 4px;
+}
+.athelet-avatar {
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 100%;
+    min-width: 80px;
+    min-height: 80px;
+}
 
 }
 
