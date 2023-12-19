@@ -1327,8 +1327,10 @@ table tr{
 .shareinvest h4.panel-title::after{
     display: none;
 }
-.shareinvest .panel-group .panel{
+.shareinvest .panel-group .panel {
     border: none;
+    box-shadow: none !important;
+    background: #262626;
 }
 .shareinvest .panel-title > a{
     color: var(--Colors-color-text-primary, #FAFAFA);
