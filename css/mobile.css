@@ -1,3 +1,41 @@
+.mobile-dropdown button,
+.mobile-dropdown button:focus,
+.mobile-dropdown button:hover {
+    background: #262626;
+    border-radius: 0 !important;
+    color: var(--Colors-color-text-primary, #FAFAFA);
+    font-family: 'Inter',sans-serif;
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.mobile-dropdown span.downangle {
+    float: right;
+}
+.mobile-dropdown .btn-group{
+    width: 100%;
+}
+.mobile-dropdown  .dropdown-menu {
+    width: 100%;
+    border-radius: 8px;
+background: var(--Colors-Neutral-200, #262626);
+box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
+}
+.mobile-dropdown  .dropdown-menu > li > a {
+    display: block;
+    clear: both;
+    color: var(--Colors-color-text-primary, #FAFAFA);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    padding: 12px;
+    background: var(--Colors-Neutral-200, #262626);
+}
 @media screen and (min-width: 768px) and (max-width: 1080px) {
     body {
         /* Common styles for the body at this screen size */
@@ -61,7 +99,7 @@
         margin: 0;
     }
      nav.mynav ul.navbar-nav {
-        padding: 30px 0 0 0;
+        padding:0;
     }
     section.topBar {
         padding: 12px 0px;
@@ -88,9 +126,9 @@
     nav.mynav ul.navbar-nav li a:hover, 
      nav.mynav ul.navbar-nav li a {
         color: #fafafa;
-        font-size: 20px;
-        padding: 20px 30px;
-        border-bottom: 1px solid #fafafa;
+        font-size: 16px;
+        padding: 16px 30px;
+        border: none;
 
     }
     section.Hero .heroText {
@@ -102,6 +140,7 @@
     body .btn, body .btn-default, body .btn.btn-primary, body .btn-group-lg > .btn {
         padding: 12px 18px !important;
         font-size: 18px !important;
+        border-radius: 8px !important;
     }
     section.Hero .btn-group-lg {
         margin-top: 24px;
@@ -269,29 +308,35 @@
     .navbar-default .navbar-toggle:hover, 
 .navbar-default .navbar-toggle:focus {
     background-color: transparent;
-    background-image: url(../images/home-v4/Burger-menu.svg);
+    background-image: url(../images/home-v4/Burger-1.svg);
 }
 .navbar-default .navbar-toggle {
     border: none;
-    background-image: url(../images/home-v4/Burger-menu.svg);
+    background-image: url(../images/home-v4/Burger-1.svg);
     background-color: transparent;
     width: 50px;
     height: 40px;
     border-radius: 0;
     background-repeat: no-repeat;
     margin-right: 0;
+    background-position: center;
+
+}
+body .top-bar{
+    padding: 0;
 }
 nav.mynav .navbar-collapse {
     padding: 0;
     position: absolute;
-    background: #1e1e1e;
-    width: 110%;
-    box-shadow: 0px 10px 20px rgb(0 0 0 / 4%), 0px 2px 6px rgb(0 0 0 / 4%), 0px 0px 1px rgb(0 0 0 / 4%);
+    background: #262626;
+    width: 120%;
+    box-shadow: none;
     padding-bottom: 30px;
     border: none;
-    top: 66px;
-    left: -15px;
+    top: 60px;
+    left: -30px;
     right: auto;
+    border-top: 1px solid var(--Colors-Neutral-300, #404040);
 }
 
 .navbar-default .navbar-toggle .icon-bar{
@@ -300,7 +345,7 @@ nav.mynav .navbar-collapse {
 
 /* FAQ page */
 section.optionsFaq .nav-tabs > li > a {
-    font-size: 15px;
+    font-size: 14px;
     padding: 10px;
 }
 section.optionsFaq{
@@ -309,11 +354,19 @@ section.optionsFaq{
 section.optionsFaq div.MTaccordion {
     padding-top: 20px;
 }
-.coverCta{
+.coverCta {
     padding: 24px;
-    margin-top: 24px;
+    border-radius: 0;
+    margin: 0 -15px;
 }
-
+section.FAQ h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.coverCta .btn {
+    margin-top: 10px;
+    font-size: 16px !important;
+}
 .coverCta p{
     font-size: 18px;
 }
@@ -375,6 +428,19 @@ section.prelaunchHero .socialBot{
 }
 .terms-and-privacy .btn-term{
     font-size: 14px;
+}
+section.FaqHero .heroText {
+    padding: 20px;
+}
+ul.privacy-terms {
+    display: none;
+}
+.mobile-dropdown {
+    margin: -1px;
+    background: #262626;
+}
+section.legal{
+    padding: 40px 0;
 }
 
 }
