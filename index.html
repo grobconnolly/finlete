@@ -19,8 +19,8 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="swiperlib/swiper-bundle.min.css" rel="stylesheet">
     <!--=================== custom style css ================================== -->
-    <link href="css/home-v4.css?version=1.13" rel="stylesheet">
-    <link rel="stylesheet" href="css/mobile.css?version=1.14">
+    <link href="css/home-v4.css?version=1.15" rel="stylesheet">
+    <link rel="stylesheet" href="css/mobile.css?version=1.15">
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 </head>
 
@@ -46,7 +46,7 @@
     <!-- Top Bar end -->
 
     <header>
-        <section class="top-bar" id="">
+        <section class="top-bar style2" id="">
                 
                 <div class="container-fluid">
                     <div class="logo for-dt">
@@ -77,11 +77,32 @@
                             </div>
                             
                             <div id="navbar" class="navbar-collapse collapse ">
-                                <ul class="nav navbar-nav">
-                                    <li class="active"><a href="index.html">How it Works</a></li>
-                                    <li><a href="#Athletes">Athletes</a></li>
+
+                                 <!-- Mobile menu -->
+                                <ul class="nav navbar-nav for-mb">
+                                    <li><a href="index.html">How it Works</a></li>
+                                    <li><a href="#Athletes">Explore Athletes</a></li>
                                     <li><a href="#TheTeam">The Team</a></li>
                                     <li><a href="#FAQ">FAQ</a></li>
+                                    <li class="getstarted"><a href="pre-launch.html">Get Started</a></li>
+                                </ul>
+                                <!-- desktop menu -->
+                               
+                                <ul class="nav navbar-nav for-dt">
+                                    <li class="active"><a href="index.html">How it Works</a></li>
+                                    <li><a href="#Athletes">Explore Athletes</a></li>
+                                    <li class="getstarted"><a href="pre-launch.html">Get Started</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#fafafa">
+                                            <path d="M5.41706 5.99969L8.00372 8.58635L10.5904 5.99969C10.8504 5.73969 11.2704 5.73969 11.5304 5.99969C11.7904 6.25969 11.7904 6.67969 11.5304 6.93969L8.47039 9.99969C8.21039 10.2597 7.79039 10.2597 7.53039 9.99969L4.47039 6.93969C4.21039 6.67969 4.21039 6.25969 4.47039 5.99969C4.73039 5.74635 5.15706 5.73969 5.41706 5.99969Z" fill="#F5F5F5"/>
+                                          </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#TheTeam">The Team</a></li>
+                                            <li><a href="#FAQ">FAQ</a></li>
+                                        </ul>
+                                    </li>
+                                    
                                 </ul>
                                                                 
                             </div>

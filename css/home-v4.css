@@ -236,6 +236,7 @@ body .btn.btn-default {
 body .btn.btn-default:hover,
 body .btn.btn-default:focus {
     color: var(--colors, #FAFAFA);
+    background: var(--Colors-Primary-700, #2B6A2D);
 }
 body .btn.btn-primary {
     border: 1.6px solid var(--border, #44A647);
@@ -245,6 +246,7 @@ body .btn.btn-primary:hover,
 body .btn.btn-primary:focus {
     border: 1.6px solid var(--border, #44A647);
     color: var(--colors, #FAFAFA);
+    background: rgba(43, 106, 45, 0.48);
 }
 img{
     max-width: 100%;
@@ -1148,6 +1150,11 @@ section.preThankyou .heroText {
     font-style: normal;
     font-weight: 500;
     line-height: 160%;
+    text-decoration: none;
+}
+.terms-and-privacy .btn-term:hover,
+.terms-and-privacy .btn-term:focus{
+    background: rgba(43, 106, 45, 0.48);
 }
 .terms-and-privacy .btn-term svg{
     vertical-align: middle;
@@ -1494,7 +1501,38 @@ div#WhoIn .cont-ath h4 {
     div#iphone2 {
         margin-top: -212px;
     }
-   
+   /* Nav 2 style */
+.top-bar.style2 .topnavbar {
+    float: right;
+    width: calc(100% - 220px);
+}
+.style2 li.dropdown,.style2 li.getstarted{
+    float: right;
+}
+.style2 li.getstarted {
+    border-left: 1px solid #404040;
+}
+.style2 .navbar-default .navbar-nav > .open > a, 
+.style2 .navbar-default .navbar-nav > .open > a:hover, 
+.style2 .navbar-default .navbar-nav > .open > a:focus {
+    color: #388B3E;
+    background-color: #262626;
+}
+.navbar-nav > li > .dropdown-menu{
+    background: #262626;
+    top: 40px;
+    min-width: 200px;
+}
+li.dropdown svg {
+    vertical-align: middle;
+}
+.style2 .navbar-default .navbar-nav > .open > a svg{
+    fill: #388B3E;
+}
+/* End Nav 2 */
+.style2 .dropdown-menu > li > a {
+    padding: 8px 20px !important;
+}
 }
 
 @media screen and (min-width:768px) {
