@@ -632,7 +632,7 @@ section.footerNew address {
     padding: 10px 20px 10px 0;
 }
 section.footerNew ul li a:hover{
-  color: #44A647;
+  color: #388B3E;
 }
 section.footerNew address {
     font-weight: 400;
@@ -1180,6 +1180,9 @@ ul.privacy-terms a {
     display: block;
     padding: 8px 16px;
     text-decoration: none;
+}
+ul.privacy-terms a:hover{
+    color: #388B3E;
 }
 ul.privacy-terms .active a{
     color:#FAFAFA;
