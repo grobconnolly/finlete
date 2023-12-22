@@ -474,6 +474,7 @@
 
                         <h5>Invest amount </h5>
                         <p style="color: #737373;">Min 5 Shares</p>
+                        <p class="perkPop" style="color:#FDB002"></p>
                         <div class="slider-box priceslider-cover">
                             <div id="share-update" class="slider"></div>
                             <div class="filler" style="width: 0%;"></div>
@@ -575,7 +576,6 @@
    <script>
     var incrementWidthM = 100 / 300;
     var SharePrice = "23";
-    var ratio = "";
 
     $(document).ready(function () {
 
@@ -591,6 +591,24 @@
             $(".filler").width(ui.value * incrementWidthM + "%");
             $('#sharecount').text(ui.value + ' Shares');
             $('#price-share').text('$' + ui.value * SharePrice);
+            let perk = ui.value;
+
+            if (perk !== undefined && perk !== null) {
+                if (perk >= 25 && perk <= 99) {
+                    $('.perkPop').text('You won perk 1');
+                } else if (perk >= 100 && perk <= 249) {
+                    $('.perkPop').text('You won perk 2');
+                } else if (perk > 250) {
+                    $('.perkPop').text('You won perk 3');
+                } else {
+                    // Handle the case where perk is present but doesn't fall into any range
+                    $('.perkPop').text('No perk won');
+                }
+            } else {
+                // Handle the case where perk is not present
+                $('.perkPop').text('No perk won');
+            }
+           
         },
 
         })
