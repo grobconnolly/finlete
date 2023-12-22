@@ -1023,36 +1023,7 @@ form.comingsoonForm {
     width: 100%;
     position: relative;
 }
-._form-content {
-    position: relative;
-}
-._form-inner {
-    position: absolute;
-}
-#_form_5_  ._error._below {
-    position: absolute;
-    width: 100%;
-    margin-top: 10px;
-}
-#_form_5_ ._error._above {
-    position: absolute;
-    width: 100%;
-    bottom:-45px;
-}
-#_form_5_ ._error-inner {
-    padding:8px 12px;
-    border:1px solid #f37c7b;
-    font-size:14px;
-    font-family:arial, sans-serif;
-    color:#fafafa;
-    text-align:left;
-    text-decoration:none;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    border-radius:4px;
-}
-
-section.prelaunchHero input#email {
+section.prelaunchHero input {
     padding: 16px 24px;
     background: #fff;
     border: none;
@@ -1064,9 +1035,15 @@ section.prelaunchHero input#email {
     height: 72px;
     margin-top: -1px;
     outline: none;
-    width: 60%;
+    width: 100%;
+    border-radius: 16px;
 }
-section.prelaunchHero input#email:focus{
+._error-inner {
+    font-size: 14px;
+    padding: 10px 15px;
+    color: #fb5b5b;
+}
+section.prelaunchHero input:focus{
     outline: none;
     border: none;
 }
@@ -1083,12 +1060,12 @@ section.prelaunchHero button[type="submit"] {
     line-height: 150%;
     margin-left: -4px;
     background-position: 15px center;
-    padding-left: 70px;
     height: 72px;
     margin-top: -1px;
     float: right;
-    width: 40%;
-    text-align: left;
+    width: 100%;
+    text-align: center;
+    border-radius: 16px;
 }
 section.prelaunchHero .socialBot {
     text-align: left;
