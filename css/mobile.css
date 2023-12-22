@@ -490,6 +490,9 @@ li.getstarted {
 body .top-bar .container-fluid {
     padding: 0;
 }
+#flipFlop iframe{
+    height: 200px;
+}
 
 }
 

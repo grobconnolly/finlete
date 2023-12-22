@@ -1521,4 +1521,8 @@ li.dropdown svg {
     .for-mb{
         display: none !important;
     }
+    body .modal-dialog{
+        width: 800px;
+        max-width: 100%;
+    }
 }
