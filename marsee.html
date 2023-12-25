@@ -595,18 +595,18 @@
 
             if (perk !== undefined && perk !== null) {
                 if (perk >= 25 && perk <= 99) {
-                    $('.perkPop').text('You won perk 1');
+                    $('.perkPop').text('perk 1 activated');
                 } else if (perk >= 100 && perk <= 249) {
-                    $('.perkPop').text('You won perk 2');
+                    $('.perkPop').text('perk 2 activated');
                 } else if (perk > 250) {
-                    $('.perkPop').text('You won perk 3');
+                    $('.perkPop').text('perk 3 activated');
                 } else {
                     // Handle the case where perk is present but doesn't fall into any range
                     $('.perkPop').text('No perk won');
                 }
             } else {
                 // Handle the case where perk is not present
-                $('.perkPop').text('No perk won');
+                $('.perkPop').text('No perk activated');
             }
            
         },
