@@ -165,7 +165,7 @@
                     <div class="video-container">
                         <div class="overlya-video"></div>
                         <div id="playButton">
-                            <img src="images/echedry-page-assets/Btn-play.png" alt="">
+                            <img src="images/echedry-page-assets/Btn-play.png" alt="" id="btn-img">
                         </div>
                         <video id="echedryVideo" class="echedry-video" width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
                             <source src="images/echedry-page-assets/finlete_echedry_vargas.mp4" type="video/mp4">
@@ -864,12 +864,15 @@
     <script>
         var video = document.getElementById("echedryVideo");
         var playButton = document.getElementById("playButton");
+        var btnImg = document.getElementById("btn-img");
 
         playButton.addEventListener("click", function() {
             if (video.paused) {
                 video.play();
+                btnImg.src = "images/echedry-page-assets/Btn-pause.png";
             } else {
                 video.pause();
+                btnImg.src = "images/echedry-page-assets/Btn-play.png";
             }
         });
     </script>
