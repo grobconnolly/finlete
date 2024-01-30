@@ -1461,6 +1461,191 @@ div#WhoIn .cont-ath h4 {
 }
 /* End */
 
+/* Echedry / Desktop page */
+section.Diagram.no-bg {
+    background: none;
+}
+p.player-location {
+    overflow: hidden;
+    color: #0A0A0A;
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    line-height: 160%;
+}
+.swiperSlider.echedry p{
+    margin: 0;
+}
+section.footerNew.echedry ul{
+    float: right;
+}
+section.footerNew.echedry address{
+    text-align: right;
+    padding: 0;
+}
+section.footerNew ul li a{
+    padding: 10px 0px 10px 24px;
+}   
+.footerNew.echedry .socialBot {
+    padding-top: 0px;
+    text-align: left;
+}
+.footerNew.echedry .icon{
+    margin: 0 15px 0 0;
+}
+.Dalmoreft p {
+    color: #FAFAFA;
+}
+.seprator {
+    border-top: 1px solid #404040;
+    margin: 24px 0;
+}
+.Dalmoreft p{
+    font-size: 18px;
+}
+.inline-athelet.echedry .social-player {
+    margin-top: 10px;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+}
+.inline-athelet.echedry {
+    position: relative;
+    background: #262626;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 64px;
+}
+.echedry-table tr.data-row:hover {
+    background: rgba(56, 139, 62, 0.08);
+}
+table.echedry-table td, table.echedry-table th{
+    padding: 12px;
+}
+table.echedry-table tr.data-row td:first-child, 
+table.echedry-table tr.header-row th:first-child {
+    border-right: 2px solid #404040;
+}
+table.echedry-table tr.data-row td:nth-child(9), 
+table.echedry-table tr.header-row th:nth-child(9),
+table.echedry-table tr.data-row td:nth-child(13), 
+table.echedry-table tr.header-row th:nth-child(13) {
+    border-right: 2px solid #404040;
+}
+section.Hero.echedry .btn {
+    font-size: 18px !important;
+}
+span.commision {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    width: 250px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.stat-ratio {
+    border-radius: 8px;
+    border: 1px solid #404040;
+    background: #262626;
+    padding: 12px 16px;
+    text-align: center;
+    min-width: 140px;
+}
+.stat-ratio span {
+    display: block;
+    color: #FAFAFA;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+}
+section.Hero.echedry .stat-ratio p, .stat-ratio p {
+    font-size: 12px;
+    font-weight: 700;
+}
+section.Hero.echedry.btn-group-lg {
+    margin-top: 30px;
+}
+section.Hero.echedry .heroMedia {
+    padding-top: 90px;
+}
+.overlya-video{
+    opacity: 0.48;
+    background: #0C0A09;
+    mix-blend-mode: multiply;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.video-container{
+    position: relative;
+    display: inline-block;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.echedry-video {
+    max-width: 100%;
+    object-fit: cover;
+box-shadow: 0px 21px 25.2px 0px rgba(30, 30, 30, 0.64);
+}
+#playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 9;
+}
+section.Hero.echedry {
+    position: relative;
+    overflow: hidden;
+    background-image: none;
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.00) 0%, #1E1E1E 94.1%);
+}
+section.Hero p.progress-count {
+    color: #FDB002;
+    font-size: 18px;
+}
+section.Hero p.progress-count svg{
+   vertical-align: middle;
+}
+section.Hero.echedry .bg-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+}
+div#echedry-Features {
+    margin-top: 34px;
+}
+.stat-eche {
+    padding-top: 32px;
+    padding-bottom: 190px;
+}
+.Features-1e .features img {
+    margin-bottom: 30px;
+}
+.Features-1e {
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+/* Echedry / Desktop End */
+
 @media screen and (min-width:1440px) {
     .container {
         width: 1360px;
