@@ -1653,6 +1653,15 @@ div#echedry-Features {
     padding-bottom: 60px;
     padding-top: 30px;
 }
+.discuss-wrap {
+    padding: 90px 0;
+    background: #1e1e1e;
+}
+.discuss-wrap #disqus_thread {
+    background: #fff;
+    border: 1px solid lightgray;
+    padding: 50px;
+}
 /* Echedry / Desktop End */
 
 @media screen and (min-width:1440px) {
