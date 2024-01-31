@@ -17,9 +17,7 @@ a:hover{
     color: #44A647;
     text-decoration: underline;
 }
-section{
-    margin: -2px 0;
-}
+
 section.topBar {
     background: #44A647;
     padding: 12px 15px;
