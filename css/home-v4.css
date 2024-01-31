@@ -1497,6 +1497,9 @@ section.footerNew ul li a{
 .footerNew.echedry .icon{
     margin: 0 15px 0 0;
 }
+.footerNew.echedry{
+    padding-bottom: 200px;
+}
 .Dalmoreft p {
     color: #FAFAFA;
 }
@@ -1714,7 +1717,11 @@ section.Discover.echedry {
 }
 .time-offer-echedry {
     background: #404040;
-    padding: 24px
+    padding: 24px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
 }
 .time-offer-echedry .timecounter-echedry {
     border-radius: 20px;
