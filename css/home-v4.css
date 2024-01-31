@@ -1709,6 +1709,52 @@ section.Playergallery {
 section.Discover.echedry {
     padding: 60px 0 150px 0;
 }
+.time-offer-echedry {
+    background: #404040;
+    padding: 24px
+}
+.time-offer-echedry .timecounter-echedry {
+    border-radius: 20px;
+    padding: 16px;
+    background: rgba(12, 10, 9, 0.72);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.timer-eche {
+    display: flex;
+    gap: 12px;
+    color: #FAFAFA;
+}
+.timer-eche div {
+    display: flex;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    border: 1px solid  #404040;
+    flex-direction: column;
+    color: var(--Colors-color-text-secondary, #E7E5E4);
+    /* Bold/Type@Small-text */
+    font-family: 'Inter',sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 18px */
+}
+.timer-eche div span {
+    color:  #FAFAFA;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.buyft .btn {
+    padding: 16px 20px !important;
+}
 /* Echedry / Desktop End */
 
 @media screen and (min-width:1440px) {

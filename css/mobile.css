@@ -681,6 +681,24 @@ div[id^=playButton]{
 .branding-finlete{
     width: 25px;
 }
+.time-offer-echedry {
+    padding: 24px 0;
+}
+.buyft,.timer-eche{
+    width: 100%;
+}
+.timer-eche div {
+    flex: 25%;
+}
+.buyft .btn {
+    display: block;
+    width: 100%;
+    margin-top: 13px;
+}
+.timer-eche div span{
+    font-size: 18px;
+}
 
 }
+
 

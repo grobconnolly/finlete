@@ -921,21 +921,75 @@
 			</div>
           
 		</section>
-		<!-- <script type="text/javascript">
-            (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
-            vgo('setAccount', '477323417');
-            vgo('setTrackByDefault', true);
-        
-            vgo('process');
-        </script> -->
 	</footer>
 
     <!-- script -->
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="swiperlib/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="js/js-V4.js"></script>
+    <!-- <script type="text/javascript" src="js/js-V4.js"></script>
+
+    <script type="text/javascript">
+        (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+        vgo('setAccount', '477323417');
+        vgo('setTrackByDefault', true);
     
-    <!-- <script id="dsq-count-scr" src="//finlete.disqus.com/count.js" async></script> -->
+        vgo('process');
+    </script>
+    <script id="dsq-count-scr" src="//finlete.disqus.com/count.js" async></script>
+     -->
+    <!-- Time offer -->
+    <div class="time-offer-echedry">
+        <div class="container-fluid">
+            <div class="timecounter-echedry">
+                <div class="timer-eche" id="timer-eche">
+                    <div class="day"><span id="days">10</span> Day</div>
+                    <div class="hour"><span id="hours">07</span> hours</div>
+                    <div class="min"><span id="minutes">59</span> Mins</div>
+                    <div class="sec"><span id="seconds">12</span> Sec</div>
+                </div>
+            <div class="buyft">
+                <a href="pre-launch.html" class="btn btn-default">Buy Now  at $7.58 / Share</a>
+            </div>
+
+            </div>
+        </div>
+        <script>
+           
+            // Set the date we're counting down to (current date + 39 days)
+            var countDownDate = new Date();
+            countDownDate.setDate(countDownDate.getDate() + 40);
+            countDownDate.setHours(0, 0, 0, 0);
+
+            // Update the countdown every 1 second
+            var x = setInterval(function() {
+                // Get the current date and time
+                var now = new Date().getTime();
+
+                // Calculate the remaining time
+                var distance = countDownDate - now;
+
+                // Calculate days, hours, minutes, and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Update the HTML with the calculated values
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+                document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+                document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+
+                // If the countdown is over, display a message
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("timer-eche").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+
+          </script>
+          
+    </div>
 </body>
 
 </html>
