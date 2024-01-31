@@ -1,0 +1,775 @@
+header#transHeader {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  display: none;
+}
+header#transHeader section.top-bar {
+  background: transparent;
+  box-shadow: none;
+}
+header#transHeader .top-bar .logo {
+  margin-right: 15px;
+}
+header#transHeader .partnerlogo {
+  border-color: #fff;
+}
+header#transHeader nav.mynav ul.navbar-nav li a {
+  color: #ffffff;
+}
+header#transHeader nav.mynav ul.navbar-nav li a:hover {
+  color: #2b445c;
+}
+header#transHeader .btn.finbtn2 {
+  background: #2b445c;
+  border-color: #2b445c;
+}
+header#transHeader .btn.finbtn2:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #2b445c;
+}
+p {
+  font-weight: 400;
+}
+.EarlyAccess h1 {
+  text-align: left;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.EarlyAccess {
+  background: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 250px;
+  padding-bottom: 230px;
+  position: relative;
+}
+.quickform form input[type="text"] {
+  height: 68px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px 0px 0px 4px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 150%;
+  color: #787878;
+  margin-top: 1px;
+  padding: 15px 24px;
+}
+.quickform form button._submit {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffffff;
+  padding: 16px 24px;
+  width: 151px;
+  height: 68px;
+  background: #2b445c;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  margin-left: -4px;
+}
+.quickform ._form-content > div {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column-reverse;
+}
+.quickform ._field-wrapper {
+  position: relative;
+}
+
+.quickform form input[type="text"]._has_error,
+.quickform form textarea._has_error {
+  border: #f37c7b 1px solid;
+}
+.quickform form input[type="checkbox"]._has_error {
+  outline: #f37c7b 1px solid;
+}
+.EarlyAccess .notify {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #ffffff;
+  text-align: left;
+  margin-top: 15px;
+}
+.heroMini {
+  background-image: url(images/home/Hero-img.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  width: 700px;
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+.btn.finbtn2.active {
+  border-radius: 4px;
+}
+.section.video h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 135%;
+  text-align: center;
+  color: #1f2f42;
+}
+.section.video p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #404040;
+}
+.videoText {
+  padding-bottom: 90px;
+}
+#poster-image {
+  background: url("../images/home/Videebg.png") center center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+section.section.process {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 400px;
+  padding-bottom: 400px;
+}
+.home .TableAccess,
+.home section.process {
+  background-color: #f6f7f8;
+}
+.home section.video {
+  padding: 0;
+}
+.home .TableAccess {
+  padding-bottom: 0;
+}
+.home .section.Calculator {
+  padding-top: 0;
+}
+section.section.process h3 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  color: #ffffff;
+}
+section.section.process h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffffff;
+}
+section.section.process .processtext p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #f0f0f0;
+}
+section.section.process p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #f0f0f0;
+}
+.processtext {
+  padding-bottom: 60px;
+}
+span.icon img {
+  width: 45px;
+}
+.section.Calculator {
+  background: #f6f7f8;
+}
+.disclaimer {
+  padding-top: 20px;
+}
+.section.Calculator .disclaimer p{
+ color: #404040;
+}
+h3.titlesection {
+  font-size: 40px;
+}
+section.video2{
+  padding-top: 0;
+}
+.Earnings.result-col {
+  padding-left: 10px;
+}
+.calculateit {
+  padding-top: 0;
+}
+.result {
+  background: #ffffff;
+  padding: 40px 24px;
+  box-shadow: 0px 27px 145px rgb(51 51 51 / 7%),
+    0px 8.13971px 43.7133px rgb(51 51 51 / 5%),
+    0px 3.38082px 18.1562px rgb(51 51 51 / 4%),
+    0px 1.22278px 6.56676px rgb(51 51 51 / 2%);
+  border-radius: 8px;
+}
+.more-about .text-success {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  color: #44a647;
+  margin: 0;
+  height: auto;
+}
+.video2 h4 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #2b445c;
+}
+.btn.style2 {
+  background: #2b445c;
+  border-radius: 4px;
+  border-color: #2b445c;
+  color: #ffffff;
+}
+.btn.style2.active {
+  background: transparent;
+  border-color: #2b445c;
+  color: #2b445c;
+  box-shadow: none;
+}
+.btn.style2:hover {
+  color: #2b445c;
+}
+.btn.style3 {
+  background: #fff;
+  color: #5a5a5a;
+  border-color: #5a5a5a;
+}
+.btn.style3:hover {
+  color: #5a5a5a;
+}
+.investor-average .btn + .btn {
+  margin-top: 20px;
+  margin-left: 0px;
+}
+.investor-average .invest-term {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #404040;
+  padding: 10px 0 10px 12px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 12px;
+}
+.investor-average {
+  text-align: center;
+  background: #f7fbf7;
+  border: 1px solid #44a647;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin: 0;
+}
+.investor-average h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
+  color: #404040;
+}
+.investor-average p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #5a5a5a;
+}
+.sumarryuser h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #404040;
+}
+.sumarryuser .table > thead > tr > th,
+.sumarryuser .table > tbody > tr > th,
+.sumarryuser .table > tfoot > tr > th,
+.sumarryuser .table > thead > tr > td,
+.sumarryuser .table > tbody > tr > td,
+.sumarryuser .table > tfoot > tr > td {
+  padding: 10px;
+  color: #404040;
+}
+
+body hr{
+  border-top: 1px solid #d9d9d9;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+section.uservideo {
+  padding-top: 50px;
+}
+.resultCalc .result-col {
+  width: 100%;
+  max-width: none;
+}
+.resultCalc .result-col ul li p {
+  float: right;
+}
+.section.Calculator .resultCalc .result-col ul li {
+  border-bottom: 1px solid #d9d9d8;
+  padding-bottom: 8px;
+}
+.section.Calculator .resultCalc .result-col ul li p {
+  float: right;
+  color: #44a647;
+  font-weight: 700;
+  font-size: 18px;
+}
+.section.Calculator .resultCalc .result-col ul li span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #787878;
+}
+.ui-widget.ui-widget-content {
+  background: none;
+  border-radius: 22px;
+  border: none;
+}
+.priceslider-cover {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+body .ui-state-default,
+body .ui-state-focus,
+body .ui-widget-content .ui-state-default,
+body .ui-widget-content .ui-state-focus,
+body .ui-widget-header .ui-state-default,
+body .ui-widget-header .ui-state-focus,
+body .ui-widget-header .ui-state-hover {
+  border: 2px solid #059c69 !important;
+  background: #fff !important;
+  font-weight: 400 !important;
+  color: #fff !important;
+  width: 27px !important;
+  height: 27px !important;
+  cursor: ew-resize !important;
+  outline: 0 !important;
+  z-index: 9;
+  border-radius: 100%;
+  top: -8px;
+  margin-left: 0;
+  transform: translate(-50%);
+}
+.ui-widget.ui-widget-content::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #d9d9d9;
+  border-radius: 22px;
+}
+.priceslider-cover .filler {
+  content: "";
+  position: absolute;
+  height: 11px;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 22px;
+  background: #059c69;
+  opacity: 0.7;
+}
+h3.titlecalc {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
+  color: #404040;
+}
+.resultCalc h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #404040;
+}
+.textcalc {
+  padding: 0px 0 40px;
+}
+.textcalc h3 {
+  font-weight: 700;
+}
+.section .calcbtn p {
+  color: #404040;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.Calc2 input#Earnings {
+  background-color: #f0f0f0;
+  border: 1px solid #d9d9d9;
+}
+.Calc2 .calculateit input,
+.Calc2 .calculateit select {
+  text-align: left;
+}
+.resterms {
+  background: #2b445c;
+  border-radius: 8px;
+  color: #fff;
+  padding: 20px;
+}
+.resterms h5 {
+  font-weight: 700;
+  color: #ffffff;
+}
+.resterms a {
+  color: #fff;
+  text-decoration: underline;
+}
+.resterms li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+.discl {
+  border-top: 1px solid #bbbbbb;
+  padding-top: 40px;
+  margin-top: 50px;
+}
+section.Calculator.Calc2 {
+  background: #fff;
+  padding-top: 40px;
+}
+button#nextstep.error {
+  display: none;
+}
+section.reserverform input[type="text"],
+section.reserverform input[type="email"] ,
+section.reserverform select{
+  padding: 12px 16px;
+  width: 100%;
+  height: 53px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+section.reserverform button {
+  margin: 15px 0;
+}
+.reserverform label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #404040;
+}
+.nextstep {
+  padding-top: 50px;
+}
+section.reserverform h3 {
+  font-weight: 700;
+}
+.share-social {
+  margin-top: 10px;
+  background: #2b445c;
+  padding: 10px;
+  display: none;
+  border-radius: 4px;
+}
+.share-social.visible{
+  display: block;
+}
+.share-social a {
+  display: inline-block;
+  padding: 10px;
+}
+.share-social .link {
+  background: #fff;
+}
+section.section.RecentInvestors {
+  padding-top: 40px;
+}
+#BackOffer {
+  margin-top: 30px;
+}
+
+section.RecentInvestors .investorinfo:nth-child(4),
+section.RecentInvestors .investorinfo:nth-child(8),
+section.RecentInvestors .investorinfo:nth-child(12){
+  margin-right: 0;
+}
+.investorsall-text {
+  padding-bottom: 30px;
+}
+section.RecentInvestors .investorinfo {
+  display: none;
+}
+section.RecentInvestors .investorinfo:nth-child(1),
+section.RecentInvestors .investorinfo:nth-child(2),
+section.RecentInvestors .investorinfo:nth-child(3),
+section.RecentInvestors .investorinfo:nth-child(4){
+  display:inline-block;
+}
+
+@media screen and (min-width: 1600px) {
+  section.section.process {
+    padding-top: 600px;
+    padding-bottom: 600px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .resultCalc {
+    padding-left: 40px;
+  }
+  .quickform form ._error {
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    z-index: 10000001;
+  }
+  .quickform form ._error._above {
+    padding-bottom: 4px;
+    bottom: 64px;
+    right: 0;
+  }
+  .quickform form ._error._below {
+    padding-top: 4px;
+    top: 100%;
+    right: 0;
+  }
+  .quickform form ._error._above ._error-arrow {
+    bottom: 0;
+    right: 15px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #f37c7b;
+  }
+  .quickform form ._error._below ._error-arrow {
+    top: 0;
+    right: 15px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #f37c7b;
+  }
+  .quickform form ._error-inner {
+    padding: 8px 12px;
+    background-color: #f37c7b;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .quickform form ._error-inner._form_error {
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .quickform form ._button-wrapper ._error-inner._form_error {
+    position: static;
+  }
+  .quickform form ._error-inner._no_arrow {
+    margin-bottom: 10px;
+  }
+  .quickform form ._error-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  header#transHeader {
+    display: block;
+  }
+  header#generalHeader {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .investor-average{
+    margin-top: 25px;
+  }
+  .investor-average .invest-term{
+    font-size: 11px;
+  }
+  .home .videoText {
+    margin-top: -40px;
+  }
+  .home .videoText {
+    padding-bottom: 50px;
+  }
+  .EarlyAccess {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    /* background: #F6F7F8 !important; */
+  }
+  .heroMini {
+    background-image: url("../images/home/mb/Hero-img.svg") !important;
+    height: 440px;
+    width: 100%;
+    top: 30px;
+    right: 0;
+    display: none !important;
+  }
+  .EarlyAccess .notify {
+    color: #ffff;
+    font-size: 14px;
+  }
+  .EarlyAccess h1 {
+    font-size: 32px;
+    color: #ffffff;
+  }
+  .quickform form input[type="text"] {
+    height: 45px;
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px 0px 0px 4px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #787878;
+    margin-top: 1px;
+    padding: 8px 15px;
+    width: 230px;
+  }
+  .quickform form button._submit {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+    padding: 8px 10px;
+    width: 110px;
+    height: 46px;
+    background: #2b445c;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    margin-left: -4px;
+  }
+  section.section.process {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #1f2f42 !important;
+  }
+  section.section.process h3,
+  .section.video h3 {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: left;
+  }
+  .section.video p {
+    font-size: 20px;
+    text-align: left;
+  }
+  section.section.process h5 {
+    font-size: 15px;
+  }
+  section.section.process .processtext p {
+    font-size: 16px;
+    text-align: left;
+  }
+  section.section.process p,
+  .section.video p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  body .result {
+    padding: 40px 15px;
+  }
+  .notify br {
+    display: none;
+  }
+  section.userprofile #BackOffer {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+  section.reserverform h3,
+  h3.titlesection,
+  .section.video h3 {
+    font-size: 24px;
+  }
+  body.user section.TableAccess {
+    display: none;
+  }
+  section.Calculator.Calc2 {
+    padding-top: 10px;
+}
+.textcalc h3 {
+  font-size: 24px;
+}
+section.Calculator.Calc2 .textcalc p {
+  font-size: 18px;
+  color: #404040;
+}
+h3.titlecalc{
+  font-size: 26px;
+}
+.section .calcbtn p{
+  font-weight: 500;
+}
+.resultCalc {
+  margin-top: 40px;
+}
+.resultCalc h4,
+.section.Calculator .resultCalc .result-col ul li span,
+.section.Calculator .resultCalc .result-col ul li p,.discl p{
+  font-size: 14px;
+}
+.resultCalc .result-col ul, .resultCalc .result-col ul li {
+  width: 100%;
+  padding: 0;
+  display: block;
+}
+section.reserverform button {
+  max-width: none !important;
+  width: 100%;
+}
+section.reserverform input[type="text"], section.reserverform input[type="email"], section.reserverform select {
+  padding: 5px 16px;
+  height: 38px;
+  margin-bottom: 15px;
+}
+.home .section.Calculator{
+  padding-top: 40px;
+}
+.home .TableAccess{
+  padding-bottom: 40px;
+}
+
+}
+
+#prefix-suffix-slider .ui-slider-label {
+  margin-left: -1.75em;
+}
+body .ui-slider-pips [class*="ui-slider-pip-selected"] {
+  font-weight: 400;
+  color: #44a647;
+}
+/* We also use a media query so the pips do not crowd-over each other
+      when we get to a small screen size */
+
+@media screen and (max-width: 1040px) {
+  #prefix-suffix-slider .ui-slider-pip:nth-of-type(2n + 1) .ui-slider-label {
+    display: none;
+  }
+}
