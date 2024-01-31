@@ -14,7 +14,28 @@ $(window).scroll(function() {
     }
 }); //missing );
 
-    
+ // Function to handle play/pause for a specific video and button
+ function handlePlayPause(videoId,buttonId) {
+    var video = document.getElementById(videoId);
+    var playButton = document.getElementById(buttonId);
+    var playButton = document.getElementById(buttonId);
+    var btnImg = playButton.querySelector('.btn-img');
+
+    playButton.addEventListener("click", function() {
+        if (video.paused) {
+            video.play();
+            btnImg.src = "images/echedry-page-assets/Btn-pause.png";
+        } else {
+            video.pause();
+            btnImg.src = "images/echedry-page-assets/Btn-play.png";
+        }
+    });
+}
+
+// Call the function for each video and button pair
+handlePlayPause("echedryVideo_1", "playButton_1");
+handlePlayPause("echedryVideo_2", "playButton_2");
+
         
 // swiper for profile section
 var swiper = new Swiper(".swiper", {

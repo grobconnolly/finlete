@@ -165,10 +165,10 @@
                 <div class="col-md-6 heroMedia" >
                     <div class="video-container">
                         <div class="overlya-video"></div>
-                        <div id="playButton">
-                            <img src="images/echedry-page-assets/Btn-play.png" alt="" id="btn-img">
+                        <div id="playButton_1" class="playButton">
+                            <img src="images/echedry-page-assets/Btn-play.png" alt="" class="btn-img">
                         </div>
-                        <video id="echedryVideo" class="echedry-video" width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
+                        <video id="echedryVideo_1" class="echedry-video" width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
                             <source src="images/echedry-page-assets/finlete_echedry_vargas.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
@@ -314,6 +314,43 @@
                 </div> 
                 
             </div>
+    </section>
+    
+    <!-- Player gallery -->
+    <section class="Playergallery">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Video and Images</h3>
+                </div>
+                <div class="col-md-12">
+                    <div class="video-container">
+                        <div class="branding-finlete">
+                            <img src="images/echedry-page-assets/Favicon.svg" alt="">
+                        </div>
+                        <!-- <div class="overlya-video"></div> -->
+                        <div id="playButton_2" class="playButton">
+                            <img src="images/echedry-page-assets/Btn-play.png" alt="" class="btn-img">
+                        </div>
+                        <video id="echedryVideo_2" class="echedry-video"width="1464" height="640" poster="./images/echedry-page-assets/PJAF9011.jpg">
+                            <source src="images/echedry-page-assets/PJAF9026-1920.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="row gallery-images">
+                <div class="col-md-4">
+                    <div class="bg-gallery" style="background-image: url(./images/echedry-page-assets/PJAF9011.jpg);"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-gallery" style="background-image: url(./images/echedry-page-assets/PJAF9048.jpg);"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-gallery" style="background-image: url(./images/echedry-page-assets/PJAF9055.jpg);"></div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Discover features -->
     <section class="Discover">
@@ -480,8 +517,8 @@
                           </svg> Zoom</p>
                     </div>
                     <!-- Calendly inline widget begin -->
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/finlete/finlete-website-meeting?hide_event_type_details=1" style="min-width:320px;"></div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/finlete/finlete-website-meeting?hide_event_type_details=1" style="min-width:320px;"></div> -->
+                    <!-- <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
                     <!-- Calendly inline widget end -->
                     </div>
                 </div>
@@ -693,7 +730,7 @@
             <div class="container">
                 <h2 class="text-center">Join the Discussion</h2>
                 <div id="disqus_thread"></div>
-                <script>
+                <!-- <script>
                     let PAGE_URL = "https://finlete.com/"; 
                     //let PAGE_IDENTIFIER = "";
                     /**
@@ -713,7 +750,7 @@
                     })();
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            </div>
+            </div> -->
         </section>
     
         <!-- End discuss thread -->
@@ -893,22 +930,8 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="swiperlib/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/js-V4.js"></script>
-    <script>
-        var video = document.getElementById("echedryVideo");
-        var playButton = document.getElementById("playButton");
-        var btnImg = document.getElementById("btn-img");
-
-        playButton.addEventListener("click", function() {
-            if (video.paused) {
-                video.play();
-                btnImg.src = "images/echedry-page-assets/Btn-pause.png";
-            } else {
-                video.pause();
-                btnImg.src = "images/echedry-page-assets/Btn-play.png";
-            }
-        });
-    </script>
-    <script id="dsq-count-scr" src="//finlete.disqus.com/count.js" async></script>
+    
+    <!-- <script id="dsq-count-scr" src="//finlete.disqus.com/count.js" async></script> -->
 </body>
 
 </html>
