@@ -37,10 +37,7 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
     background: var(--Colors-Neutral-200, #262626);
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) {
-    body {
-        /* Common styles for the body at this screen size */
-    }
-
+    
     body h1 {
         font-size: 36px;
     }
