@@ -73,6 +73,30 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
     body .heroText {
         padding: 40px;
     }
+    section.Hero.echedry .btn{
+        width: 50%;
+    }
+    span.commision{
+        margin-left: 10%;
+    }
+    section.Hero.echedry .heroText {
+        padding: 60px 60px 0;
+    }
+    section.Hero.echedry .heroMedia {
+        padding: 60px;
+    }
+    section.Hero.echedry{
+        height: auto;
+    }
+    .stat-ratio{
+        flex:25%;
+    }
+    section.Playergallery {
+        padding: 50px 0;
+    }
+    .team-member .member{
+        height: 320px;
+    }
 }
 
 
@@ -87,7 +111,7 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
         margin-top: 8px;
     }
     body h1 {
-        font-size: 32px;
+        font-size: 36px;
     }
     body h2{
         font-size: 26px;
@@ -492,6 +516,170 @@ body .top-bar .container-fluid {
 }
 #flipFlop iframe{
     height: 200px;
+}
+body .heroText {
+    padding: 40px;
+}
+/* echedry page */
+section.Hero.echedry .btn{
+    width: 100%;
+}
+
+section.Hero.echedry{
+    height: auto;
+}
+section.Hero p.progress-count,span.commision{
+    font-size: 14px;
+}
+span.commision {
+    text-align: center;
+    width: 100%;
+    padding: 12px 50px;
+}
+.stat-ratio span{
+    font-size: 16px;
+}
+section.Hero.echedry .stat-ratio p, .stat-ratio p {
+    font-size: 8px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-weight: 400;
+}
+.stats{
+    align-items: stretch;
+}
+.stat-ratio{
+    padding: 12px 6px;
+    min-width: 70px;
+}
+section.Hero.echedry .heroMedia {
+    padding-top: 0;
+}
+.inline-athelet.echedry{
+    padding: 14px 10px;
+    margin: 0;
+}
+.inline-athelet.echedry .social-player {
+    margin-top: 10px;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+}
+.inline-athelet.echedry .badge-wrap {
+    padding-left: 0;
+    width: 100%;
+}
+.inline-athelet.echedry .athelet-avatar {
+    float: left;
+    margin-right: 10px;
+}
+.badge-wrap.badge-echedry {
+    clear: both;
+    padding-top: 18px;
+}
+.social-player span{
+    margin: 0 5px;
+}
+.badge-wrap .badge{
+    margin: 2px 0;
+}
+video#echedryVideo_1 {
+    height: 226px;
+}
+table.echedry-table td, table.echedry-table th {
+    font-size: 12px;
+}
+body.echedry h3,body.echedry h1{
+    font-size: 28px;
+    text-align: left;
+}
+body.echedry p,body.echedry section.FAQ h2 {
+    text-align: left;
+}
+body.echedry  .teamText p ,body.echedry  .team-member p{
+    text-align: center;
+}
+body.echedry section.Team {
+    padding: 40px 0;
+}
+
+body.echedry section.Hero h1 {
+    font-size: 40px;
+}
+body.echedry  section.detailPlayer {
+    padding: 64px 0 0;
+}
+ section.Playergallery {
+    padding: 10px 0;
+}
+video#echedryVideo_2 {
+    height: 200px;
+}
+.bg-gallery{
+    height: 123.767px;    
+}
+.row.gallery-images {
+    padding: 0 15px;
+}
+.row.gallery-images .col-xs-4 {
+    padding: 0 5px;
+}
+body.echedry section.Diagram.no-bg h2{
+    max-width: 60%;
+}
+body.echedry .swiperControls {
+    margin-top: -60px;
+}
+body.echedry .swiperControls svg {
+    width: 32px;
+}
+body.echedry .ftLink {
+    border: none;
+}
+section.footerNew.echedry ul li a {
+    padding: 5px 20px 5px 0px;
+    font-weight: 500;
+    font-size: 14px;
+}
+section.footerNew.echedry address {
+    text-align: left;
+    padding: 0;
+}
+section.footerNew.echedry p{
+    font-size: 12px;
+}
+body.echedry section.swiperSlider {
+    padding-bottom: 40px;
+}
+.swiperSlider.echedry p{
+    font-size: 14px;
+}
+.swiperSlider.echedry .content p:first-of-type{
+    color: #0A0A0A;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.stat-eche{
+    padding-bottom: 90px;
+}
+section.Discover.echedry .features p{
+    -webkit-line-clamp: 3;
+}
+section.Discover.echedry .features h4 {
+    height: 37px;
+}
+.Features-1e {
+    padding-top: 0;
+}
+section.Discover.echedry {
+    padding: 40px 0 50px 0;
+}
+div[id^=playButton]{
+    width: 45px;    
+}
+.branding-finlete{
+    width: 25px;
 }
 
 }

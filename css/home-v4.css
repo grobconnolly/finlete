@@ -17,6 +17,9 @@ a:hover{
     color: #44A647;
     text-decoration: underline;
 }
+section{
+    margin: -2px 0;
+}
 section.topBar {
     background: #44A647;
     padding: 12px 15px;
@@ -1502,6 +1505,8 @@ section.footerNew ul li a{
 .seprator {
     border-top: 1px solid #404040;
     margin: 24px 0;
+    display: inline-block;
+    width: 100%;
 }
 .Dalmoreft p{
     font-size: 18px;
@@ -1518,6 +1523,13 @@ section.footerNew ul li a{
     padding: 40px;
     border-radius: 12px;
     margin-bottom: 64px;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+}
+.inline-athelet.echedry .athelet-avatar{
+    float: left;
+    margin-right: 24px;
 }
 .echedry-table tr.data-row:hover {
     background: rgba(56, 139, 62, 0.08);
@@ -1554,6 +1566,7 @@ span.commision {
     align-items: center;
     justify-content: space-around;
     padding-top: 30px;
+    gap: 12px;
 }
 .stat-ratio {
     border-radius: 8px;
@@ -1690,6 +1703,12 @@ section.Playergallery {
     position: absolute;
     top: 24px;
     left: 24px;
+}
+.section.detailPlayer.echedry{
+    padding: 64px 0 0 0;
+}
+section.Discover.echedry {
+    padding: 60px 0 150px 0;
 }
 /* Echedry / Desktop End */
 
