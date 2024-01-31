@@ -32,17 +32,17 @@ $(window).scroll(function() {
 
 //  Popup video
 document.addEventListener("DOMContentLoaded", function () {
-    var video = document.getElementById("echedryVideo_popup");
+    var videoPop = document.getElementById("echedryVideo_popup");
     var playButtonPop = document.getElementById("playButton");
     var closeButton = document.getElementById("close_video");
 
     playButtonPop.addEventListener("click", function () {
-        video.play();
+        videoPop.play();
     });
 
     closeButton.addEventListener("click", function () {
-        video.pause();
-        video.currentTime = 0; // Rewind video to the beginning
+        videoPop.pause();
+        videoPop.currentTime = 0; // Rewind video to the beginning
     });
 });
         
