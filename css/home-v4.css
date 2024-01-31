@@ -1615,7 +1615,6 @@ section.Hero.echedry {
     height: 100vh;
     width: 100vw;
     background-image: none;
-    background: linear-gradient(180deg, rgba(30, 30, 30, 0.00) 0%, #1E1E1E 94.1%);
 }
 section.Hero p.progress-count {
     color: #FDB002;
@@ -1631,6 +1630,14 @@ section.Hero.echedry .bg-video{
     transform: translate(-50%, -50%);
     width: 100%;
     height: auto;
+}
+.overlay-bg-video {
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.00) 0%, #1E1E1E 94.1%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 div#echedry-Features {
     margin-top: 34px;
