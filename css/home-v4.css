@@ -1614,13 +1614,17 @@ section.Hero.echedry .heroMedia {
 box-shadow: 0px 21px 25.2px 0px rgba(30, 30, 30, 0.64);
 width: 100%;
 }
-div[id^=playButton] {
+div.playButton {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
     z-index: 9;
+}
+div.playButton img:hover {
+    scale: 1.1;
+    transition: all ease 0.25s;
 }
 section.Hero.echedry {
     position: relative;

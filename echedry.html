@@ -165,10 +165,10 @@
                 <div class="col-lg-6 heroMedia" >
                     <div class="video-container">
                         <div class="overlya-video"></div>
-                        <div id="playButton_1" class="playButton">
+                        <div id="playButton" class="playButton" data-toggle="modal" data-target="#flipFlop">
                             <img src="images/echedry-page-assets/Btn-play.png" alt="" class="btn-img">
                         </div>
-                        <video id="echedryVideo_1" class="echedry-video" width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
+                        <video id="echedryVideo_1" class="echedry-video" autoplay muted loop  width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
                             <source src="images/echedry-page-assets/finlete_echedry_vargas.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
@@ -332,7 +332,7 @@
                         </div>
                         <!-- <div class="overlya-video"></div> -->
                         <div id="playButton_2" class="playButton">
-                            <img src="images/echedry-page-assets/Btn-play.png" alt="" class="btn-img">
+                            <img src="images/echedry-page-assets/Btn-play.png" alt="" id="btn-img">
                         </div>
                         <video id="echedryVideo_2" class="echedry-video"width="1464" height="640" poster="./images/echedry-page-assets/PJAF9011.jpg">
                             <source src="images/echedry-page-assets/PJAF9026-1920.mp4" type="video/mp4">
@@ -935,7 +935,6 @@
     
         vgo('process');
     </script>
-    <script id="dsq-count-scr" src="//finlete.disqus.com/count.js" async></script>
     
     <!-- Time offer -->
     <div class="time-offer-echedry">
@@ -987,8 +986,31 @@
                 }
             }, 1000);
 
-          </script>
+        </script>
           
+    </div>
+    <script id="dsq-count-scr" src="//finlete.disqus.com/count.js" async></script>
+
+    <!-- The modal -->
+    <div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                
+                <h4 class="modal-title" id="modalLabel">Finlete: Fueling Futures, Building Fans.
+                </h4>
+                </div>
+                <div class="modal-body">
+                    <video id="echedryVideo_popup" class="echedry-video"  controls style="max-width: 100%;"  width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
+                        <source src="images/echedry-page-assets/finlete_echedry_vargas.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal" id="close_video">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

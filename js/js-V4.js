@@ -15,27 +15,36 @@ $(window).scroll(function() {
 }); //missing );
 
  // Function to handle play/pause for a specific video and button
- function handlePlayPause(videoId,buttonId) {
-    var video = document.getElementById(videoId);
-    var playButton = document.getElementById(buttonId);
-    var playButton = document.getElementById(buttonId);
-    var btnImg = playButton.querySelector('.btn-img');
+ 
+ var video = document.getElementById("echedryVideo_2");
+ var playButton = document.getElementById("playButton_2");
+ var btnImg = document.getElementById("btn-img");
 
-    playButton.addEventListener("click", function() {
-        if (video.paused) {
-            video.play();
-            btnImg.src = "images/echedry-page-assets/Btn-pause.png";
-        } else {
-            video.pause();
-            btnImg.src = "images/echedry-page-assets/Btn-play.png";
-        }
+ playButton.addEventListener("click", function() {
+     if (video.paused) {
+         video.play();
+         btnImg.src = "images/echedry-page-assets/Btn-pause.png";
+     } else {
+         video.pause();
+         btnImg.src = "images/echedry-page-assets/Btn-play.png";
+     }
+ });
+
+//  Popup video
+document.addEventListener("DOMContentLoaded", function () {
+    var video = document.getElementById("echedryVideo_popup");
+    var playButton = document.getElementById("playButton");
+    var closeButton = document.getElementById("close_video");
+
+    playButton.addEventListener("click", function () {
+        video.play();
     });
-}
 
-// Call the function for each video and button pair
-handlePlayPause("echedryVideo_1", "playButton_1");
-handlePlayPause("echedryVideo_2", "playButton_2");
-
+    closeButton.addEventListener("click", function () {
+        video.pause();
+        video.currentTime = 0; // Rewind video to the beginning
+    });
+});
         
 // swiper for profile section
 var swiper = new Swiper(".swiper", {

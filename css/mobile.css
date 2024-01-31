@@ -675,7 +675,7 @@ section.Discover.echedry .features h4 {
 section.Discover.echedry {
     padding: 40px 0 50px 0;
 }
-div[id^=playButton]{
+div.playButton{
     width: 45px;    
 }
 .branding-finlete{
