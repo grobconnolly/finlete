@@ -33,10 +33,10 @@ $(window).scroll(function() {
 //  Popup video
 document.addEventListener("DOMContentLoaded", function () {
     var video = document.getElementById("echedryVideo_popup");
-    var playButton = document.getElementById("playButton");
+    var playButtonPop = document.getElementById("playButton");
     var closeButton = document.getElementById("close_video");
 
-    playButton.addEventListener("click", function () {
+    playButtonPop.addEventListener("click", function () {
         video.play();
     });
 
