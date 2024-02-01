@@ -83,6 +83,27 @@ body p{
     height: 48px;
     width: auto;
 }
+.BuyShares {
+    padding: 90px;
+}
+.BuyShares h2{
+    margin-bottom: 32px;
+}
+.estimate00 {
+    border-bottom: 1px solid var(--Colors-Neutral-300, #404040);
+    display: flex;
+    justify-content: space-between;
+}
+.estimate00 div {
+    color: var(--Colors-color-text-primary, #FAFAFA);
+    font-family: 'Inter',sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding: 5px 0;
+}
+
 /*===========nav style=====================*/
 .top-bar {
     background: #262626;
@@ -1764,6 +1785,11 @@ section.Discover.echedry {
 }
 .buyft .btn {
     padding: 16px 20px !important;
+}
+section.calc-share {
+    background: #1E1E1E;
+    padding: 48px 0;
+    color: #fff;
 }
 /* Echedry / Desktop End */
 
