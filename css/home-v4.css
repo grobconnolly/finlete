@@ -1724,6 +1724,7 @@ section.Hero.echedry .heroMedia {
     border-radius: 12px;
     overflow: hidden;
     width: 100%;
+    margin-top: 60px;
 }
 .echedry-video {
     max-width: 100%;

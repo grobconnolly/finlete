@@ -726,6 +726,9 @@ div.playButton{
 .share-echedry .share-price {
     gap: 8px;
 }
+.video-container{
+    margin-top: 0;
+}
 
 }
 
