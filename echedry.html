@@ -1272,16 +1272,15 @@
 
         $(document).ready(function () {
     
-        $("#share-echedry,#share-echedry_1").slider({
+        $("#share-echedry").slider({
             min: 13, 
             max: 3000, 
             slide: function (event, ui) {
                 //update(1, ui.value); //changed
                 $(".filler").width(ui.value * incrementWidthM + "%");
-                $(".filler2").width(ui.value * incrementWidthM + "%");
-                $('#sharecount,#sharecount_1').text(ui.value + '');
+                $('#sharecount').text(ui.value + '');
                 //$('#price-share').text('$' + Math.round(ui.value * SharePrice));
-                $('#price-share,#price-share_1').text('$' + (ui.value * SharePrice).toFixed(2));
+                $('#price-share').text('$' + (ui.value * SharePrice).toFixed(2));
                 
                 // Remove 'active' class from all elements
                 $('.inline-perk-eche').removeClass('active');
@@ -1290,15 +1289,15 @@
 
                 if (perk !== undefined && perk !== null) {
                     if (perk >= 35 && perk <= 69) {
-                        $('#perk35,#perk35_1').addClass('active');
+                        $('#perk35').addClass('active');
                     } else if (perk >= 70 && perk <= 124) {
-                        $('#perk70,#perk70_1').addClass('active');
+                        $('#perk70').addClass('active');
                     } else if (perk >= 125 && perk <= 649) {
-                        $('#perk125,#perk125_1').addClass('active');
+                        $('#perk125').addClass('active');
                     } else if (perk >= 650 && perk <= 2999) {
-                        $('#perk650,#perk650_1').addClass('active');
+                        $('#perk650').addClass('active');
                     } else if (perk === 3000) {
-                        $('#perk30kplus,#perk30kplus_1').addClass('active');
+                        $('#perk30kplus').addClass('active');
                     } else {
                         // Handle the case where perk is present but doesn't fall into any range
                     }
@@ -1306,7 +1305,42 @@
                
             },
     
-            })                
+            })    
+            
+            $("#share-echedry_1").slider({
+            min: 13, 
+            max: 3000, 
+            slide: function (event, ui) {
+                //update(1, ui.value); //changed
+                $(".filler2").width(ui.value * incrementWidthM + "%");
+                $('#sharecount_1').text(ui.value + '');
+                //$('#price-share').text('$' + Math.round(ui.value * SharePrice));
+                $('#price-share_1').text('$' + (ui.value * SharePrice).toFixed(2));
+                
+                // Remove 'active' class from all elements
+                $('.inline-perk-eche').removeClass('active');
+
+                let perk1 = ui.value;
+
+                if (perk1 !== undefined && perk1 !== null) {
+                    if (perk1 >= 35 && perk1 <= 69) {
+                        $('#perk35_1').addClass('active');
+                    } else if (perk1 >= 70 && perk1 <= 124) {
+                        $('#perk70_1').addClass('active');
+                    } else if (perk1 >= 125 && perk1 <= 649) {
+                        $('#perk125_1').addClass('active');
+                    } else if (perk1 >= 650 && perk1 <= 2999) {
+                        $('#perk650_1').addClass('active');
+                    } else if (perk1 === 3000) {
+                        $('#perk30kplus_1').addClass('active');
+                    } else {
+                        // Handle the case where perk is present but doesn't fall into any range
+                    }
+                } 
+               
+            },
+    
+            })    
             
         });
     
