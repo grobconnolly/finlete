@@ -1575,7 +1575,7 @@ body .share-echedry .ui-state-default, body .share-echedry .ui-state-focus, body
 body .share-echedry  .ui-widget.ui-widget-content {
     height: 26px;
 }
-body .share-echedry .priceslider-cover .filler {
+body .share-echedry .priceslider-cover .filler ,body .share-echedry .priceslider-cover .filler2{
     height: 26px;
     background: #388B3E;
     opacity: 1;
