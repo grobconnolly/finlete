@@ -1375,7 +1375,7 @@ body .ui-state-default, body .ui-state-focus, body .ui-widget-content .ui-state-
     margin-left: 0;
     transform: translate(-50%);
 }
-.priceslider-cover .filler {
+.priceslider-cover .filler ,.priceslider-cover .filler2{
     content: "";
     position: absolute;
     height: 6px;

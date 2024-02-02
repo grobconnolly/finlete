@@ -1065,7 +1065,7 @@
                 </div>
                 <div class="slider-box priceslider-cover">
                     <div id="share-echedry_1" class="slider"></div>
-                    <div class="filler" style="width: 0%;"></div>
+                    <div class="filler2" style="width: 0%;"></div>
                 </div>
                 <div class="share-price">
                     <div class="price-col">
@@ -1278,6 +1278,7 @@
             slide: function (event, ui) {
                 //update(1, ui.value); //changed
                 $(".filler").width(ui.value * incrementWidthM + "%");
+                $(".filler2").width(ui.value * incrementWidthM + "%");
                 $('#sharecount,#sharecount_1').text(ui.value + '');
                 //$('#price-share').text('$' + Math.round(ui.value * SharePrice));
                 $('#price-share,#price-share_1').text('$' + (ui.value * SharePrice).toFixed(2));
