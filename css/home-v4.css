@@ -1628,6 +1628,7 @@ body .share-echedry .priceslider-cover .filler {
     border-radius: 12px;
     background: var(--Colors-Neutral-200, #262626);
     padding: 24px;
+    margin-bottom: 32px;
 }
 .BuyShares h2 {
     margin-top: 50px;
@@ -1880,7 +1881,7 @@ section.Discover.echedry {
 }
 section.calc-share {
     background: #1E1E1E;
-    padding: 48px 0;
+    padding: 90px 0;
     color: #fff;
 }
 

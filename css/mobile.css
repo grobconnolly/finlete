@@ -708,6 +708,24 @@ div.playButton{
 .footerNew.echedry{
     padding-bottom: 100px;
 }
+.share-echedry .share-price .price-col{
+    padding: 10px;
+}
+.pip-range,.detail-perk-eche h5,
+.estimate00 div{
+    font-size: 14px;
+}
+.share-echedry .share-price h4{
+    font-size: 16px;
+    margin: 0;
+}
+.share-echedry .share-price .price-col,
+.detail-perk-eche p{
+    font-size: 10px;
+}
+.share-echedry .share-price {
+    gap: 8px;
+}
 
 }
 
