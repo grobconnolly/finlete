@@ -13,39 +13,7 @@ $(window).scroll(function() {
         $(".top-bar").removeClass("sticky");
     }
 }); //missing );
-
- // Function to handle play/pause for a specific video and button
- 
- var video = document.getElementById("echedryVideo_2");
- var playButton = document.getElementById("playButton_2");
- var btnImg = document.getElementById("btn-img");
-
- playButton.addEventListener("click", function() {
-     if (video.paused) {
-         video.play();
-         btnImg.src = "images/echedry-page-assets/Btn-pause.png";
-     } else {
-         video.pause();
-         btnImg.src = "images/echedry-page-assets/Btn-play.png";
-     }
- });
-
-//  Popup video
-document.addEventListener("DOMContentLoaded", function () {
-    var videoPop = document.getElementById("echedryVideo_popup");
-    var playButtonPop = document.getElementById("playButton");
-    var closeButton = document.getElementById("close_video");
-
-    playButtonPop.addEventListener("click", function () {
-        videoPop.play();
-    });
-
-    closeButton.addEventListener("click", function () {
-        videoPop.pause();
-        videoPop.currentTime = 0; // Rewind video to the beginning
-    });
-});
-        
+       
 // swiper for profile section
 var swiper = new Swiper(".swiper", {
     speed: 400,
@@ -112,3 +80,4 @@ $(document).ready(function() {
 
     console.log(currentYear);
 });
+
