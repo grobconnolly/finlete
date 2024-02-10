@@ -294,9 +294,11 @@ section.Diagram {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    background-color: #fafafa;
 }
 section.swiperSlider {
     padding-bottom: 90px;
+    background-color: #fafafa;
 }
 section.swiperSlider .swiper{
     overflow: visible;
