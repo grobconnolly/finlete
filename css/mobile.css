@@ -152,7 +152,10 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
         border: none;
     }
     section.Hero .heroText,body .BuyShares {
-        padding: 48px 20px;
+        padding: 48px 20px 0;
+    }
+    .BuyShares h2{
+        margin-top: 0;
     }
     section.Hero p{
         font-size: 18px;
@@ -285,7 +288,7 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
         margin: 0 0 40px 0;
     }
     .team-member.Legal .member {
-        min-height: 340px;
+        min-height: 360px;
     }
     .teamText {
         padding-bottom: 40px;
@@ -542,6 +545,7 @@ span.commision {
     text-align: center;
     width: 100%;
     padding: 12px 50px;
+    margin: 0;
 }
 .stat-ratio span{
     font-size: 16px;
@@ -560,7 +564,7 @@ section.Hero.echedry .stat-ratio p, .stat-ratio p {
     min-width: 70px;
 }
 section.Hero.echedry .heroMedia {
-    padding: 0px 15px 50px 15px;
+    padding: 0px 15px 0px 15px;
 }
 .inline-athelet.echedry{
     padding: 14px 10px;
@@ -678,6 +682,33 @@ section.Discover.echedry .features h4 {
 }
 .Features-1e {
     padding-top: 0;
+    padding-bottom: 0;
+}
+.discuss-wrap {
+    padding: 0 0 90px 0;
+}
+.pip-range {
+    padding-top: 28px;
+}
+body .share-echedry .ui-widget.ui-widget-content,
+body .share-echedry .priceslider-cover .filler, 
+body .share-echedry .priceslider-cover .filler2 {
+    height: 16px;
+}
+body .share-echedry .ui-state-default, 
+body .share-echedry .ui-state-focus, 
+body .share-echedry .ui-widget-content .ui-state-default {
+    width: 34px !important;
+    height: 34px !important;
+    top: -8px;
+    background: url(../images/echedry-page-assets/slider-nob.svg) no-repeat !important;
+    border: none !important;
+    background-position: center;
+    background-size: cover !important;
+    margin-left: 5px;
+}
+section.calc-share{
+    padding: 0 0 40px;
 }
 section.Discover.echedry {
     padding: 40px 0 50px 0;

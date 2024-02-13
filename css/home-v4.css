@@ -3,6 +3,7 @@ body,html{
     overflow-x:hidden; 
     scroll-behavior: smooth;
     color: #1E1E1E;
+    background: #1E1E1E;
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -293,9 +294,11 @@ section.Diagram {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    background-color: #fafafa;
 }
 section.swiperSlider {
     padding-bottom: 90px;
+    background-color: #fafafa;
 }
 section.swiperSlider .swiper{
     overflow: visible;
@@ -472,6 +475,7 @@ button#btn-Deck {
 /* Team */
 section.Team {
     padding: 90px 0;
+    background: #fff;
 }
 .team-member{
     text-align: center;
@@ -536,14 +540,26 @@ section.FAQ  .panel-default > .panel-heading {
     border: none;
     border-radius: 0;
     padding: 18px 24px;
-    border-bottom: 1px solid #525252;
+    /* border-bottom: 1px solid #525252; */
 }
+section.FAQ .panel-default.active > .panel-heading {
+    background: #262626;
+    /* border-bottom: 1px solid #262626; */
+}
+
 section.FAQ .panel-group .panel {
     margin-bottom: 0;
     border-radius: 0;
     border: none;
     box-shadow: none;
     background-color:#1e1e1e;
+}
+section.FAQ .panel-default.panel{
+    border-bottom: 1px solid #525252;
+    margin: 0;
+}
+section.FAQ .panel-default.panel.active:first-of-type {
+    border-top: 1px solid #525252;
 }
 section.FAQ .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border: none;
@@ -1465,6 +1481,10 @@ div#WhoIn .cont-ath h4 {
 /* Echedry / Desktop page */
 section.Diagram.no-bg {
     background: none;
+    background: #FAFAFA;
+}
+body.echedry section.swiperSlider {
+    background: #FAFAFA;
 }
 p.player-location {
     overflow: hidden;
@@ -1724,7 +1744,7 @@ section.Hero.echedry .heroMedia {
     border-radius: 12px;
     overflow: hidden;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 .echedry-video {
     max-width: 100%;
@@ -1786,7 +1806,7 @@ div#echedry-Features {
 }
 .Features-1e {
     padding-bottom: 60px;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 .discuss-wrap {
     padding: 90px 0;
@@ -1819,6 +1839,9 @@ section.Playergallery {
     margin-bottom: 30px;
     margin-top:0;
 }
+section.Playergallery .video-container {
+    margin: 0;
+}
 .branding-finlete {
     position: absolute;
     top: 24px;
@@ -1828,7 +1851,10 @@ section.Playergallery {
     padding: 64px 0 0 0;
 }
 section.Discover.echedry {
-    padding: 60px 0 150px 0;
+    padding: 60px 0 96px 0;
+}
+body.echedry .teamText {
+    padding-bottom: 40px;
 }
 .time-offer-echedry {
     background: #404040;
