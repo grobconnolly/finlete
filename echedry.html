@@ -1324,21 +1324,35 @@
 
                 let perk = ui.value;
 
-                if (perk !== undefined && perk !== null) {
-                    if (perk >= 35 && perk <= 69) {
-                        $('#perk35').addClass('active');
-                    } else if (perk >= 70 && perk <= 124) {
-                        $('#perk70').addClass('active');
-                    } else if (perk >= 125 && perk <= 649) {
-                        $('#perk125').addClass('active');
-                    } else if (perk >= 650 && perk <= 2999) {
-                        $('#perk650').addClass('active');
-                    } else if (perk === 3000) {
-                        $('#perk30kplus').addClass('active');
-                    } else {
-                        // Handle the case where perk is present but doesn't fall into any range
-                    }
-                } 
+                if (perk > 35) {
+                    $('#perk35').addClass('active');
+                } else {
+                    $('#perk35').removeClass('active');
+                }
+
+                if (perk > 70) {
+                    $('#perk70').addClass('active');
+                } else {
+                    $('#perk70').removeClass('active');
+                }
+
+                if (perk > 125) {
+                    $('#perk125').addClass('active');
+                } else {
+                    $('#perk125').removeClass('active');
+                }
+
+                if (perk > 650) {
+                    $('#perk650').addClass('active');
+                } else {
+                    $('#perk650').removeClass('active');
+                }
+
+                if (perk === 3000) {
+                    $('#perk30kplus').addClass('active');
+                } else {
+                    $('#perk30kplus').removeClass('active');
+                }
                
             },
     
@@ -1355,26 +1369,41 @@
                 $('#price-share_1').text('$' + (ui.value * SharePrice).toFixed(2));
                 
                 // Remove 'active' class from all elements
-                $('#share-echedryFT .inline-perk-eche').removeClass('active');
+                //$('#share-echedryFT .inline-perk-eche').removeClass('active');
 
                 let perk1 = ui.value;
+                
+                if (perk1 > 35) {
+                    $('#perk35_1').addClass('active');
+                } else {
+                    $('#perk35_1').removeClass('active');
+                }
 
-                if (perk1 !== undefined && perk1 !== null) {
-                    if (perk1 >= 35 && perk1 <= 69) {
-                        $('#perk35_1').addClass('active');
-                    } else if (perk1 >= 70 && perk1 <= 124) {
-                        $('#perk70_1').addClass('active');
-                    } else if (perk1 >= 125 && perk1 <= 649) {
-                        $('#perk125_1').addClass('active');
-                    } else if (perk1 >= 650 && perk1 <= 2999) {
-                        $('#perk650_1').addClass('active');
-                    } else if (perk1 === 3000) {
-                        $('#perk30kplus_1').addClass('active');
-                    } else {
-                        // Handle the case where perk is present but doesn't fall into any range
-                    }
-                } 
-               
+                if (perk1 > 70) {
+                    $('#perk70_1').addClass('active');
+                } else {
+                    $('#perk70_1').removeClass('active');
+                }
+
+                if (perk1 > 125) {
+                    $('#perk125_1').addClass('active');
+                } else {
+                    $('#perk125_1').removeClass('active');
+                }
+
+                if (perk1 > 650) {
+                    $('#perk650_1').addClass('active');
+                } else {
+                    $('#perk650_1').removeClass('active');
+                }
+
+                if (perk1 === 3000) {
+                    $('#perk30kplus_1').addClass('active');
+                } else {
+                    $('#perk30kplus_1').removeClass('active');
+                }
+
+
             },
     
             })    
@@ -1410,37 +1439,37 @@
        
        <script>
            
-            // Set the date we're counting down to (current date + 39 days)
-            var countDownDate = new Date();
-            countDownDate.setDate(countDownDate.getDate() + 40);
-            countDownDate.setHours(0, 0, 0, 0);
+    // Set the date we're counting down to (current date)
+    var countDownDate = new Date();
+    countDownDate.setDate(countDownDate.getDate() + 37); // Add 40 days to the current date
 
-            // Update the countdown every 1 second
-            var x = setInterval(function() {
-                // Get the current date and time
-                var now = new Date().getTime();
+    // Update the countdown every 1 second
+    var x = setInterval(function() {
+        // Get the current date and time
+        var now = new Date().getTime();
 
-                // Calculate the remaining time
-                var distance = countDownDate - now;
+        // Calculate the remaining time
+        var distance = countDownDate - now;
 
-                // Calculate days, hours, minutes, and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Calculate days, hours, minutes, and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                // Update the HTML with the calculated values
-                document.getElementById("days").innerText = days;
-                document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
-                document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
-                document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+        // Update the HTML with the calculated values
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+        document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+        document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
 
-                // If the countdown is over, display a message
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("timer-eche").innerHTML = "EXPIRED";
-                }
-            }, 1000);
+        // If the countdown is over, display a message
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer-eche").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+
 
         </script>
           
