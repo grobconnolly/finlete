@@ -436,7 +436,7 @@
                 </div> 
                 <div class="col-md-4 rightPlayer">
                     <aside class="shareinvest">
-                        <div class="timecounter">
+                        <div class="timecounter" id="timecounter">
                             <div class="day"><span id="days">10</span> Day</div>
                             <div class="hour"><span id="hours">07</span> hours</div>
                             <div class="min"><span id="minutes">59</span> Mins</div>
@@ -617,7 +617,7 @@
    </script>
    <script>
    // Set the date we're counting down to
-   var countDownDate = new Date("Dec 31, 2023 00:00:00").getTime();
+   var countDownDate = new Date("Jan 31, 2023 00:00:00").getTime();
  
    // Update the countdown every 1 second
    var x = setInterval(function() {
@@ -643,7 +643,7 @@
      // If the countdown is over, display a message
      if (distance < 0) {
        clearInterval(x);
-       document.getElementById("demo").innerHTML = "EXPIRED";
+       document.getElementById("timecounter").innerHTML = "OFFER EXPIRED 😕";
      }
    }, 1000);
  </script>
