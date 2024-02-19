@@ -1767,8 +1767,6 @@ div.playButton img:hover {
 section.Hero.echedry {
     position: relative;
     overflow: hidden;
-    height: 100vh;
-    width: 100vw;
     background-image: none;
 }
 section.Hero p.progress-count {
@@ -1859,7 +1857,7 @@ body.echedry .teamText {
 .time-offer-echedry {
     background: #404040;
     padding: 24px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     z-index: 9;
