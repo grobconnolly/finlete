@@ -1802,6 +1802,10 @@ div#echedry-Features {
 .Features-1e .features img {
     margin-bottom: 30px;
 }
+.features img {
+    height: 60px;
+    width: auto;
+}
 .Features-1e {
     padding-bottom: 60px;
     padding-top: 0px;
