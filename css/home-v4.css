@@ -1819,6 +1819,153 @@ div#echedry-Features2 .features p {
     padding-bottom: 60px;
     padding-top: 0px;
 }
+/* flow css */
+.flow-wrap {
+    text-align: center;
+    padding-bottom: 45px;
+}
+.stat-stack.for-mb {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+}
+.invest-stack {
+    border-radius: 12px;
+    border: 1px solid #404040;
+    background: linear-gradient(180deg, #404040 0%, #262626 100%);
+    color: #FAFAFA;
+    padding: 12px;
+    flex: 67px;
+}
+.vector-stack {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    height: 60px;
+}
+.vector-stack [class*="vc-"] {
+    position: absolute;
+    top: -5px;
+}
+.vc-1 {
+    left: 11.5%;
+}
+.vc-2 {
+    left: 37%;
+}
+.vc-3 {
+    left: 48.5%;
+}
+.vc-4 {
+    right: 11%;
+    left: auto;
+}
+.invest-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+.invest-name {
+    color:#FAFAFA;
+    text-align: center;
+    font-family: 'Inter',sans-serif;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.invest-amount-share {
+    color: #FAFAFA;
+    text-align: center;
+    font-family: 'Inter',sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+}
+.finlete-connect {
+    border-radius: 12px;
+    border: 1px solid #404040;
+    background: linear-gradient(180deg, #404040 0%, #262626 100%);
+    padding: 24px;
+    display: inline-block;
+    color:  #FAFAFA;
+    text-align: center;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin-top: 4px;
+}
+body.echedry .flow-wrap .finlete-connect p{
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 8px;
+}
+.finlete-connect.player-eche-conn {
+    padding: 12px;
+    margin-top: -2px;
+}
+.vc-line {
+    margin-top: -5px;
+}
+.expenses-2024 {
+    border-radius: 12px;
+    background:  #262626;
+    backdrop-filter: blur(48px);
+    color: #E7E5E4;
+}
+p.exp-title {
+    color:  #FAFAFA;
+    font-family: 'Inter',sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin: 0;
+    padding: 12px;
+}
+p.exp-sml{
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0;
+    padding: 12px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+}
+.expenses-2024 ul {
+    padding: 12px;
+    margin: 0;
+    border-bottom: 1px solid #404040;
+}
+.expenses-2024 ul:last-of-type{
+    border-bottom: none;
+}
+.expenses-2024 ul li {
+    color: #FAFAFA;
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../images/echedry-page-assets/check_circle.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 32px;
+}
+span.exp-price {
+    font-weight: 700;
+    color: #FAFAFA;
+}
+/* flow css end */
 .discuss-wrap {
     padding: 90px 0;
     background: #1e1e1e;

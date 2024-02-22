@@ -220,10 +220,9 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
     }
     .features{
         padding: 14px;
+        min-height: 245px;
     }
-    .features img {
-        width: 40px;
-    }
+   
     .features h4 {
         margin-top: 20px;
         font-size: 14px;
@@ -673,6 +672,9 @@ body.echedry section.swiperSlider {
 }
 .stat-eche{
     padding-bottom: 90px;
+}
+div#echedry-Features2 .features p {
+    min-height: auto;
 }
 section.Discover.echedry .features p{
     -webkit-line-clamp: 3;
