@@ -595,6 +595,7 @@
                             <img src="images/echedry-page-assets/eche-Flow-mb2.svg" alt="stats-echedry" class="for-mb">
                         </div>
                         
+                        
                 </div>
             </div>
 
@@ -1335,9 +1336,10 @@
             slide: function (event, ui) {
                 //update(1, ui.value); //changed
                 $(".filler").width(ui.value * incrementWidthM + "%");
-                $('#sharecount').text(ui.value + '');
-                //$('#price-share').text('$' + Math.round(ui.value * SharePrice));
-                $('#price-share').text('$' + (ui.value * SharePrice).toFixed(0));
+                //$('#sharecount').text(ui.value + '');
+                //$('#price-share').text('$' + (ui.value * SharePrice).toFixed(0));
+                $('#sharecount').text(addCommas(ui.value));
+                $('#price-share').text('$' + addCommas((ui.value * SharePrice).toFixed(0)));
                 
                 // Remove 'active' class from all elements
                 $('#share-echedryTp .inline-perk-eche').removeClass('active');
@@ -1384,10 +1386,10 @@
             slide: function (event, ui) {
                 //update(1, ui.value); //changed
                 $(".filler2").width(ui.value * incrementWidthM + "%");
-                $('#sharecount_1').text(ui.value + '');
-                //$('#price-share').text('$' + Math.round(ui.value * SharePrice));
-                $('#price-share_1').text('$' + (ui.value * SharePrice).toFixed(0));
-                
+                //$('#sharecount_1').text(ui.value + '');
+                //$('#price-share_1').text('$' + (ui.value * SharePrice).toFixed(0));
+                $('#sharecount_1').text(addCommas(ui.value));
+                $('#price-share_1').text('$' + addCommas((ui.value * SharePrice).toFixed(0)));
                 // Remove 'active' class from all elements
                 $('#share-echedryFT .inline-perk-eche').removeClass('active');
 
@@ -1428,6 +1430,12 @@
     
             })    
             
+        
+            
+
+        function addCommas(n) {
+            return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
         });
     
     </script>
