@@ -280,9 +280,7 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
         padding: 16px 10px;
         min-height: 300px;
     }
-    body.echedry {
-
-    }
+   
     body.echedry .legal-title {
         margin: 0 0 40px 0;
     }
@@ -761,6 +759,9 @@ div.playButton{
 }
 .video-container{
     margin-top: 0;
+}
+.row.Dalmoreft {
+    padding-bottom: 150px;
 }
 
 }
