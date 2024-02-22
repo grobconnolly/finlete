@@ -12,6 +12,13 @@ $(window).scroll(function() {
     else{
         $(".top-bar").removeClass("sticky");
     }
+    if (scroll >= 500) {
+        //clearHeader, not clearheader - caps H
+        $(".time-offer-echedry").addClass("stickft");
+    }
+    else{
+        $(".time-offer-echedry").removeClass("stickft");
+    }
 }); //missing );
        
 // swiper for profile section

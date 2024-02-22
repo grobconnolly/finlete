@@ -2018,10 +2018,13 @@ body.echedry .teamText {
     background: rgba(12, 10, 9, 0.72);
     /* backdrop-filter: blur(12px); */
     padding: 24px;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     z-index: 9;
+}
+.time-offer-echedry.stickft {
+    position: fixed;
 }
 .time-offer-echedry .timecounter-echedry {
     border-radius: 20px;
