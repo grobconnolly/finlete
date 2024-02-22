@@ -2016,7 +2016,7 @@ body.echedry .teamText {
 }
 .time-offer-echedry {
     background: rgba(12, 10, 9, 0.72);
-    backdrop-filter: blur(12px);
+    /* backdrop-filter: blur(12px); */
     padding: 24px;
     position: fixed;
     bottom: 0;
@@ -2094,10 +2094,20 @@ section.calc-share {
 
 /* Echedry / Desktop End */
 
+
+@media screen and (min-width:1440px) and (max-width:1600px){
+
+    div.share-echedry {
+        padding-right: 50px;
+    }
+    
+}
+
 @media screen and (min-width:1440px) {
     .container {
         width: 1360px;
     }
+    
 }
 @media screen and (min-width:980px) {
     .btn-group-lg .btn+.btn {
