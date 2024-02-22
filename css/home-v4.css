@@ -92,7 +92,7 @@ body p{
     width: 100%;
     position: relative;
     z-index: 9;
-    padding: 12px 9px;
+    padding: 4px 16px 6px;
     transition: all ease-in-out 0.25s;
 }
 .top-bar .logo {
