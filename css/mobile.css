@@ -38,7 +38,7 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) {
     
-    body h1 {
+    /* body h1 {
         font-size: 36px;
     }
 
@@ -48,7 +48,7 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
 
     body p {
         font-size: 14px;
-    }
+    } */
 
     body .btn,
     body .btn-default,

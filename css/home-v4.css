@@ -1871,7 +1871,7 @@ body.echedry .teamText {
     background: rgba(12, 10, 9, 0.72);
     backdrop-filter: blur(12px);
     padding: 24px;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 9;
