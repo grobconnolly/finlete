@@ -1582,7 +1582,9 @@ span.commision {
     vertical-align: middle;
     margin-left: 40px;
 }
-body .share-echedry .ui-state-default, body .share-echedry .ui-state-focus, body .share-echedry .ui-widget-content .ui-state-default {
+body .share-echedry .ui-state-default, 
+body .share-echedry .ui-state-focus, 
+body .share-echedry .ui-widget-content .ui-state-default {
     width: 70px !important;
     height: 70px !important;
     top: -18px;
@@ -1591,6 +1593,9 @@ body .share-echedry .ui-state-default, body .share-echedry .ui-state-focus, body
     background-position: center;
     background-size: auto;
     margin-left: 17px;
+}
+body .share-echedry .ui-state-default[style="left: 100%;"]{
+    margin-left: 0px;
 }
 body .share-echedry  .ui-widget.ui-widget-content {
     height: 26px;
@@ -1863,7 +1868,8 @@ body.echedry .teamText {
     padding-bottom: 40px;
 }
 .time-offer-echedry {
-    background: #404040;
+    background: rgba(12, 10, 9, 0.72);
+    backdrop-filter: blur(12px);
     padding: 24px;
     position: relative;
     bottom: 0;
