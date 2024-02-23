@@ -2117,6 +2117,12 @@ div.share-echedry {
         padding-top: 60px;
         padding-right: 60px;
     }
+    .stat-ratio{
+        padding: 12px 5px 14px;
+    }
+    section.Hero.echedry .stat-ratio p, .stat-ratio p{
+        margin: 0;
+    }
 }
 
 @media screen and (min-width:1440px) {
