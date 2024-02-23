@@ -225,7 +225,9 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
         padding: 14px;
         min-height: 245px;
     }
-   
+    div#echedry-Features2 .features {
+        min-height: 310px;
+    }
     .features h4 {
         margin-top: 20px;
         font-size: 14px;
