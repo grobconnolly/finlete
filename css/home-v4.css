@@ -2094,17 +2094,11 @@ section.calc-share {
     line-height: 160%;
     padding: 12px 0;
 }
+div.share-echedry {
+    padding-right: 90px;
+}
 
 /* Echedry / Desktop End */
-
-
-@media screen and (min-width:1440px) and (max-width:1600px){
-
-    div.share-echedry {
-        padding-right: 50px;
-    }
-    
-}
 
 @media screen and (min-width:1440px) {
     .container {

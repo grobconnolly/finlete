@@ -82,6 +82,9 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
     section.Hero.echedry .heroMedia {
         padding: 60px;
     }
+    div.share-echedry {
+        padding: 30px;
+    }
     section.Hero.echedry{
         height: auto;
     }
@@ -562,6 +565,9 @@ section.Hero.echedry .stat-ratio p, .stat-ratio p {
 }
 section.Hero.echedry .heroMedia {
     padding: 0px 15px 0px 15px;
+}
+div.share-echedry {
+    padding: 15px;
 }
 .inline-athelet.echedry{
     padding: 14px 10px;
