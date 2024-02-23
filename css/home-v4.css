@@ -2038,8 +2038,8 @@ body.echedry .teamText {
 .time-offer-echedry .timecounter-echedry {
     border-radius: 20px;
     padding: 16px;
-    background: rgba(12, 10, 9, 0.72);
-    backdrop-filter: blur(12px);
+    background:transparent;
+    /* backdrop-filter: blur(12px); */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
