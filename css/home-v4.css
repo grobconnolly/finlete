@@ -2104,6 +2104,15 @@ div.share-echedry {
 }
 
 /* Echedry / Desktop End */
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+    .heroText {
+        padding: 60px;
+    }
+    section.Hero.echedry .heroMedia {
+        padding-top: 60px;
+        padding-right: 60px;
+    }
+}
 
 @media screen and (min-width:1440px) {
     .container {
