@@ -436,11 +436,17 @@ div#Features {
 }
 .features p {
     color: #E7E5E4;
-    display: -webkit-box;
+    /* display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 4; */
+}
+div#echedry-Features2 .features {
+    min-height: 330px;
+}
+div#echedry-Features .features {
+    min-height: 275px;
 }
 /* Interested */
 section.Interested {
@@ -1801,9 +1807,7 @@ div#echedry-Features,
 div#echedry-Features2{
     margin-top: 34px;
 }
-div#echedry-Features2 .features p {
-    min-height: 120px;
-}
+
 .stat-eche {
     padding-top: 32px;
     padding-bottom: 190px;
