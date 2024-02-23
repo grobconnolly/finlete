@@ -2024,9 +2024,10 @@ body.echedry .teamText {
     padding-bottom: 40px;
 }
 .time-offer-echedry {
-    background: rgba(12, 10, 9, 0.72);
+    /* background: rgba(12, 10, 9, 0.72); */
     /* backdrop-filter: blur(12px); */
     padding: 24px;
+    background: transparent;
     /* position: fixed; */
     bottom: 0;
     width: 100%;
@@ -2038,8 +2039,8 @@ body.echedry .teamText {
 .time-offer-echedry .timecounter-echedry {
     border-radius: 20px;
     padding: 16px;
-    background:transparent;
-    /* backdrop-filter: blur(12px); */
+    background: rgba(12, 10, 9, 0.72);
+    backdrop-filter: blur(12px);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
