@@ -1709,7 +1709,7 @@ background: linear-gradient(180deg, #44A647 0%, #2B6A2D 100%);
 .stats {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 30px;
     gap: 12px;
 }
