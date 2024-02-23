@@ -2003,7 +2003,8 @@ section.Playergallery .video-container {
 .branding-finlete {
     position: absolute;
     top: 24px;
-    left: 24px;
+    right: 24px;
+    left: auto;
 }
 .section.detailPlayer.echedry{
     padding: 64px 0 0 0;
