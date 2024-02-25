@@ -177,10 +177,10 @@
                 <div class="col-lg-6 heroMedia" >
                     <div class="video-container">
                         <div class="overlya-video"></div>
-                        <div id="playButton" class="playButton" data-toggle="modal" data-target="#flipFlop">
-                            <img src="images/echedry-page-assets/Btn-play.png" alt="" class="btn-img">
+                        <div id="playButton_1" class="playButton">
+                            <img src="images/echedry-page-assets/Btn-play.png" alt="" class="btn-img" id="btnImg_1">
                         </div>
-                        <video id="echedryVideo_1" class="echedry-video" autoplay muted loop  width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
+                        <video id="echedryVideo_1" class="echedry-video" muted width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
                             <source src="images/echedry-page-assets/finlete_echedry_vargas.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
@@ -594,42 +594,7 @@
                         </div>
                         <div class="stat-stack for-mb">
 
-                            <!-- stack loop -->
-                            <!-- <div class="invest-stack">
-                                <div class="invest-img"  style="background-image: url(images/echedry-page-assets/steve.png);"></div>
-                                <div class="invest-name">Investor 1</div>
-                                <div class="invest-amount-share">
-                                    $7,200 / <br> 900 Shares
-                                </div>
-                            </div> -->
-                            <!-- stack loop End -->
-                            <!-- stack loop -->
-                            <!-- <div class="invest-stack">
-                                <div class="invest-img"  style="background-image: url(images/echedry-page-assets/lucas.png);"></div>
-                                <div class="invest-name">Investor 2</div>
-                                <div class="invest-amount-share">
-                                    $96 / <br> 12 Shares
-                                </div>
-                            </div> -->
-                            <!-- stack loop End -->
-                            <!-- stack loop -->
-                            <!-- <div class="invest-stack">
-                                <div class="invest-img"  style="background-image: url(images/echedry-page-assets/jessica.png);"></div>
-                                <div class="invest-name">Investor 3</div>
-                                <div class="invest-amount-share">
-                                    $1,000 / <br> 125 Shares
-                                </div>
-                            </div> -->
-                            <!-- stack loop End -->
-                            <!-- stack loop -->
-                            <!-- <div class="invest-stack">
-                                <div class="invest-img"  style="background-image: url(images/echedry-page-assets/bob1.png);"></div>
-                                <div class="invest-name">Investor 4</div>
-                                <div class="invest-amount-share">
-                                    $2,000 / <br> 250 Shares
-                                </div>
-                            </div> -->
-                            <!-- stack loop End -->
+                            
                              <!-- palyer eche -->
                              <div class="finlete-connect player-eche-conn stadium">
                                 <img src="images/echedry-page-assets/stadium.png" alt="stadium" width="160" height="160">
@@ -639,29 +604,7 @@
                         </div>
                         <!-- flow -->
                         <div class="flow-wrap for-mb">
-                            <!-- <div class="vector-stack">
-                                <div class="vc-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="162" height="71" viewBox="0 0 162 71" fill="none">
-                                    <path d="M5.64453 0.736978C8.59005 0.736978 10.9779 3.12479 10.9779 6.07031C10.9779 9.01583 8.59005 11.4036 5.64453 11.4036C2.69901 11.4036 0.311197 9.01583 0.311197 6.07031C0.311197 3.12479 2.69901 0.736978 5.64453 0.736978ZM155.387 70.0703L149.613 60.0703L161.16 60.0703L155.387 70.0703ZM35.2618 35.6876L35.2618 34.6876L35.2618 35.6876ZM35.2618 34.6876L121.004 34.6879L121.004 36.6879L35.2618 36.6876L35.2618 34.6876ZM121.004 34.6879C140.546 34.6879 156.387 50.5292 156.387 70.0703L154.387 70.0703C154.387 51.6337 139.441 36.6879 121.004 36.6879L121.004 34.6879ZM6.64453 6.07031C6.64453 21.8752 19.4569 34.6876 35.2618 34.6876L35.2618 36.6876C18.3523 36.6876 4.64453 22.9798 4.64453 6.07031L6.64453 6.07031Z" fill="#FAFAFA"/>
-                                </svg>
-                                </div>
-                                <div class="vc-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="71" viewBox="0 0 60 71" fill="none">
-                                        <path d="M5.41406 0.736978C8.35958 0.736978 10.7474 3.12479 10.7474 6.07031C10.7474 9.01583 8.35958 11.4036 5.41406 11.4036C2.46854 11.4036 0.0807282 9.01583 0.0807284 6.07031C0.0807285 3.12479 2.46854 0.736978 5.41406 0.736978ZM53.3939 70.0703L47.6204 60.0703L59.1674 60.0703L53.3939 70.0703ZM26.1294 36.748L35.8244 41.1756L34.9936 42.9948L25.2986 38.5673L26.1294 36.748ZM35.8244 41.1756C47.1367 46.3417 54.3939 57.6341 54.3939 70.0703L52.3939 70.0703C52.3939 58.4171 45.5937 47.8357 34.9936 42.9948L35.8244 41.1756ZM6.41406 6.07031C6.41406 19.2739 14.119 31.2631 26.1294 36.748L25.2986 38.5673C12.576 32.757 4.41406 20.0569 4.41406 6.07031L6.41406 6.07031Z" fill="#FAFAFA"/>
-                                    </svg>
-                                </div>
-                                <div class="vc-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="71" viewBox="0 0 60 71" fill="none">
-                                        <path d="M54.3672 0.736978C51.4217 0.736979 49.0339 3.12479 49.0339 6.07031C49.0339 9.01583 51.4217 11.4036 54.3672 11.4036C57.3127 11.4036 59.7005 9.01583 59.7005 6.07031C59.7005 3.12479 57.3127 0.736978 54.3672 0.736978ZM6.38734 70.0703L12.1608 60.0703L0.613838 60.0703L6.38734 70.0703ZM33.6518 36.748L23.9569 41.1756L24.7877 42.9948L34.4827 38.5673L33.6518 36.748ZM23.9569 41.1756C12.6445 46.3417 5.38734 57.6341 5.38734 70.0703L7.38734 70.0703C7.38734 58.4171 14.1876 47.8357 24.7877 42.9948L23.9569 41.1756ZM53.3672 6.07031C53.3672 19.2739 45.6622 31.2631 33.6518 36.748L34.4827 38.5673C47.2053 32.757 55.3672 20.0569 55.3672 6.07031L53.3672 6.07031Z" fill="#FAFAFA"/>
-                                    </svg>
-                                </div>
-                                
-                                <div class="vc-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="162" height="71" viewBox="0 0 162 71" fill="none">
-                                    <path d="M156.137 0.736978C153.191 0.736979 150.803 3.12479 150.803 6.07031C150.803 9.01583 153.191 11.4036 156.137 11.4036C159.082 11.4036 161.47 9.01583 161.47 6.07031C161.47 3.12479 159.082 0.736978 156.137 0.736978ZM6.39435 70.0703L12.1678 60.0703L0.620849 60.0703L6.39435 70.0703ZM126.519 35.6876L126.519 34.6876L126.519 35.6876ZM126.519 34.6876L40.7768 34.6879L40.7768 36.6879L126.519 36.6876L126.519 34.6876ZM40.7768 34.6879C21.2356 34.6879 5.39435 50.5292 5.39435 70.0703L7.39435 70.0703C7.39435 51.6337 22.3402 36.6879 40.7768 36.6879L40.7768 34.6879ZM155.137 6.07031C155.137 21.8752 142.324 34.6876 126.519 34.6876L126.519 36.6876C143.429 36.6876 157.137 22.9798 157.137 6.07031L155.137 6.07031Z" fill="#FAFAFA"/>
-                                </svg>
-                                </div>
-                            </div> -->
+                           
                             <!-- finlete -->
                             <div class="vc-line">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="71" viewBox="0 0 13 71" fill="none">
@@ -846,12 +789,7 @@
                         </p>                
                 </div>
                 <div class="col-md-7">
-                    <!-- <form action="#" method="post" id="deckForm">
-                        <input type="text" name="fullname" id="fname" placeholder="Your fullname" required >
-                        <input type="email" name="email" id="deckemail" placeholder="your@mail.com" required>
-                        <button type="submit" class="btn btn-block" id="btn-Deck">Get Investor Deck</button>
-                    </form> -->
-                    
+                   
                     <div class="Calendlywidget">
                     <div class="profileRob">
                         <img src="./images/home-v4/team/Img.png" alt="Rob photo">
@@ -1578,7 +1516,20 @@
     <script>
                 
         // Function to handle play/pause for a specific video and button
-        
+        var video_1 = document.getElementById("echedryVideo_1");
+        var playButton_1 = document.getElementById("playButton_1");
+        var btnImg_1 = document.getElementById("btnImg_1");
+
+        playButton_1.addEventListener("click", function() {
+            if (video_1.paused) {
+                video_1.play();
+                btnImg_1.src = "images/echedry-page-assets/Btn-pause.png";
+            } else {
+                video_1.pause();
+                btnImg_1.src = "images/echedry-page-assets/Btn-play.png";
+            }
+        });
+        // video 2
         var video = document.getElementById("echedryVideo_2");
         var playButton = document.getElementById("playButton_2");
         var btnImg = document.getElementById("btn-img");
@@ -1594,20 +1545,20 @@
         });
         
         //  Popup video
-        document.addEventListener("DOMContentLoaded", function () {
-            var videoPop = document.getElementById("echedryVideo_popup");
-            var playButtonPop = document.getElementById("playButton");
-            var closeButton = document.getElementById("close_video");
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     var videoPop = document.getElementById("echedryVideo_popup");
+        //     var playButtonPop = document.getElementById("playButton");
+        //     var closeButton = document.getElementById("close_video");
 
-            playButtonPop.addEventListener("click", function () {
-                videoPop.play();
-            });
+        //     playButtonPop.addEventListener("click", function () {
+        //         videoPop.play();
+        //     });
 
-            closeButton.addEventListener("click", function () {
-                videoPop.pause();
-                videoPop.currentTime = 0; // Rewind video to the beginning
-            });
-        });
+        //     closeButton.addEventListener("click", function () {
+        //         videoPop.pause();
+        //         videoPop.currentTime = 0; // Rewind video to the beginning
+        //     });
+        // });
 
     </script>
     <script>
@@ -1791,7 +1742,7 @@
    
 
     <!-- The modal -->
-    <div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1810,7 +1761,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script id="dsq-count-scr" src="//finlete.disqus.com/count.js" async></script>
     

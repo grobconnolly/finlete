@@ -1816,8 +1816,9 @@ div#echedry-Features2{
     margin-bottom: 30px;
 }
 .features img {
-    height: 50px;
+    max-width: 60px;
     width: auto;
+    height: auto;
 }
 .Features-1e {
     padding-bottom: 60px;
