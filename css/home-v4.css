@@ -1740,6 +1740,20 @@ section.Hero.echedry .heroMedia {
     padding-top: 90px;
     padding-right: 90px;
 }
+.video_cap {
+    color: #fff;
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+    background: rgb(128 128 128 / 90%);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    z-index: 1;
+}
 .overlya-video{
     opacity: 0.48;
     background: #0C0A09;
