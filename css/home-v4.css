@@ -449,7 +449,7 @@ div#echedry-Features2 .features {
     min-height: 330px;
 }
 div#echedry-Features .features {
-    min-height: 275px;
+    min-height: 230px;
 }
 /* Interested */
 section.Interested {
@@ -1829,9 +1829,7 @@ div#echedry-Features2{
     padding-top: 32px;
     padding-bottom: 190px;
 }
-.Features-1e .features img {
-    margin-bottom: 30px;
-}
+
 .features img {
     max-width: 60px;
     width: auto;
