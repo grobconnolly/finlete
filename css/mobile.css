@@ -694,7 +694,9 @@ section.Discover.echedry .features h4 {
     padding-top: 0;
     padding-bottom: 0;
 }
-
+div#echedry-Features .features h4 {
+    height: auto;
+}
 .discuss-wrap {
     padding: 0 0 90px 0;
 }
