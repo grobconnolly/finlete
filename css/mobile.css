@@ -223,7 +223,9 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
     }
     .features{
         padding: 14px;
-        min-height: 245px;
+    }
+    div#echedry-Features .features {
+        min-height: 210px;
     }
     div#echedry-Features2 .features {
         min-height: 320px;
@@ -691,6 +693,9 @@ section.Discover.echedry .features h4 {
 .Features-1e {
     padding-top: 0;
     padding-bottom: 0;
+}
+.Features-1e .features h4 {
+    margin: 0;
 }
 .discuss-wrap {
     padding: 0 0 90px 0;
