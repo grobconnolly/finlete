@@ -1589,6 +1589,24 @@
         //         videoPop.currentTime = 0; // Rewind video to the beginning
         //     });
         // });
+        var Webflow = Webflow || [];
+            Webflow.push(function () {
+            // DOMready has fired
+            // May now use jQuery and Webflow API
+            var playButtonPop = document.getElementById("playButton_1");
+            var closeButton = document.getElementById("close_video");
+            var iframe = document.querySelector('iframe');
+            var player = new Vimeo.Player($('#popVimeo'));
+            
+            playButtonPop.click(function() {
+                player.play();
+                });
+            
+            closeButton.click(function() {
+                player.pause();
+                });
+            
+            });
 
     </script>
     <script>
@@ -1786,7 +1804,7 @@
                         <source src="images/echedry-page-assets/finlete_echedry_vargasV2.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>                 -->
-                    <iframe src="https://player.vimeo.com/video/903383261?h=443c7ea974" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="popVimeo" src="https://player.vimeo.com/video/903383261?h=443c7ea974" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default btn-block" data-dismiss="modal" id="close_video">Close</button>
