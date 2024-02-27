@@ -1589,26 +1589,32 @@
         //         videoPop.currentTime = 0; // Rewind video to the beginning
         //     });
         // });
-        var Webflow = Webflow || [];
-            Webflow.push(function () {
-            // DOMready has fired
-            // May now use jQuery and Webflow API
-            var playButtonPop = document.getElementById("playButton_1");
-            var closeButton = document.getElementById("close_video");
-            var iframe = document.querySelector('iframe');
-            var player = new Vimeo.Player($('#popVimeo'));
-            
-            playButtonPop.click(function() {
-                player.play();
-                });
-            
-            closeButton.click(function() {
-                player.pause();
-                });
-            
-            });
-
+      
     </script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        // Get a reference to the container element
+        var playerContainer = document.getElementById('vimeoPlayer');
+    
+        // Create the Vimeo player programmatically
+        var player = new Vimeo.Player(playerContainer, {
+            url: 'https://vimeo.com/903383261', // Replace with your Vimeo video URL
+            autoplay: false
+        });
+    
+        // Add event listeners to your custom buttons
+        document.getElementById('playButton_1').addEventListener('click', function() {
+            // Play the video when the play button is clicked
+            player.play();
+        });
+    
+        document.getElementById('close_video').addEventListener('click', function() {
+            // Pause the video when the pause button is clicked
+            player.pause();
+        });
+    </script>
+    
+    
     <script>
         var incrementWidthM = 100 / 1500;
         var SharePrice = "8.00";
