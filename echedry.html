@@ -1597,7 +1597,10 @@
         
         // Get a reference to the container element
         var playerContainer = document.getElementById('vimeoPlayer');
-    
+        
+        playerContainer.style.width = '640px';
+        playerContainer.style.height = '360px';
+
         // Create the Vimeo player programmatically
         var player = new Vimeo.Player(playerContainer, {
             url: 'https://vimeo.com/903383261', // Replace with your Vimeo video URL
