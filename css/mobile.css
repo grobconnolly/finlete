@@ -776,6 +776,12 @@ div.playButton{
 .row.Dalmoreft {
     padding-bottom: 150px;
 }
+section.dalmore-legal {
+    padding: 40px 15px;
+}
+.ended-damlore {
+    padding: 15px;
+}
 
 }
 
