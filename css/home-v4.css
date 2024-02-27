@@ -2136,6 +2136,12 @@ div.share-echedry {
 section.dalmore-legal {
     padding: 90px;
 }
+ul.list-number {
+    list-style: decimal;
+}
+ul.list-roman {
+    list-style: lower-roman;
+}
 
 /* Dalmore page End */
 
