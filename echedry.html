@@ -180,9 +180,9 @@
                         <div class="overlya-video"></div>
                         <div class="video_cap">Get to know Finlete & Echedry Vargas</div>
                         <div id="playButton_1" class="playButton">
-                            <img src="images/echedry-page-assets/Btn-play.png" alt="" class="btn-img" id="btnImg_1" data-target="">
+                            <img src="images/echedry-page-assets/Btn-play.png" alt="" class="btn-img" id="btnImg_1" data-toggle="modal" data-target="#flipFlop">
                         </div>
-                        <video id="echedryVideo_1" class="echedry-video" width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
+                        <video id="echedryVideo_1" class="echedry-video" autoplay muted loop width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
                             <source src="images/echedry-page-assets/finlete_echedry_vargasV2.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
@@ -1546,19 +1546,19 @@
     <script>
                 
         // Function to handle play/pause for a specific video and button
-        var video_1 = document.getElementById("echedryVideo_1");
-        var playButton_1 = document.getElementById("playButton_1");
-        var btnImg_1 = document.getElementById("btnImg_1");
+        // var video_1 = document.getElementById("echedryVideo_1");
+        // var playButton_1 = document.getElementById("playButton_1");
+        // var btnImg_1 = document.getElementById("btnImg_1");
 
-        playButton_1.addEventListener("click", function() {
-            if (video_1.paused) {
-                video_1.play();
-                btnImg_1.src = "images/echedry-page-assets/Btn-pause.png";
-            } else {
-                video_1.pause();
-                btnImg_1.src = "images/echedry-page-assets/Btn-play.png";
-            }
-        });
+        // playButton_1.addEventListener("click", function() {
+        //     if (video_1.paused) {
+        //         video_1.play();
+        //         btnImg_1.src = "images/echedry-page-assets/Btn-pause.png";
+        //     } else {
+        //         video_1.pause();
+        //         btnImg_1.src = "images/echedry-page-assets/Btn-play.png";
+        //     }
+        // });
         // video 2
         var video = document.getElementById("echedryVideo_2");
         var playButton = document.getElementById("playButton_2");
@@ -1577,7 +1577,7 @@
         //  Popup video
         // document.addEventListener("DOMContentLoaded", function () {
         //     var videoPop = document.getElementById("echedryVideo_popup");
-        //     var playButtonPop = document.getElementById("playButton");
+        //     var playButtonPop = document.getElementById("playButton_1");
         //     var closeButton = document.getElementById("close_video");
 
         //     playButtonPop.addEventListener("click", function () {
@@ -1778,14 +1778,15 @@
             <div class="modal-content">
                 <div class="modal-header">
                 
-                <h4 class="modal-title" id="modalLabel">Finlete: Fueling Futures, Building Fans.
+                <h4 class="modal-title" id="modalLabel">Finlete is where sports fans come to invest
                 </h4>
                 </div>
                 <div class="modal-body">
-                    <video id="echedryVideo_popup" class="echedry-video"  controls style="max-width: 100%;"  width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
-                        <source src="images/echedry-page-assets/finlete_echedry_vargas.mp4" type="video/mp4">
+                    <!-- <video id="echedryVideo_popup" class="echedry-video"  controls style="max-width: 100%;"  width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
+                        <source src="images/echedry-page-assets/finlete_echedry_vargasV2.mp4" type="video/mp4">
                       Your browser does not support the video tag.
-                    </video>                
+                    </video>                 -->
+                    <iframe src="https://player.vimeo.com/video/903383261?h=443c7ea974" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default btn-block" data-dismiss="modal" id="close_video">Close</button>

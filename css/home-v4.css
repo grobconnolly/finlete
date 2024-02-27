@@ -2123,7 +2123,10 @@ section.calc-share {
 div.share-echedry {
     padding-right: 90px;
 }
-
+div#flipFlop iframe {
+    width: 100%;
+    max-width: none;
+}
 /* Echedry / Desktop End */
 /* Dalmore page added */
 .ended-damlore {
