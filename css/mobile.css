@@ -782,6 +782,20 @@ section.dalmore-legal {
 .ended-damlore {
     padding: 15px;
 }
+section.Hero.echedry .invest-btn {
+    max-width: none;
+    text-align: center;
+}
+body section .offering, 
+body .timecounter-echedry .offering{
+    text-align: center;
+    font-size: 14px;
+
+}
+body .timecounter-echedry .offering{
+    margin:0;
+    margin-top: 5px;
+}
 
 }
 
