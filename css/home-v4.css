@@ -217,7 +217,7 @@ nav.mynav ul.navbar-nav li:hover ul.childmenu{
 body .btn,
 body .btn-default,
 body .btn.btn-primary, 
-body .btn-group-lg > .btn {
+body .invest-btn > .btn {
     border: none;
     border-radius: 16px !important;
     color: var(--colors, #FAFAFA);
@@ -276,7 +276,7 @@ section.Hero p {
     font-weight: 400;
     line-height: 150%;
 }
-section.Hero .btn-group-lg {
+section.Hero .invest-btn {
     margin-top: 100px;
     margin-bottom: 30px;
 }
@@ -1339,7 +1339,7 @@ table tr{
     background: #262626;
 }
 .shareinvest .panel-title > a{
-    color: var(--Colors-color-text-primary, #FAFAFA);
+    color:  #FAFAFA;
     font-family: 'Inter',sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -1347,17 +1347,13 @@ table tr{
     line-height: 160%; 
     text-decoration: none;
 }
-.offering{
-    font-size: small;
-    color: white;
+body section .offering,
+body .timecounter-echedry .offering{
+    font-size: 14px;
+    color: #fafafa;
     text-align: center;
-    margin-top: 5%;
-}
-#offering{
-    font-size: small;
-    color: white;
-    margin-top: 1%;
-    margin-left:9%
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 span.perkopn {
     position: absolute;
@@ -1366,7 +1362,7 @@ span.perkopn {
 }
 .shareinvest .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border: none;
-    background: var(--colors-neutral-200, #262626);
+    background: #262626;
     padding: 20px 0 0;
 }
 aside.shareinvest p {
@@ -1379,7 +1375,7 @@ aside.shareinvest p {
     line-height: 135%;
 }
 .sharePrice p {
-color: var(--Colors-Neutral-500, #737373);
+color: #737373;
 font-family: 'Inter',sans-serif;
 font-size: 14px;
 font-style: normal;
@@ -1748,8 +1744,9 @@ section.Hero.echedry .stat-ratio p, .stat-ratio p {
     font-size: 12px;
     font-weight: 700;
 }
-section.Hero.echedry .btn-group-lg {
+section.Hero.echedry .invest-btn {
     margin-top: 30px;
+    max-width: 300px;
 }
 section.Hero.echedry .heroMedia {
     padding-top: 90px;
@@ -2186,7 +2183,7 @@ ul.list-roman {
     
 }
 @media screen and (min-width:980px) {
-    .btn-group-lg .btn+.btn {
+    .invest-btn .btn+.btn {
         margin-left: 30px;
     }
     section.FaqHero h1 {
