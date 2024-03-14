@@ -11,7 +11,7 @@ gulp.task('minify-js', function() {
         .pipe(gulp.dest('js')); // Output directory for minified JS
 });
 function combineAndMinifyCSS() {
-    return gulp.src(['css/bootstrap.css', 'css/home-v4.css', 'css/mobile.css']) // Paths to your CSS files
+    return gulp.src(['css/jquery-ui.css','css/bootstrap.css', 'css/home-v4.css', 'css/mobile.css']) // Paths to your CSS files
         .pipe(concat('styles.min.css')) // Concatenate into one file
         .pipe(cleanCSS()) // Minify CSS
         .pipe(gulp.dest('css')); // Output directory for minified CSS
