@@ -1789,6 +1789,9 @@ section.Hero.echedry .heroMedia {
 box-shadow: 0px 21px 25.2px 0px rgba(30, 30, 30, 0.64);
 width: 100%;
 }
+.echedry-video img {
+    width: 100%;
+}
 div.playButton {
     position: absolute;
     top: 50%;
