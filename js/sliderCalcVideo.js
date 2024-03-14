@@ -1,5 +1,35 @@
 
-                
+
+// Set the date we're counting down to (February 28, 2024)
+var countDownDate = new Date("February 28, 2024 00:00:00").getTime();
+
+// Update the countdown every 1 second
+var x = setInterval(function() {
+    // Get the current date and time
+    var now = new Date().getTime();
+
+    // Calculate the remaining time
+    var distance = countDownDate - now;
+
+    // Calculate days, hours, minutes, and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Update the HTML with the calculated values
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+
+    // If the countdown is over, display a message
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer-eche").innerHTML = "OFFER EXPIRED 😕";
+    }
+}, 1000);
+            
         // Function to handle play/pause for a specific video and button
         // var video_1 = document.getElementById("echedryVideo_1");
         // var playButton_1 = document.getElementById("playButton_1");
