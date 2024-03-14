@@ -1161,28 +1161,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container">
             <h2 class="text-center">Join the Discussion</h2>
             <div id="disqus_thread"></div>
-            <script>
-                let PAGE_URL = "https://finlete.com/"; 
-                let PAGE_IDENTIFIER = "https://finlete.com/"; 
-                //let PAGE_IDENTIFIER = "";
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                
-                (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://finlete.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </div>
     </section>
 
     <!-- End discuss thread -->
@@ -1642,14 +1620,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
    
 
-    <script src="js/global.min.js"></script>
+    <script src="js/global.min.js" defer></script>
      <!-- script -->
-     <script type="text/javascript" src="swiperlib/swiper-bundle.min.js"></script>
+     <script type="text/javascript" src="swiperlib/swiper-bundle.min.js" async></script>
      <!-- jQuery ui -->
-     <script src="js/jquery.ui.touch-punch.min.js"></script>
+     <script src="js/jquery.ui.touch-punch.min.js" async></script>
 
-    <script type="text/javascript" src="js/js-V4.js"></script>
-    <script>
+    <script type="text/javascript" src="js/js-V4.js" async></script>
+    <script  type="text/javascript" defer>
                 
         var video = document.getElementById("echedryVideo_2");
         var playButton = document.getElementById("playButton_2");
@@ -1781,7 +1759,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     </script>
    
-    <script type="text/javascript">
+    <script type="text/javascript" defer>
         (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
         vgo('setAccount', '477323417');
         vgo('setTrackByDefault', true);
@@ -1789,7 +1767,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         vgo('process');
     </script>
     
-    <script id="dsq-count-scr" src="//finlete.disqus.com/count.js" async></script>
+    <script  type="text/javascript"  defer>
+        let PAGE_URL = "https://finlete.com/"; 
+        let PAGE_IDENTIFIER = "https://finlete.com/"; 
+        //let PAGE_IDENTIFIER = "";
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://finlete.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+    <script id="dsq-count-scr" src="//finlete.disqus.com/count.js" defer></script>
 </body>
 
 </html>
