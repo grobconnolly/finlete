@@ -130,8 +130,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- test -->
      <!-- Hero -->
      <section class="Hero echedry">
-        <video autoplay muted loop class="bg-video">
-            <source src="images/echedry-page-assets/AuraBg.webm" type="video/webm">
+        
+        <!-- HTML markup with lazy loading class and data-src attribute -->
+        <video autoplay muted loop class="bg-video lazy-video">
+            <source data-src="images/echedry-page-assets/AuraBg.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
         <div class="overlay-bg-video"></div>
@@ -185,12 +187,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div id="playButton_1" class="playButton">
                             <img src="images/echedry-page-assets/Btn-play.png" alt="" class="btn-img" id="btnImg_1" data-toggle="modal" data-target="#flipFlop">
                         </div>
-                        <video id="echedryVideo_1" class="echedry-video for-dt" autoplay muted loop width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
-                            <source src="images/echedry-page-assets/finlete_echedry_vargasV2.mp4" type="video/mp4">
+                        <video id="echedryVideo_1" class="echedry-video for-dt lazy-video" autoplay muted loop width="612" height="384" poster="./images/echedry-page-assets/Video-poster.png">
+                            <source data-src="images/echedry-page-assets/finlete_echedry_vargasV2.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                         <div class="echedry-video for-mb">
-                            <img src="images/echedry-page-assets/Video-poster.png" alt="Video poster echedry" srcset="images/echedry-page-assets/Video-poster.png">
+                            <img src="images/echedry-page-assets/Video-poster.webp" alt="Video poster echedry">
                         </div>
                     </div>
                    
@@ -376,7 +378,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-md-12 leftPlayer player2">
                     <div class="inline-athelet echedry">
                         <div class="athelet-avatar">
-                            <img src="./images/echedry-page-assets/optimized/profile.webp" alt="">
+                            <img class="lazyload" data-sizes="auto" data-src="./images/echedry-page-assets/optimized/profile.webp" alt="">
                         </div>
                         
                         <div class="badge-wrap">
@@ -517,14 +519,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-md-12">
                     <div class="video-container">
                         <div class="branding-finlete">
-                            <img src="images/echedry-page-assets/Favicon.svg" alt="">
+                            <img class="lazyload" data-sizes="auto" data-src="images/echedry-page-assets/Favicon.svg" alt="">
                         </div>
                         <!-- <div class="overlya-video"></div> -->
                         <div id="playButton_2" class="playButton">
-                            <img src="images/echedry-page-assets/Btn-play.png" alt="" id="btn-img">
+                            <img class="lazyload" data-sizes="auto" data-src="images/echedry-page-assets/Btn-play.png" alt="" id="btn-img">
                         </div>
-                        <video id="echedryVideo_2" class="echedry-video"width="1464" height="640" poster="./images/echedry-page-assets/optimized/PJAF9011.webp">
-                            <source src="images/echedry-page-assets/PJAF9026-1920.mp4" type="video/mp4">
+                        <video id="echedryVideo_2" class="echedry-video lazy-video" width="1464" height="640" poster="./images/echedry-page-assets/optimized/PJAF9011.webp">
+                            <source data-src="images/echedry-page-assets/PJAF9026-1920.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                         </video>
                     </div>
@@ -565,7 +567,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <!-- loop -->
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="features">
-                        <img src="./images/echedry-page-assets/target.png" alt="Echedry to focus">
+                        <img class="lazyload" data-sizes="auto" data-src="./images/echedry-page-assets/target.png" alt="Echedry to focus">
                         <h4>DEDICATION</h4>
                         <p>Focus on baseball year-round</p>
                     </div>
@@ -574,7 +576,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <!-- loop -->
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="features">
-                        <img src="./images/echedry-page-assets/pitching-machine.png" alt="Echedry to focus">
+                        <img class="lazyload" data-sizes="auto" data-src="./images/echedry-page-assets/pitching-machine.png" alt="Echedry to focus">
                         <h4>PERFORMANCE</h4>
                         <p>Better off-season training</p>
                     </div>
@@ -583,7 +585,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <!-- loop -->
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="features">
-                        <img src="./images/echedry-page-assets/diet.png" alt="Echedry to focus">
+                        <img class="lazyload" data-sizes="auto" data-src="./images/echedry-page-assets/diet.png" alt="Echedry to focus">
                         <h4>HEALTH</h4>
                         <p>Hire a nutritionist, eat better</p>
                     </div>
@@ -592,7 +594,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <!-- loop -->
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="features">
-                        <img src="./images/echedry-page-assets/house.png" alt="Echedry to focus">
+                        <img class="lazyload" data-sizes="auto" data-src="./images/echedry-page-assets/house.png" alt="Echedry to focus">
                         <h4>HOUSING</h4>
                         <p>Safe off-season housing</p>
                     </div>
@@ -730,7 +732,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="features">
                         <div class="wrap-icon">
-                            <img src="./images/home-v4/analytics.png" alt="INVESTMENT">
+                            <img class="lazyload" data-sizes="auto" data-src="./images/home-v4/analytics.png" alt="INVESTMENT">
                         </div>
                         <h4>INVESTMENT</h4>
                         <p>Finlete is not betting, fantasy, or gaming. It’s the real deal, actual skin in the game. If Finlete athletes succeed, the company and its investors like you succeed too.</p>
@@ -742,7 +744,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="features">
                        
                         <div class="wrap-icon">
-                            <img src="./images/echedry-page-assets/icons/goal1.png" alt="Share in Athletic Achievements">
+                            <img class="lazyload" data-sizes="auto" data-src="./images/echedry-page-assets/icons/goal1.png" alt="Share in Athletic Achievements">
                         </div>
                         <h4>POTENTIAL UPSIDE</h4>
                         <p>Acquire a stake in the potential success of real athletes. As they advance in their careers, you share in the journey.</p>
@@ -753,7 +755,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="features">
                         <div class="wrap-icon">
-                            <img src="./images/echedry-page-assets/icons/opportunity1.png" alt="Access">
+                            <img class="lazyload" data-sizes="auto" data-src="./images/echedry-page-assets/icons/opportunity1.png" alt="Access">
                         </div>
                         <h4>ACCESS</h4>
                         <p>
@@ -765,7 +767,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="features">
                         <div class="wrap-icon">
-                            <img src="./images/echedry-page-assets/icons/talent-recognition1.png" alt="Connect with Top-Tier Talent">
+                            <img class="lazyload" data-sizes="auto" data-src="./images/echedry-page-assets/icons/talent-recognition1.png" alt="Connect with Top-Tier Talent">
                         </div>
                         <h4>COMMUNITY</h4>
                         <p>
@@ -777,7 +779,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                  <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="features">
                         <div class="wrap-icon">
-                            <img src="./images/echedry-page-assets/icons/exchange1.png" alt="ENGAGEMENT">
+                            <img class="lazyload" data-sizes="auto" data-src="./images/echedry-page-assets/icons/exchange1.png" alt="ENGAGEMENT">
                         </div>
                         <h4>ENGAGEMENT</h4>
                         <p>Perks and experiences like exclusive virtual meet & greets, contract signing parties, content, merchandise, and so much more.</p>
@@ -788,7 +790,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="features">
                         <div class="wrap-icon">
-                            <img src="./images/echedry-page-assets/icons/transparency1.png" alt="COMPLIANCE">
+                            <img class="lazyload" data-sizes="auto" data-src="./images/echedry-page-assets/icons/transparency1.png" alt="COMPLIANCE">
                         </div>
                         <h4>COMPLIANCE</h4>
                         <p>Finlete operates in a regulatory framework and is compliant with Reg CF requirements.</p>
@@ -816,7 +818,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                    
                     <div class="Calendlywidget">
                     <div class="profileRob">
-                        <img src="./images/echedry-page-assets/optimized/team/rob.webp" alt="Rob photo" width="64">
+                        <img class="lazyload" data-sizes="auto" data-src="./images/echedry-page-assets/optimized/team/rob.webp" alt="Rob photo" width="64">
                         <p class="ownerRob">Rob Connolly</p>
                         <p class="brandName">Discover Finlete</p>
                         <p class="timeCall"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -1593,13 +1595,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
    
     <script src="js/lazysizes.min.js" async></script>
-    <script src="js/global.min.js" defer></script>
+    <script src="js/global.min.js" async></script>
      <!-- script -->
-     <script type="text/javascript" src="swiperlib/swiper-bundle.min.js" async></script>
+     <script type="text/javascript" src="swiperlib/swiper-bundle.min.js" defer></script>
      <!-- jQuery ui -->
-     <script src="js/jquery.ui.touch-punch.min.js" async></script>
+    <script src="js/jquery.ui.touch-punch.min.js" async></script>
 
-    <script type="text/javascript" src="js/js-V4.js" async></script>
+    <script type="text/javascript" src="js/js-V4.js" defer></script>
+
+
+    <!-- JavaScript code for lazy loading -->
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get all video elements with the lazy-video class
+            var lazyVideos = document.querySelectorAll(".lazy-video");
+
+            // IntersectionObserver to check when videos enter the viewport
+            var observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        // Load the video source when it enters the viewport
+                        var video = entry.target;
+                        var source = video.querySelector("source[data-src]");
+                        if (source) {
+                            source.setAttribute("src", source.getAttribute("data-src"));
+                            source.removeAttribute("data-src");
+                            video.load(); // Reload the video to apply the new source
+                        }
+                        observer.unobserve(video); // Stop observing once video is loaded
+                    }
+                });
+            });
+
+            // Start observing lazy videos
+            lazyVideos.forEach(function(video) {
+                observer.observe(video);
+            });
+        });
+    </script>
+
     <script  type="text/javascript" defer>
                 
         var video = document.getElementById("echedryVideo_2");
