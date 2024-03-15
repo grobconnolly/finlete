@@ -6,7 +6,6 @@ body,html{
     background: #1E1E1E;
     font-display: swap;
 }
-
 h1,h2,h3,h4,h5,h6,p{
   margin: 0 0 15px 0;
   line-height: normal;
@@ -2162,6 +2161,14 @@ ul.list-roman {
 
 /* Dalmore page End */
 
+/* Lazy code */
+img.lazyload:not([src]) {
+	visibility: hidden;
+}
+.no-js img.lazyload {
+    display: none;
+}
+/*   Lazy code End */
 @media screen and (min-width: 1360px) and (max-width: 1600px) {
     .heroText {
         padding: 60px;
