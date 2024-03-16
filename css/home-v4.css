@@ -704,9 +704,12 @@ body .socialBot {
     background-position:-320px 0;
 }
 /* Calendly widget*/
+.Interested h2 {
+    padding-top: 20%;
+}
 .Calendlywidget {
     border-radius: 16px;
-    background: #F5F5F5;
+    background: #fff;
     overflow: hidden;
     padding: 45px;
 }
@@ -891,7 +894,7 @@ div#Playerslide .item img {
     font-family: 'Inter',sans-serif;
 }
 
-.leftPlayer h4 {
+.leftPlayer h4, section.news h4 {
     color: #fff;
     font-weight: 400;
     font-size: 36px;
@@ -2160,6 +2163,59 @@ ul.list-roman {
 }
 
 /* Dalmore page End */
+
+/* New section and page */
+section.news {
+    padding-bottom: 100px;
+}
+section.news .newsimage {
+    background-repeat: no-repeat;
+    height: 256px;
+    background-size: cover;
+    background-color: #404040;
+    margin-bottom: 20px;
+}
+section.news .tagsLink a {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+}
+section.news h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #fff;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+section.news p {
+    overflow: hidden;
+    color:  #E7E5E4;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 160%;
+    display: -webkit-box;
+}
+section.news h4 a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 20px */
+    float: right;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+section.news h4 a svg {
+    vertical-align: middle;
+}
+/* New section and page */
 
 /* Lazy code */
 img.lazyload:not([src]) {

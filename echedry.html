@@ -23,11 +23,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
         <!--=================== custom style css ================================== -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link href="swiperlib/swiper-bundle.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.min.css">
-    
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    
+        
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <!-- jQuery ui -->
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
+        
+        
            
                 <!-- Google Tag Manager -->
                 <script type="text/javascript" async>
@@ -525,10 +530,58 @@
                     
                 </div>
         </section>
+
+        <!--  in the news -->
+	<section class="section news" id="inThenewshome">
+		<div class="container">
+            <h4 style="font-weight: 700;">News <a href="#news">View More News <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                <path d="M4.34115 11.3342H13.6495L9.58281 15.4009C9.25781 15.7259 9.25781 16.2592 9.58281 16.5842C9.90781 16.9092 10.4328 16.9092 10.7578 16.5842L16.2495 11.0926C16.5745 10.7676 16.5745 10.2426 16.2495 9.91758L10.7661 4.41758C10.4411 4.09258 9.91615 4.09258 9.59115 4.41758C9.26615 4.74258 9.26615 5.26758 9.59115 5.59258L13.6495 9.66758H4.34115C3.88281 9.66758 3.50781 10.0426 3.50781 10.5009C3.50781 10.9592 3.88281 11.3342 4.34115 11.3342Z" fill="#388B3E"/>
+              </svg></a></h4>
+			<div class="row">
+
+				<div class="col-md-4">
+					<a href="https://alts.co/investing-in-athletes/#Finlete" target="_blank"> 
+						<div class="newsimage" style="background-image: url(images/echedry-page-assets/optimized/Media.webp);"></div>
+					</a>
+					<div class="tagsLink" >
+						<a href="#" target="_blank">Stefan Von Imhof</a> 
+						<h5>Finlete is a new Comcast NBC-backed crowdfunding platform for fans to purchase shares in promising athletes</h4>
+						<p>You can support in an athlete on the verge of going pro. Every time they get paid, you get paid. How cool is that?!</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<a href="https://podcasts.apple.com/us/podcast/a-new-way-to-invest-in-athletes-rob-connolly-co/id1583571496?i=1000586698841" target="_blank">
+						<div class="newsimage" style="background-image: url(images/echedry-page-assets/optimized/Media.webp);"></div>
+					</a>
+					<div class="tagsLink">
+						<a href="https://podcasts.apple.com/us/podcast/neustreet-x/id1583571496" target="_blank">Neustreet X</a>
+						<h5>A New Way To support Athletes - Rob Connolly, Co-Founder & CEO of Finlete</h4>
+						<p>Rob Connolly is the Co-Founder & CEO of Finlete. Finlete is allowing fans to support some of the most promising athletes in the world. Fans who choose to finance athletes get access to share in the journey both emotionally and financially.</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<a href="https://connect.org/cool-company-spotlight-finlete/">
+						<div class="newsimage" style="background-image: url(images/echedry-page-assets/optimized/Media.webp);">
+						</div>
+					</a>
+					<div class="tagsLink">
+						<a href="https://connect.org/" target="_blank"> connect.org</a>
+						<h5>Welcome To The Cool Companies Spotlight: Finlete</h4>
+						<p>Finlete is the AngelList for minor league athletes. Our platform provides an easy way for up-and-coming professional athletes to securitize a percentage of their future earnings.</p>
+					</div>
+				</div>
+				
+				
+			</div>
+
+		</div>
+	</section>
         
         <!-- Player gallery -->
         <section class="Playergallery">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <h3>Gallery</h3>
@@ -1609,51 +1662,10 @@
             </div>
         </div>
     
-    
-       
-        <script src="js/lazysizes.min.js" async></script>
-        <script src="js/global.min.js" async></script>
+        <script type="text/javascript" src="swiperlib/swiper-bundle.min.js" async></script>
         
-        <!-- jQuery ui -->
-        <script src="js/jquery.ui.touch-punch.min.js" async></script>
-        
-         <!-- script -->
-         <script type="text/javascript" src="swiperlib/swiper-bundle.min.js" defer></script>
-    
-        <script type="text/javascript" src="js/js-V4.js" defer></script>
-    
-    
-        <!-- JavaScript code for lazy loading -->
-        <script type="text/javascript">
-            document.addEventListener("DOMContentLoaded", function() {
-                // Get all video elements with the lazy-video class
-                var lazyVideos = document.querySelectorAll(".lazy-video");
-    
-                // IntersectionObserver to check when videos enter the viewport
-                var observer = new IntersectionObserver(function(entries, observer) {
-                    entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
-                            // Load the video source when it enters the viewport
-                            var video = entry.target;
-                            var source = video.querySelector("source[data-src]");
-                            if (source) {
-                                source.setAttribute("src", source.getAttribute("data-src"));
-                                source.removeAttribute("data-src");
-                                video.load(); // Reload the video to apply the new source
-                            }
-                            observer.unobserve(video); // Stop observing once video is loaded
-                        }
-                    });
-                });
-    
-                // Start observing lazy videos
-                lazyVideos.forEach(function(video) {
-                    observer.observe(video);
-                });
-            });
-        </script>
-    
-        <script  type="text/javascript" defer>
+        <script type="text/javascript" src="js/js-V4.js" async></script>
+        <script  type="text/javascript" async>
                     
             var video = document.getElementById("echedryVideo_2");
             var playButton = document.getElementById("playButton_2");
@@ -1784,7 +1796,44 @@
             });
         
         </script>
+        <script src="js/lazysizes.min.js" async></script>
+         <!-- script -->
+      
+         
        
+    
+        <script src="js/bootstrap.min.js" defer></script>
+
+        <!-- JavaScript code for lazy loading -->
+        <script type="text/javascript" async>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Get all video elements with the lazy-video class
+                var lazyVideos = document.querySelectorAll(".lazy-video");
+    
+                // IntersectionObserver to check when videos enter the viewport
+                var observer = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            // Load the video source when it enters the viewport
+                            var video = entry.target;
+                            var source = video.querySelector("source[data-src]");
+                            if (source) {
+                                source.setAttribute("src", source.getAttribute("data-src"));
+                                source.removeAttribute("data-src");
+                                video.load(); // Reload the video to apply the new source
+                            }
+                            observer.unobserve(video); // Stop observing once video is loaded
+                        }
+                    });
+                });
+    
+                // Start observing lazy videos
+                lazyVideos.forEach(function(video) {
+                    observer.observe(video);
+                });
+            });
+        </script>
+           
         <script type="text/javascript" async>
             (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
             vgo('setAccount', '477323417');

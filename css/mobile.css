@@ -799,6 +799,29 @@ body .timecounter-echedry .offering{
 .inline-perk-eche {
     margin-bottom: 10px;
 }
+section.news {
+    padding-bottom: 40px;
+}
+section.news h5{
+    font-size: 14px;
+    display: block;
+}
+section.news p{
+    font-size: 12px;
+    display: block;
+}
+section.news h4{
+    font-size: 28px;
+}
+section.news h4 a{
+    font-size: 16px;
+}
+.Interested h2 {
+    padding-top: 0;
+}
+video.bg-video.lazy-video {
+    display: none;
+}
 
 }
 
