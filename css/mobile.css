@@ -110,6 +110,10 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
     .top-bar .logo {
         margin-top: 8px;
     }
+    .logo.for-mb img, .logo.for-mb a {
+        display: inline-block;
+        vertical-align: top;
+    }
     body h1 {
         font-size: 36px;
     }
@@ -649,8 +653,15 @@ body.echedry section.Diagram.no-bg h2{
 body.echedry .swiperControls {
     margin-top: -60px;
 }
-body.echedry .swiperControls svg {
+body.echedry .swiperControls svg,
+body.echedry .newsControls svg {
     width: 32px;
+}
+body .newsControls {
+    padding-right: 15px;
+}
+body .newsControls {
+    margin-top: -35px;
 }
 body.echedry .ftLink {
     border: none;

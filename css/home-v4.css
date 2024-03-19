@@ -311,20 +311,29 @@ section.swiperSlider .swiper{
 .diagramRow{
     padding-bottom: 90px;
 }
-.swiperControls{
+.swiperControls,.newsControls{
     margin-top: -45px;
     text-align: right;
 }
+.newsControls {
+    padding-right: 30px;
+}
 section.Diagram .swiper-button-prev:after, 
-section.Diagram .swiper-rtl .swiper-button-next:after {
+section.Diagram .swiper-rtl .swiper-button-next:after,
+section.news .swiper-button-prev:after, 
+section.news .swiper-rtl .swiper-button-next:after{
     content: none;
 }
 section.Diagram .swiper-button-next:after, 
-section.Diagram .swiper-rtl .swiper-button-prev:after {
+section.Diagram .swiper-rtl .swiper-button-prev:after,
+section.news .swiper-button-next:after, 
+section.news .swiper-rtl .swiper-button-prev:after {
     content: none;
 }
 section.Diagram .swiper-button-next, 
-section.Diagram .swiper-button-prev {
+section.Diagram .swiper-button-prev ,
+section.news .swiper-button-next, 
+section.news .swiper-button-prev {
     position: relative;
     display: inline-block;
     left: auto;
@@ -2174,6 +2183,7 @@ section.news .newsimage {
     background-size: cover;
     background-color: #404040;
     margin-bottom: 20px;
+    background-position: center;
 }
 section.news .tagsLink a {
     font-size: 12px;
@@ -2214,6 +2224,15 @@ section.news h4 a {
 }
 section.news h4 a svg {
     vertical-align: middle;
+}
+.swiperNews {
+    overflow: hidden;
+    margin-top: 20px;
+}
+.news-slide {
+    width: 423.994px;
+    overflow: hidden;
+    max-width: 100%;
 }
 /* New section and page */
 
@@ -2270,7 +2289,10 @@ img.lazyload:not([src]) {
    /* Nav 2 style */
 .top-bar.style2 .topnavbar {
     float: right;
-    width: calc(100% - 220px);
+    width: calc(100% - 520px);
+}
+.partner-header {
+    float: left;
 }
 .style2 li.dropdown,.style2 li.getstarted{
     float: right;
