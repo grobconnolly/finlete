@@ -757,6 +757,10 @@ div.playButton{
     width: 100%;
     margin-top: 13px;
 }
+body .btn.btn-default.whitebg {
+    background: #F5F5F5;
+    color: #0C0A09;
+}
 .buyft .btn-group .btn+.btn {
     margin-left: 0px;
 }
