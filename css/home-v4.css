@@ -236,6 +236,10 @@ body .invest-btn > .btn {
 body .btn.btn-default {
     background: var(--colors-primary, #44A647);
 }
+body .btn.btn-default.whitebg {
+    background: #F5F5F5;
+    color: #0C0A09;
+}
 body .btn.btn-default:hover,
 body .btn.btn-default:focus {
     color: var(--colors, #FAFAFA);
