@@ -141,6 +141,7 @@ nav.mynav ul.navbar-nav li a {
 }
 nav.mynav ul.navbar-nav li{
     margin-right: 5px;
+    float: right;
 }
 nav.mynav  ul.navbar-nav{
     width: 100%;
