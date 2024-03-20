@@ -141,7 +141,6 @@ nav.mynav ul.navbar-nav li a {
 }
 nav.mynav ul.navbar-nav li{
     margin-right: 5px;
-    float: right;
 }
 nav.mynav  ul.navbar-nav{
     width: 100%;
@@ -2340,5 +2339,8 @@ li.dropdown svg {
     body .modal-dialog{
         width: 800px;
         max-width: 100%;
+    }
+    nav.mynav ul.navbar-nav li{
+        float: right;
     }
 }

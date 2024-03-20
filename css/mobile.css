@@ -116,6 +116,7 @@ box-shadow: 0px 4px 16px 0px rgba(12, 10, 9, 0.24);
     }
     .top-bar .logo {
         margin-top: 8px;
+        margin-right: 20px;
     }
     .logo.for-mb img, .logo.for-mb a {
         display: inline-block;
