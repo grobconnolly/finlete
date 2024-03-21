@@ -846,7 +846,7 @@ section.faqCta {
 /* Players page */
 section.detailPlayer {
     background: #1E1E1E;
-    padding: 64px 0;
+    padding: 64px 0 0;
 }
 h3.player-title {
     color: #FFF;
@@ -2185,6 +2185,7 @@ ul.list-roman {
 /* New section and page */
 section.news {
     padding-bottom: 100px;
+    padding-top: 100px;
 }
 section.news .newsimage {
     background-repeat: no-repeat;
