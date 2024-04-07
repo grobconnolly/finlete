@@ -985,6 +985,18 @@ body {
   margin-top: 1px;
 }
 
+.-ml-1 {
+  margin-left: -0.25rem;
+}
+
+.-ml-0 {
+  margin-left: -0px;
+}
+
+.-ml-0\.5 {
+  margin-left: -0.125rem;
+}
+
 .line-clamp-3 {
   overflow: hidden;
   display: -webkit-box;
@@ -998,6 +1010,10 @@ body {
 
 .inline-block {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -1720,6 +1736,10 @@ body {
   padding-top: 48px;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1842,6 +1862,10 @@ body {
 
 .leading-\[135\%\] {
   line-height: 135%;
+}
+
+.leading-none {
+  line-height: 1;
 }
 
 .text-gray-3 {
@@ -2380,6 +2404,10 @@ input[type="range"]::-webkit-slider-thumb {
 
   .md\:mt-9 {
     margin-top: 2.25rem;
+  }
+
+  .md\:-ml-1 {
+    margin-left: -0.25rem;
   }
 
   .md\:block {
