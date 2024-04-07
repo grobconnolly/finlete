@@ -1088,6 +1088,16 @@ body {
   height: 100%;
 }
 
+.size-\[61px\] {
+  width: 61px;
+  height: 61px;
+}
+
+.size-\[63px\] {
+  width: 63px;
+  height: 63px;
+}
+
 .h-3 {
   height: 0.75rem;
 }
@@ -1186,6 +1196,10 @@ body {
 
 .w-px {
   width: 1px;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .max-w-2xl {
@@ -1565,6 +1579,11 @@ body {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
