@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Learn Button -->
+    <div class="relative z-0">
+        <button type="button"
+            class="flex items-center gap-3 px-5 py-3 text-lg font-medium text-neutral-900 dropdown-btn">
+            Learn
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                    d="M5.4151 5.99969L8.00177 8.58635L10.5884 5.99969C10.8484 5.73969 11.2684 5.73969 11.5284 5.99969C11.7884 6.25969 11.7884 6.67969 11.5284 6.93969L8.46844 9.99969C8.20844 10.2597 7.78844 10.2597 7.52844 9.99969L4.46844 6.93969C4.20844 6.67969 4.20844 6.25969 4.46844 5.99969C4.72844 5.74635 5.1551 5.73969 5.4151 5.99969Z"
+                    fill="currentcolor" />
+            </svg>
+        </button>
+        <div
+            class="absolute right-0 top-[calc(100%+10px)] w-[180px] z-10 hidden dropdown before:absolute before:w-full before:h-5 before:bg-transparent before:-z-10">
+            <div class="flex items-start justify-end px-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
+                    <path d="M7.07273 0L14.0009 12H0.144531L7.07273 0Z" fill="#262626" />
+                </svg>
+            </div>
+            <ul class="px-3 py-2 text-left list-none rounded-md bg-neutral-200 shadow-shadow-dropdown">
+                <li>
+                    <a href="#"
+                        class="block px-5 py-3 text-base font-medium transition-all hover:text-primary-white hover:underline hover:underline-offset-8 text-text-primary-white hover:text-primary">About
+                        Finlete</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block px-5 py-3 text-base font-medium transition-all hover:text-primary-white hover:underline hover:underline-offset-8 text-text-primary-white hover:text-primary">
+                        Investor FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block px-5 py-3 text-base font-medium transition-all hover:text-primary-white hover:underline hover:underline-offset-8 text-text-primary-white hover:text-primary">
+                        Athlete FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block px-5 py-3 text-base font-medium transition-all hover:text-primary-white hover:underline hover:underline-offset-8 text-text-primary-white hover:text-primary">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--  How it works-->
+    <section class="py-16 md:py-20 lg:py-24">
+        <div class="wrapper">
+            <div class="flex flex-col items-center gap-10 lg:gap-24 lg:flex-row">
+                <!-- Athlete profile -->
+                <div class="p-4 md:p-6 bg-neutral-200 rounded-xl md:rounded-3xl lg:w-[536px] space-y-4 md:space-y-5">
+                    <div class="flex flex-wrap items-center gap-4 md:gap-5">
+                        <img src="img/Athlete-profile-img.png" alt="Athlete profile"
+                            class="object-cover rounded-full size-14 md:size-20">
+                        <div>
+                            <h3
+                                class="text-text-primary-white text-xl md:text-2xl lg:text-[28px] lg:leading-[135%] font-bold">
+                                Echedry Vargas
+                            </h3>
+                            <ul
+                                class=" flex items-center gap-2 list-none *:before:absolute *:before:left-0 *:before:size-1 *:before:rounded-full *:before:bg-text-primary-green *:relative *:z-0 *:before:top-1/2 *:before:-translate-y-1/2 *:pl-3 mt-2 md:mt-3">
+                                <li class="first:before:hidden first:pl-0">
+                                    <a href="#"
+                                        class="text-sm capitalize transition-all text-text-primary-green font-inter">Instagram</a>
+                                </li>
+                                <li class="first:before:hidden first:pl-0">
+                                    <a href="#"
+                                        class="text-sm capitalize transition-all text-text-primary-green font-inter">Facebook</a>
+                                </li>
+                                <li class="first:before:hidden first:pl-0">
+                                    <a href="#"
+                                        class="text-sm capitalize transition-all text-text-primary-green font-inter">X</a>
+                                </li>
+                                <li class="first:before:hidden first:pl-0">
+                                    <a href="#"
+                                        class="text-sm capitalize transition-all text-text-primary-green font-inter">Fangraphs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="text-sm text-text-primary-white font-inter">
+                        Echedry is quickly moving up the rankings. He started as a relative unknown, but is
+                        rapidly making a name for himself.
+                        Echedry’s statistics over the past 3 seasons are impressive and have exceeded
+                        expectations.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-1 text-sm text-center rounded bg-neutral-300 font-inter text-text-primary-white">
+                            Infielder (SS, 2B, 3B)
+                        </span>
+                        <span
+                            class="px-2 py-1 text-sm text-center rounded bg-neutral-300 font-inter text-text-primary-white">
+                            Organization: Texas Rangers
+                        </span>
+                        <span
+                            class="px-2 py-1 text-sm text-center rounded bg-neutral-300 font-inter text-text-primary-white">
+                            ETA 2027
+                        </span>
+                        <span
+                            class="px-2 py-1 text-sm text-center rounded bg-neutral-300 font-inter text-text-primary-white">
+                            Age: 18
+                        </span>
+                        <span
+                            class="px-2 py-1 text-sm text-center rounded bg-neutral-300 font-inter text-text-primary-white">
+                            Bats / Throws: Right / Right
+                        </span>
+                        <span
+                            class="px-2 py-1 text-sm text-center rounded bg-neutral-300 font-inter text-text-primary-white">
+                            Height / Weight: 5’11” / 170
+                        </span>
+                        <span
+                            class="px-2 py-1 text-sm text-center rounded bg-neutral-300 font-inter text-text-primary-white">
+                            2022 International Signing
+                        </span>
+                        <span
+                            class="px-2 py-1 text-sm text-center rounded bg-neutral-300 font-inter text-text-primary-white">
+                            Hometown: Azua, Dominican Republic
+                        </span>
+                    </div>
+                    <div class="flex flex-col items-start gap-3 md:flex-row">
+                        <!-- Awards / Recognition -->
+                        <div>
+                            <h3 class="mb-1 text-base font-bold md:text-lg font-inter text-text-primary-white">
+                                Awards +
+                                Recognition:
+                            </h3>
+                            <ul
+                                class="space-y-1 text-sm list-disc list-inside marker:text-text-primary-white font-inter text-text-primary-white">
+                                <li>DSL Player of the Week</li>
+                                <li>DSL Mid-Season All-Star</li>
+                                <li>ACL Player of the Week</li>
+                                <li>ACL Player of the Month</li>
+                                <li>ACL Post Season All-Star</li>
+                                <li>ACL TOP MLB Prospect</li>
+                                <li>Baseball America Rookie All-Star</li>
+                            </ul>
+                        </div>
+                        <!-- Rankings -->
+                        <div>
+                            <h3 class="mb-1 text-base font-bold md:text-lg font-inter text-text-primary-white">
+                                Awards +
+                                Rankings
+                            </h3>
+                            <ul
+                                class="space-y-1 text-sm list-disc list-inside marker:text-text-primary-white font-inter text-text-primary-white">
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Headline -->
+                <div class="lg:w-[700px]">
+                    <h2
+                        class="text-text-primary-white text-4xl md:text-5xl lg:text-[56px] font-bold lg:leading-[120%] text-left">
+                        How this works
+                    </h2>
+                    <div class="mt-8 space-y-4 md:mt-10 lg:mt-12 md:space-y-5 lg:space-y-6">
+                        <!-- Item -->
+                        <div class="flex flex-col items-start gap-2 md:items-center md:gap-6 md:flex-row">
+                            <img src="img/hiw-icon-1.svg" alt="icon" class="size-16 md:size-[104px]">
+                            <div>
+                                <h4
+                                    class="text-xl md:text-2xl lg:text-[28px] font-bold md:leading-[135%] text-text-primary-white mb-1 md:mb-2">
+                                    Invest in athletes through Finlete
+                                </h4>
+                                <p class="text-sm md:text-base text-text-secondary-gray lg:text-lg">
+                                    Buy shares and you will get to participate in the potential success of real
+                                    athletes. You do not need to be an
+                                    accredited investor.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="flex flex-col items-start gap-2 md:items-center md:gap-6 md:flex-row">
+                            <img src="img/hiw-icon-2.svg" alt="icon" class="size-16 md:size-[104px]">
+                            <div>
+                                <h4
+                                    class="text-xl md:text-2xl lg:text-[28px] font-bold md:leading-[135%] text-text-primary-white mb-1 md:mb-2">
+                                    Join their journey
+                                </h4>
+                                <p class="text-sm md:text-base text-text-secondary-gray lg:text-lg">
+                                    Finlete is not betting, fantasy, or gaming. It’s the real deal, actual skin in
+                                    the game. If Finlete athletes succeed,
+                                    the company and its investors like you succeed too.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="flex flex-col items-start gap-2 md:items-center md:gap-6 md:flex-row">
+                            <img src="img/hiw-icon-3.svg" alt="icon" class="size-16 md:size-[104px]">
+                            <div>
+                                <h4
+                                    class="text-xl md:text-2xl lg:text-[28px] font-bold md:leading-[135%] text-text-primary-white mb-1 md:mb-2">
+                                    Share in their success
+                                </h4>
+                                <p class="text-sm md:text-base text-text-secondary-gray lg:text-lg">
+                                    Dividends are paid twice a year, based on the athlete’s lifetime professional
+                                    sports earnings at the Major League level.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END How it works -->
+</body>
+
+</html>
