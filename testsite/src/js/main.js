@@ -1,12 +1,4 @@
-"use strict";
-// Dropdown
-const dropdownButton = document.querySelector('.dropdown-btn');
-
-dropdownButton.addEventListener('click', function () {
-    const dropdown = document.querySelector('.dropdown');
-    dropdown.classList.toggle('hidden')
-})
-
+"use strict"
 // Nav Mobile
 const navToggler = document.querySelector('.nav-toggler');
 navToggler.addEventListener('click', function () {

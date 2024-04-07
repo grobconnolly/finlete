@@ -8,6 +8,51 @@
 </head>
 
 <body>
+    <!-- Learn Button -->
+    <div class="relative z-0">
+        <button type="button"
+            class="flex items-center gap-3 px-5 py-3 text-lg font-medium text-neutral-900 dropdown-btn">
+            Learn
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                    d="M5.4151 5.99969L8.00177 8.58635L10.5884 5.99969C10.8484 5.73969 11.2684 5.73969 11.5284 5.99969C11.7884 6.25969 11.7884 6.67969 11.5284 6.93969L8.46844 9.99969C8.20844 10.2597 7.78844 10.2597 7.52844 9.99969L4.46844 6.93969C4.20844 6.67969 4.20844 6.25969 4.46844 5.99969C4.72844 5.74635 5.1551 5.73969 5.4151 5.99969Z"
+                    fill="currentcolor" />
+            </svg>
+        </button>
+        <div
+            class="absolute right-0 top-[calc(100%+10px)] w-[180px] z-10 hidden dropdown before:absolute before:w-full before:h-5 before:bg-transparent before:-z-10">
+            <div class="flex items-start justify-end px-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
+                    <path d="M7.07273 0L14.0009 12H0.144531L7.07273 0Z" fill="#262626" />
+                </svg>
+            </div>
+            <ul class="px-3 py-2 text-left list-none rounded-md bg-neutral-200 shadow-shadow-dropdown">
+                <li>
+                    <a href="#"
+                        class="block px-5 py-3 text-base font-medium transition-all hover:text-primary-white hover:underline hover:underline-offset-8 text-text-primary-white hover:text-primary">About
+                        Finlete</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block px-5 py-3 text-base font-medium transition-all hover:text-primary-white hover:underline hover:underline-offset-8 text-text-primary-white hover:text-primary">
+                        Investor FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block px-5 py-3 text-base font-medium transition-all hover:text-primary-white hover:underline hover:underline-offset-8 text-text-primary-white hover:text-primary">
+                        Athlete FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block px-5 py-3 text-base font-medium transition-all hover:text-primary-white hover:underline hover:underline-offset-8 text-text-primary-white hover:text-primary">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!--  How it works-->
     <section class="py-16 md:py-20 lg:py-24">
         <div class="wrapper">
