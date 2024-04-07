@@ -1,3 +1,4 @@
+"use strict";
 // Dropdown
 const dropdownButton = document.querySelector('.dropdown-btn');
 
@@ -63,13 +64,13 @@ var swiper = new Swiper(".opportunities-swiper", {
 });
 
 // FAQ Accordion
-const items = document.querySelectorAll(".accordion .accordion-item");
+const accordionItem = document.querySelectorAll(".accordion .accordion-item");
 
 function toggleAccordion() {
     const itemToggle = this.getAttribute('aria-expanded');
 
-    for (i = 0; i < items.length; i++) {
-        items[i].setAttribute('aria-expanded', 'false');
+    for (let i = 0; i < accordionItem.length; i++) {
+        accordionItem[i].setAttribute('aria-expanded', 'false');
     }
 
     if (itemToggle == 'false') {
@@ -77,7 +78,7 @@ function toggleAccordion() {
     }
 }
 
-items.forEach(item => item.addEventListener('click', toggleAccordion));
+accordionItem.forEach(item => item.addEventListener('click', toggleAccordion));
 
 // Update footer Year
 const currentYear = document.querySelector('.current-year');
@@ -99,19 +100,19 @@ closeModal.addEventListener('click', () => {
     modalVideo.load();
 })
 
-// FAQ Accordion
-const calcItems = document.querySelectorAll(".calc-accordion .calc-acc-item");
+// Calc Accordion
+const accordionHeading = document.querySelectorAll('.acc-heading');
 
-function toggleAccordion() {
-    const itemToggle = this.getAttribute('aria-expanded');
+function toggleCalcAccordion() {
+    const accordionItem = document.querySelectorAll('.calc-acc-item');
+    const thisItem = this.parentNode;
 
-    for (i = 0; i < calcItems.length; i++) {
-        calcItems[i].setAttribute('aria-expanded', 'false');
-    }
-
-    if (itemToggle == 'false') {
-        this.setAttribute('aria-expanded', 'true');
-    }
-}
-
-calcItems.forEach(item => item.addEventListener('click', toggleAccordion));
+    accordionItem.forEach(accItem => {
+        if (thisItem == accItem) {
+            thisItem.classList.toggle('is-open');
+            return;
+        }
+        accItem.classList.remove('is-open');
+    });
+};
+accordionHeading.forEach(trigger => trigger.addEventListener('click', toggleCalcAccordion));

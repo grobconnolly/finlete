@@ -84,13 +84,14 @@
   .calc-accordion .calc-acc-content {
     display: none;
   }
-  .calc-accordion .calc-acc-item[aria-expanded="true"] {
+  .calc-accordion .calc-acc-item.is-open {
     background-color: rgba(56, 139, 62, 0.12);
   }
-  .calc-accordion .calc-acc-item[aria-expanded="true"] .calc-acc-content {
+  .calc-accordion .calc-acc-item.is-open .calc-acc-content {
     display: table;
   }
-  .calc-accordion .calc-acc-item[aria-expanded="true"] .arrow {
+  .calc-accordion .calc-acc-item.is-open .arrow {
     transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
   }
 }
